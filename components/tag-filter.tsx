@@ -1,3 +1,4 @@
+"use client";
 
 import { ProjectTag } from "@/lib/projects";
 import { cn } from "@/lib/utils";

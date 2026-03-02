@@ -1,3 +1,4 @@
+import { notFound } from "next/navigation";
 import { projects, getProjectBySlug } from "@/lib/projects";
 import { CaseStudyLayout } from "@/components/case-study-layout";
 import { UCookCaseStudy } from "@/components/ucook-case-study";

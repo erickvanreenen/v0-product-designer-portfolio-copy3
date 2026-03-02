@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Linkedin, Mail } from "lucide-react";
 
 export function Footer() {
