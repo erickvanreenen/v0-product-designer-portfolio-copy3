@@ -3,7 +3,7 @@
 import React from "react";
 import { Project } from "@/lib/projects";
 import Link from "next/link";
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import { ArrowLeft, ArrowRight, ArrowUpRight } from "lucide-react";
 
 interface OvertureCaseStudyProps {
   project: Project;
@@ -74,6 +74,34 @@ export function OvertureCaseStudy({ project, nextProject, prevProject }: Overtur
           <p className="text-base text-foreground/70 leading-relaxed">
             Mapped user journeys and deliverables across the advancing process.
           </p>
+        </section>
+
+        {/* Wireframes */}
+        <section className="mb-24">
+          <h2 className="text-3xl font-bold text-[#09332C] tracking-tight mb-10">Wireframes</h2>
+          <a
+            href="https://www.figma.com/design/QdoSI1orZciqLgNdeuwweb/Overture---Promoter-App?node-id=204-473&t=u2tQAugiWCBFyvqv-1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-sm font-medium text-foreground hover:text-[#F0531C] transition-colors duration-200 group border-b border-border pb-1"
+          >
+            View wireframes in Figma
+            <ArrowUpRight size={14} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200" />
+          </a>
+        </section>
+
+        {/* Prototype */}
+        <section className="mb-24">
+          <h2 className="text-3xl font-bold text-[#09332C] tracking-tight mb-10">Prototype</h2>
+          <a
+            href="https://www.figma.com/proto/QdoSI1orZciqLgNdeuwweb/Overture---Promoter-App?node-id=324-839&t=hzQyEkisr6EUwGlc-1&scaling=scale-down-width&content-scaling=fixed&page-id=1%3A6&starting-point-node-id=266%3A670&show-proto-sidebar=1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-sm font-medium text-foreground hover:text-[#F0531C] transition-colors duration-200 group border-b border-border pb-1"
+          >
+            View prototype in Figma
+            <ArrowUpRight size={14} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200" />
+          </a>
         </section>
 
         {/* Team */}
