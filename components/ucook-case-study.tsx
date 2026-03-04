@@ -252,7 +252,7 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
           <div className="mb-10">
             <div className="grid grid-cols-3 gap-px bg-border rounded-lg overflow-hidden mb-px">
               {["Meal Kit Page", "Add to Cart", "Checkout"].map((step, i) => (
-                <div key={step} className="bg-background p-5">
+                <div key={step} className="bg-white p-5">
                   <p className="text-xs text-foreground/20 font-bold mb-2">{String(i + 1).padStart(2, "0")}</p>
                   <p className="text-sm text-foreground/60">{step}</p>
                 </div>
@@ -305,11 +305,11 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
           </p>
 
           <div className="grid md:grid-cols-2 gap-px bg-border">
-            <div className="bg-background p-8">
+            <div className="bg-white p-8">
               <h3 className="text-xs text-foreground/30 font-medium uppercase tracking-widest mb-4">Quick wins</h3>
               <p className="text-sm text-foreground/50">Communication, navigation, UI clarity.</p>
             </div>
-            <div className="bg-background p-8">
+            <div className="bg-white p-8">
               <h3 className="text-xs text-[#F0531C] font-medium uppercase tracking-widest mb-4">Structural redesign</h3>
               <p className="text-sm text-foreground/50">Measurable funnel with payment decision.</p>
             </div>
@@ -372,7 +372,7 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
                 { title: "Form validation", desc: "Inline errors. Prevent incomplete submits." },
                 { title: "Progress tracking", desc: "GTM triggers per funnel step." },
               ].map((spec) => (
-                <div key={spec.title} className="bg-background p-6">
+                <div key={spec.title} className="bg-white p-6">
                   <p className="text-sm font-mono font-bold text-[#09332C]">{spec.title}</p>
                   <p className="text-xs text-foreground/40 mt-1">{spec.desc}</p>
                 </div>

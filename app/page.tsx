@@ -65,7 +65,7 @@ export default function HomePage() {
         <div className="max-w-5xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-bold text-[#09332C] tracking-tight mb-16">Process</h2>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border/50">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border">
             {[
               { step: "01", title: "Research", desc: "Dig into users, data, and context." },
               { step: "02", title: "Define", desc: "Turn insights into sharp problems." },
@@ -74,7 +74,7 @@ export default function HomePage() {
               { step: "05", title: "Test", desc: "Validate with real users." },
               { step: "06", title: "Iterate", desc: "Refine through feedback." },
             ].map((step) => (
-              <div key={step.step} className="bg-background p-8">
+              <div key={step.step} className="bg-white p-8">
                 <span className="text-xs text-[#F0531C] font-medium">{step.step}</span>
                 <h3 className="text-lg font-bold text-[#09332C] mt-3">{step.title}</h3>
                 <p className="text-sm text-foreground/50 mt-2">{step.desc}</p>

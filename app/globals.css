@@ -5,7 +5,7 @@
 
 :root {
   /* Palette: Venetian Lace #F7EDDA, Fiery Glow #F0531C, Fence Green #09332C, Macadamia Beige #F7DFBA, Pumpkin Vapor #FFA74F, Norfolk Green #2E4B3C, White #FFFFFF */
-  --background: #f2f2f2;
+  --background: #F7EDDA;
   --foreground: #09332C;
   --card: #FFFFFF;
   --card-foreground: #09332C;
@@ -13,15 +13,15 @@
   --popover-foreground: #09332C;
   --primary: #09332C;
   --primary-foreground: #F7EDDA;
-  --secondary: #F7EDDA;
+  --secondary: #F7DFBA;
   --secondary-foreground: #09332C;
-  --muted: #e8e8e8;
+  --muted: #EDE0C8;
   --muted-foreground: #2E4B3C;
   --accent: #F0531C;
   --accent-foreground: #FFFFFF;
   --destructive: #F0531C;
   --destructive-foreground: #FFFFFF;
-  --border: #d9d9d9;
+  --border: #D4C9B0;
   --input: #FFFFFF;
   --ring: #F0531C;
   --chart-1: #F0531C;
