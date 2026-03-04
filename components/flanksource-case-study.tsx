@@ -65,12 +65,12 @@ export function FlanksourceCaseStudy({ project, nextProject, prevProject }: Prop
       </section>
 
       {/* Outcomes */}
-      <section className="bg-[#09332C]">
+      <section className="bg-white">
         <div className="max-w-5xl mx-auto px-6 py-10">
-          <p className="text-xs text-[#FFA74F] font-medium uppercase tracking-widest mb-6">Outcomes</p>
+          <p className="text-xs text-[#F0531C] font-medium uppercase tracking-widest mb-6">Outcomes</p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {project.outcomes.map((outcome, i) => (
-              <p key={i} className="text-sm text-[#F7EDDA]/70 leading-relaxed">{outcome}</p>
+              <p key={i} className="text-sm text-foreground/65 leading-relaxed">{outcome}</p>
             ))}
           </div>
         </div>

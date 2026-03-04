@@ -202,9 +202,9 @@ export function OvertureCaseStudy({ project, nextProject, prevProject }: Overtur
         </section>
 
         {/* Outcome */}
-        <section className="mb-24 bg-[#09332C] rounded-lg p-8 md:p-10">
-          <h2 className="text-xs text-[#FFA74F] font-medium uppercase tracking-widest mb-6">Outcome</h2>
-          <p className="text-base text-[#F7EDDA]/70 leading-relaxed">
+        <section className="mb-24 bg-white rounded-lg p-8 md:p-10">
+          <h2 className="text-xs text-[#F0531C] font-medium uppercase tracking-widest mb-6">Outcome</h2>
+          <p className="text-base text-foreground/65 leading-relaxed">
             Delivered and signed off in 4 weeks.
           </p>
         </section>

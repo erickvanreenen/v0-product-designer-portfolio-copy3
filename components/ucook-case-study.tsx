@@ -178,7 +178,7 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
         </section>
 
         {/* Constraints */}
-        <section className="mb-24 bg-white rounded-lg p-8 md:p-10 border border-border">
+        <section className="mb-24 bg-white rounded-lg p-8 md:p-10">
           <h2 className="text-xs text-[#F0531C] font-medium uppercase tracking-widest mb-8">Constraints</h2>
           <div className="space-y-5">
             {[
@@ -280,24 +280,24 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
           </div>
 
           {/* Risks */}
-          <div className="bg-[#09332C] rounded-lg p-8 md:p-10">
-            <p className="text-xs text-[#FFA74F] font-medium uppercase tracking-widest mb-8">Risks identified</p>
+          <div className="bg-white rounded-lg p-8 md:p-10">
+            <p className="text-xs text-[#F0531C] font-medium uppercase tracking-widest mb-8">Risks identified</p>
             <div className="space-y-6">
               <div className="flex items-start gap-6">
-                <span className="text-xs text-[#FFA74F]/40 font-bold mt-0.5">01</span>
-                <p className="text-sm text-[#F7EDDA]/60 leading-relaxed">Subscription model not communicated before payment. Users commit without understanding recurring billing.</p>
+                <span className="text-xs text-[#F0531C]/30 font-bold mt-0.5">01</span>
+                <p className="text-sm text-foreground/65 leading-relaxed">Subscription model not communicated before payment. Users commit without understanding recurring billing.</p>
               </div>
               <div className="flex items-start gap-6">
-                <span className="text-xs text-[#FFA74F]/40 font-bold mt-0.5">02</span>
-                <p className="text-sm text-[#F7EDDA]/60 leading-relaxed">Pause and cancel functionality unclear at point of commitment.</p>
+                <span className="text-xs text-[#F0531C]/30 font-bold mt-0.5">02</span>
+                <p className="text-sm text-foreground/65 leading-relaxed">Pause and cancel functionality unclear at point of commitment.</p>
               </div>
               <div className="flex items-start gap-6">
-                <span className="text-xs text-[#FFA74F]/40 font-bold mt-0.5">03</span>
-                <p className="text-sm text-[#F7EDDA]/60 leading-relaxed">Solves acquisition only. The retention problem remains unresolved.</p>
+                <span className="text-xs text-[#F0531C]/30 font-bold mt-0.5">03</span>
+                <p className="text-sm text-foreground/65 leading-relaxed">Solves acquisition only. The retention problem remains unresolved.</p>
               </div>
               <div className="flex items-start gap-6">
-                <span className="text-xs text-[#FFA74F]/40 font-bold mt-0.5">04</span>
-                <p className="text-sm text-[#F7EDDA]/60 leading-relaxed">Order changes post-payment introduce refund risk. Reduced orders take 2+ days to reflect — creating billing confusion at the point of highest user trust.</p>
+                <span className="text-xs text-[#F0531C]/30 font-bold mt-0.5">04</span>
+                <p className="text-sm text-foreground/65 leading-relaxed">Order changes post-payment introduce refund risk. Reduced orders take 2+ days to reflect — creating billing confusion at the point of highest user trust.</p>
               </div>
             </div>
           </div>
