@@ -18,7 +18,7 @@ export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border/30">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-border/60">
       <nav className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
         <Link href="/" className="group">
           <span className="text-sm font-bold tracking-tight text-[#09332C] group-hover:text-[#F0531C] transition-colors duration-200">
@@ -68,7 +68,7 @@ export function Navbar() {
 
       {/* Mobile menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-background border-b border-border/30">
+        <div className="md:hidden bg-white border-b border-border/60">
           <ul className="px-6 py-4 space-y-1">
             {navItems.map((item) => (
               <li key={item.href}>
