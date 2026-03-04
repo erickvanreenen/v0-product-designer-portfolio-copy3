@@ -19,6 +19,7 @@ export interface Project {
   timeline: string;
   tools: string[];
   thumbnail: string;
+  thumbnailLogo?: string;
   outcomes: string[];
   summary: string;
   context: string;
@@ -49,7 +50,8 @@ export const projects: Project[] = [
     team: "Product Owner, Project Manager, 3 Developers",
     timeline: "September 2024 - Present",
     tools: ["Figma", "Miro", "Jira", "Adobe Creative Suite"],
-    thumbnail: "/images/ftn-thumbnail.jpg",
+    thumbnail: "/images/ftn-thumbnail.svg",
+    thumbnailLogo: "/images/logo-ftn.svg",
     outcomes: [
       "Complete website redesign in progress",
       "Improved information architecture",
@@ -96,7 +98,7 @@ export const projects: Project[] = [
     team: "2 Developers, Product Manager, QA Tester",
     timeline: "July 2023 - August 2024",
     tools: ["Figma", "Miro", "Jira"],
-    thumbnail: "/images/yumease-thumbnail.jpg",
+    thumbnail: "/images/yumease-thumbnail.svg",
     outcomes: [
       "Successfully launched app",
       "4.5 star average rating",
@@ -192,7 +194,7 @@ export const projects: Project[] = [
     team: "Junior Designers, Learning Designers, Project Manager",
     timeline: "May 2021 - August 2024",
     tools: ["Figma", "Miro", "Articulate 360", "Adobe Creative Suite"],
-    thumbnail: "/images/uni4-thumbnail.jpg",
+    thumbnail: "/images/uni4-thumbnail.svg",
     outcomes: [
       "Increased team productivity significantly",
       "Met all KPIs consistently",
@@ -238,7 +240,7 @@ export const projects: Project[] = [
     team: "Solo Project",
     timeline: "2024",
     tools: ["Articulate Rise", "Figma", "Miro"],
-    thumbnail: "/images/edtech-thumbnail.jpg",
+    thumbnail: "/images/edtech-thumbnail.svg",
     outcomes: [
       "Created engaging interactive learning modules",
       "Improved learner engagement through multimedia content",
@@ -285,7 +287,8 @@ export const projects: Project[] = [
     team: "Nygaard Design",
     timeline: "2025",
     tools: ["Figma", "Miro"],
-    thumbnail: "/images/flanksource-after.svg",
+    thumbnail: "/images/flanksource-thumbnail.svg",
+    thumbnailLogo: "/images/logo-flanksource.svg",
     outcomes: [
       "Unified dashboard communicating key system health metrics",
       "Consolidated five major components into one view",

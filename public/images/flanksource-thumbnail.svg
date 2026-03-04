@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <!-- Very dark background -->
+  <rect width="800" height="600" fill="#080F0D"/>
+
+  <!-- Subtle grid lines -->
+  <pattern id="hgrid" width="800" height="40" patternUnits="userSpaceOnUse">
+    <line x1="0" y1="40" x2="800" y2="40" stroke="#ffffff" stroke-width="0.5" opacity="0.04"/>
+  </pattern>
+  <rect width="800" height="600" fill="url(#hgrid)"/>
+  <pattern id="vgrid" width="80" height="600" patternUnits="userSpaceOnUse">
+    <line x1="80" y1="0" x2="80" y2="600" stroke="#ffffff" stroke-width="0.5" opacity="0.025"/>
+  </pattern>
+  <rect width="800" height="600" fill="url(#vgrid)"/>
+
+  <!-- Top status bar -->
+  <rect x="0" y="0" width="800" height="44" fill="#0A1A16"/>
+  <rect x="0" y="44" width="800" height="1" fill="#ffffff" opacity="0.06"/>
+
+  <!-- Status bar dots -->
+  <circle cx="32" cy="22" r="5" fill="#2980f3" opacity="0.8"/>
+  <circle cx="48" cy="22" r="5" fill="#2980f3" opacity="0.5"/>
+  <circle cx="64" cy="22" r="5" fill="#2980f3" opacity="0.25"/>
+  <rect x="88" y="17" width="100" height="10" rx="5" fill="#ffffff" opacity="0.06"/>
+  <rect x="200" y="17" width="70" height="10" rx="5" fill="#ffffff" opacity="0.04"/>
+
+  <!-- Right top buttons -->
+  <rect x="600" y="14" width="60" height="16" rx="3" fill="#2980f3" opacity="0.2"/>
+  <rect x="670" y="14" width="60" height="16" rx="3" fill="#ffffff" opacity="0.04"/>
+  <rect x="740" y="14" width="44" height="16" rx="3" fill="#ffffff" opacity="0.04"/>
+
+  <!-- Dashboard rows — data table feel -->
+
+  <!-- Row header -->
+  <rect x="0" y="44" width="800" height="36" fill="#0D1F1B"/>
+  <rect x="28" y="56" width="60" height="8" rx="4" fill="#ffffff" opacity="0.12"/>
+  <rect x="160" y="56" width="80" height="8" rx="4" fill="#ffffff" opacity="0.08"/>
+  <rect x="320" y="56" width="60" height="8" rx="4" fill="#ffffff" opacity="0.08"/>
+  <rect x="460" y="56" width="70" height="8" rx="4" fill="#ffffff" opacity="0.08"/>
+  <rect x="600" y="56" width="50" height="8" rx="4" fill="#ffffff" opacity="0.08"/>
+  <rect x="700" y="56" width="60" height="8" rx="4" fill="#ffffff" opacity="0.08"/>
+
+  <!-- Data rows -->
+  <!-- Row 1 — highlighted -->
+  <rect x="0" y="80" width="800" height="42" fill="#0F2820"/>
+  <rect x="0" y="80" width="3" height="42" fill="#2980f3"/>
+  <circle cx="38" cy="101" r="8" fill="#2980f3" opacity="0.15"/>
+  <circle cx="38" cy="101" r="4" fill="#2980f3" opacity="0.7"/>
+  <rect x="60" y="94" width="80" height="7" rx="3.5" fill="#ffffff" opacity="0.45"/>
+  <rect x="160" y="94" width="120" height="7" rx="3.5" fill="#ffffff" opacity="0.25"/>
+  <rect x="320" y="94" width="60" height="7" rx="3.5" fill="#2980f3" opacity="0.5"/>
+  <rect x="460" y="97" width="50" height="12" rx="3" fill="#2980f3" opacity="0.15"/>
+  <rect x="472" y="100" width="26" height="6" rx="3" fill="#2980f3" opacity="0.6"/>
+  <rect x="600" y="94" width="40" height="7" rx="3.5" fill="#ffffff" opacity="0.2"/>
+  <rect x="700" y="94" width="60" height="7" rx="3.5" fill="#ffffff" opacity="0.15"/>
+
+  <!-- Row 2 -->
+  <rect x="0" y="122" width="800" height="1" fill="#ffffff" opacity="0.03"/>
+  <rect x="0" y="123" width="800" height="42" fill="#080F0D"/>
+  <circle cx="38" cy="144" r="8" fill="#ffffff" opacity="0.03"/>
+  <circle cx="38" cy="144" r="4" fill="#F0531C" opacity="0.5"/>
+  <rect x="60" y="137" width="100" height="7" rx="3.5" fill="#ffffff" opacity="0.3"/>
+  <rect x="160" y="137" width="140" height="7" rx="3.5" fill="#ffffff" opacity="0.15"/>
+  <rect x="320" y="137" width="80" height="7" rx="3.5" fill="#ffffff" opacity="0.1"/>
+  <rect x="460" y="140" width="50" height="12" rx="3" fill="#F0531C" opacity="0.1"/>
+  <rect x="472" y="143" width="26" height="6" rx="3" fill="#F0531C" opacity="0.4"/>
+  <rect x="600" y="137" width="55" height="7" rx="3.5" fill="#ffffff" opacity="0.12"/>
+  <rect x="700" y="137" width="50" height="7" rx="3.5" fill="#ffffff" opacity="0.1"/>
+
+  <!-- Row 3 -->
+  <rect x="0" y="165" width="800" height="1" fill="#ffffff" opacity="0.03"/>
+  <rect x="0" y="166" width="800" height="42" fill="#080F0D"/>
+  <circle cx="38" cy="187" r="4" fill="#22c55e" opacity="0.55"/>
+  <rect x="60" y="180" width="70" height="7" rx="3.5" fill="#ffffff" opacity="0.2"/>
+  <rect x="160" y="180" width="110" height="7" rx="3.5" fill="#ffffff" opacity="0.1"/>
+  <rect x="320" y="180" width="50" height="7" rx="3.5" fill="#ffffff" opacity="0.08"/>
+  <rect x="460" y="183" width="50" height="12" rx="3" fill="#22c55e" opacity="0.08"/>
+  <rect x="472" y="186" width="26" height="6" rx="3" fill="#22c55e" opacity="0.4"/>
+  <rect x="600" y="180" width="45" height="7" rx="3.5" fill="#ffffff" opacity="0.1"/>
+
+  <!-- Row 4 -->
+  <rect x="0" y="208" width="800" height="1" fill="#ffffff" opacity="0.03"/>
+  <rect x="0" y="209" width="800" height="42" fill="#080F0D"/>
+  <circle cx="38" cy="230" r="4" fill="#22c55e" opacity="0.4"/>
+  <rect x="60" y="223" width="90" height="7" rx="3.5" fill="#ffffff" opacity="0.16"/>
+  <rect x="160" y="223" width="90" height="7" rx="3.5" fill="#ffffff" opacity="0.08"/>
+  <rect x="320" y="223" width="65" height="7" rx="3.5" fill="#ffffff" opacity="0.06"/>
+
+  <!-- Row 5 -->
+  <rect x="0" y="251" width="800" height="1" fill="#ffffff" opacity="0.03"/>
+  <rect x="0" y="252" width="800" height="42" fill="#080F0D"/>
+  <circle cx="38" cy="273" r="4" fill="#ffffff" opacity="0.2"/>
+  <rect x="60" y="266" width="55" height="7" rx="3.5" fill="#ffffff" opacity="0.12"/>
+  <rect x="160" y="266" width="120" height="7" rx="3.5" fill="#ffffff" opacity="0.06"/>
+
+  <!-- Rows fading out -->
+  <rect x="0" y="294" width="800" height="1" fill="#ffffff" opacity="0.025"/>
+  <rect x="0" y="295" width="800" height="42" fill="#080F0D" opacity="0.9"/>
+  <circle cx="38" cy="316" r="4" fill="#ffffff" opacity="0.08"/>
+  <rect x="60" y="309" width="75" height="7" rx="3.5" fill="#ffffff" opacity="0.07"/>
+
+  <rect x="0" y="337" width="800" height="1" fill="#ffffff" opacity="0.02"/>
+  <rect x="0" y="338" width="800" height="42" fill="#080F0D" opacity="0.95"/>
+  <circle cx="38" cy="359" r="4" fill="#ffffff" opacity="0.05"/>
+  <rect x="60" y="352" width="60" height="7" rx="3.5" fill="#ffffff" opacity="0.05"/>
+
+  <!-- Flanksource wordmark — clean flat blue, centered at bottom -->
+  <g transform="translate(180, 420) scale(3.2)" fill="#2980f3" opacity="0.85">
+    <!-- Icon: stacked chevron/slash shapes (simplified) -->
+    <polygon points="0,12 8,16 8,12 0,8" opacity="0.9"/>
+    <polygon points="0,7 8,11 8,7 0,3" opacity="0.65"/>
+    <polygon points="0,2 8,6 8,2 0,-2" opacity="0.4"/>
+    <polygon points="9,16 17,12 17,16 9,20" opacity="0.9"/>
+    <polygon points="9,11 17,7 17,11 9,15" opacity="0.65"/>
+    <polygon points="9,6 17,2 17,6 9,10" opacity="0.4"/>
+    <!-- Text: flanksource -->
+    <text x="22" y="16" font-family="ui-sans-serif, system-ui, sans-serif" font-size="9" font-weight="600" letter-spacing="0.5" fill="#2980f3" opacity="0.85">flanksource</text>
+  </g>
+
+  <!-- Subtle vignette -->
+  <rect x="0" y="380" width="800" height="220" fill="#080F0D" opacity="0.55"/>
+
+  <!-- Bottom label -->
+  <text x="48" y="570" font-family="ui-sans-serif, system-ui, sans-serif" font-size="10" fill="#ffffff" opacity="0.15" letter-spacing="3">DATA DEV · REDESIGN</text>
+</svg>

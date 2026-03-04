@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <!-- Dark green background -->
+  <rect width="800" height="600" fill="#09332C"/>
+
+  <!-- Subtle dot grid -->
+  <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+    <circle cx="14" cy="14" r="0.8" fill="#F7EDDA" opacity="0.06"/>
+  </pattern>
+  <rect width="800" height="600" fill="url(#dots)"/>
+
+  <!-- Progress header bar -->
+  <rect x="60" y="80" width="680" height="2" fill="#F7EDDA" opacity="0.08"/>
+
+  <!-- Progress fill — 65% complete -->
+  <rect x="60" y="80" width="442" height="2" fill="#F0531C" opacity="0.7"/>
+  <circle cx="502" cy="81" r="4" fill="#F0531C" opacity="0.8"/>
+
+  <!-- Module rows — course content blocks -->
+
+  <!-- Module 1 — active/current (orange accent) -->
+  <rect x="60" y="112" width="680" height="68" rx="6" fill="#F7EDDA" opacity="0.04"/>
+  <rect x="60" y="112" width="3" height="68" rx="1.5" fill="#F0531C" opacity="0.85"/>
+  <rect x="80" y="128" width="52" height="5" rx="2.5" fill="#F0531C" opacity="0.45"/>
+  <rect x="80" y="141" width="220" height="5" rx="2.5" fill="#F7EDDA" opacity="0.5"/>
+  <rect x="80" y="154" width="160" height="4" rx="2" fill="#F7EDDA" opacity="0.2"/>
+  <!-- Status pill -->
+  <rect x="620" y="128" width="90" height="20" rx="4" fill="#F0531C" opacity="0.18"/>
+  <rect x="632" y="134" width="66" height="6" rx="3" fill="#F0531C" opacity="0.5"/>
+
+  <!-- Module 2 -->
+  <rect x="60" y="196" width="680" height="68" rx="6" fill="#F7EDDA" opacity="0.03"/>
+  <rect x="60" y="196" width="3" height="68" rx="1.5" fill="#F7EDDA" opacity="0.15"/>
+  <rect x="80" y="212" width="36" height="5" rx="2.5" fill="#F7EDDA" opacity="0.25"/>
+  <rect x="80" y="225" width="280" height="5" rx="2.5" fill="#F7EDDA" opacity="0.3"/>
+  <rect x="80" y="238" width="200" height="4" rx="2" fill="#F7EDDA" opacity="0.12"/>
+  <rect x="620" y="212" width="90" height="20" rx="4" fill="#F7EDDA" opacity="0.06"/>
+  <rect x="632" y="218" width="66" height="6" rx="3" fill="#F7EDDA" opacity="0.2"/>
+
+  <!-- Module 3 -->
+  <rect x="60" y="280" width="680" height="68" rx="6" fill="#F7EDDA" opacity="0.02"/>
+  <rect x="60" y="280" width="3" height="68" rx="1.5" fill="#F7EDDA" opacity="0.1"/>
+  <rect x="80" y="296" width="44" height="5" rx="2.5" fill="#F7EDDA" opacity="0.2"/>
+  <rect x="80" y="309" width="240" height="5" rx="2.5" fill="#F7EDDA" opacity="0.2"/>
+  <rect x="80" y="322" width="180" height="4" rx="2" fill="#F7EDDA" opacity="0.08"/>
+
+  <!-- Module 4 -->
+  <rect x="60" y="364" width="680" height="68" rx="6" fill="#F7EDDA" opacity="0.02"/>
+  <rect x="60" y="364" width="3" height="68" rx="1.5" fill="#F7EDDA" opacity="0.07"/>
+  <rect x="80" y="380" width="56" height="5" rx="2.5" fill="#F7EDDA" opacity="0.15"/>
+  <rect x="80" y="393" width="200" height="5" rx="2.5" fill="#F7EDDA" opacity="0.15"/>
+  <rect x="80" y="406" width="140" height="4" rx="2" fill="#F7EDDA" opacity="0.06"/>
+
+  <!-- Module 5 — upcoming (dimmed) -->
+  <rect x="60" y="448" width="680" height="68" rx="6" fill="#F7EDDA" opacity="0.01"/>
+  <rect x="60" y="448" width="3" height="68" rx="1.5" fill="#F7EDDA" opacity="0.05"/>
+  <rect x="80" y="464" width="38" height="5" rx="2.5" fill="#F7EDDA" opacity="0.1"/>
+  <rect x="80" y="477" width="260" height="5" rx="2.5" fill="#F7EDDA" opacity="0.1"/>
+
+  <!-- Background label -->
+  <text x="60" y="554" font-family="ui-sans-serif, system-ui, sans-serif" font-size="10" fill="#F7EDDA" opacity="0.2" letter-spacing="3">EDTECH · UX STRATEGY</text>
+</svg>

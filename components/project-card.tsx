@@ -41,6 +41,22 @@ export function ProjectCard({ project, featured = false }: ProjectCardProps) {
               <span className="text-3xl md:text-4xl font-bold text-[#F7EDDA]/10 select-none">{project.title}</span>
             </div>
           )}
+
+          {/* Logo badge — bottom left */}
+          {project.thumbnailLogo && (
+            <div className="absolute bottom-4 left-4">
+              <div className="h-8 flex items-center justify-center bg-white/10 backdrop-blur-sm rounded px-2 py-1">
+                <Image
+                  src={project.thumbnailLogo}
+                  alt={`${project.title} logo`}
+                  width={80}
+                  height={24}
+                  className="object-contain max-h-5"
+                />
+              </div>
+            </div>
+          )}
+
           <div className="absolute top-4 right-4">
             <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <ArrowUpRight size={14} className="text-[#F7EDDA]" />
