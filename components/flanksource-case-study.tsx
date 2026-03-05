@@ -153,8 +153,8 @@ export function FlanksourceCaseStudy({ project, nextProject, prevProject }: Prop
           <h2 className="text-3xl font-bold text-[#09332C] tracking-tight mb-12">Before and after</h2>
 
           {/* Side by side */}
-          <div className="grid md:grid-cols-2 gap-px bg-border">
-            <div className="bg-white">
+          <div className="grid md:grid-cols-2 gap-8">
+            <div>
               <p className="text-xs text-foreground/30 font-medium uppercase tracking-widest mb-4">Before</p>
               <div className="border border-border overflow-hidden">
                 <Image
@@ -166,7 +166,7 @@ export function FlanksourceCaseStudy({ project, nextProject, prevProject }: Prop
                 />
               </div>
             </div>
-            <div className="bg-white pl-8">
+            <div>
               <p className="text-xs text-[#F0531C] font-medium uppercase tracking-widest mb-4">After</p>
               <div className="border border-border overflow-hidden">
                 <Image
