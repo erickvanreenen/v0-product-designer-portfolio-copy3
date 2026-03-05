@@ -88,7 +88,7 @@ export default function HomePage() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 md:py-32">
+      <section className="py-24 md:py-32 bg-white">
         <div className="max-w-5xl mx-auto px-6">
           <div className="border-t border-border pt-16">
             <h2 className="text-3xl md:text-4xl font-bold text-[#09332C] tracking-tight mb-4">
