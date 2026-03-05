@@ -44,50 +44,47 @@ export const projects: Project[] = [
   {
     slug: "faithful-to-nature",
     title: "Faithful to Nature",
-    subtitle: "E-commerce website redesign for South Africa's leading eco-friendly retailer",
+    subtitle: "Omnichannel platform redesign in a complex, dev-first environment",
     tags: ["E-commerce", "Redesign", "UX Strategy", "Omnichannel"],
     role: "Lead UX/UI Designer",
-    team: "Product Owner, Project Manager, 3 Developers",
-    timeline: "September 2024 - Present",
-    tools: ["Figma", "Miro", "Jira", "Adobe Creative Suite"],
+    team: "CEO, Co-CEO, CTO, BE Architecture Dev, Acumatica Dev, 2× BE Devs, 2× FE Devs, Product Owner, Project Manager, UX/UI Designer",
+    timeline: "September 2024 – Present",
+    tools: ["Figma", "Miro", "Jira"],
     thumbnail: "/images/ftn-thumbnail.jpg",
     thumbnailLogo: "/images/logo-ftn.svg",
     outcomes: [
-      "Complete website redesign in progress",
-      "Improved information architecture",
-      "Enhanced mobile experience",
-      "Streamlined checkout flow"
+      "Consistent filtering system shipped across all category levels",
+      "Omnichannel collection options introduced — 17 in-store locations + scheduled delivery",
+      "UX advocacy embedded in a previously dev-first product team",
+      "Systems thinking applied across Magento 1 → 2 migration constraints"
     ],
-    summary: "Leading the complete UX/UI redesign of Faithful to Nature's e-commerce platform, focusing on creating a seamless omnichannel experience that reflects the brand's commitment to sustainability.",
-    context: "Faithful to Nature is South Africa's leading online retailer for eco-friendly and organic products. The existing website needed a comprehensive redesign to improve user experience, increase conversions, and better communicate the brand's values.",
+    summary: "Lone lead UX/UI designer on South Africa's largest online wellness platform. Working inside a dev-first, low-UX-maturity environment to redesign a complex omnichannel platform migrating from Magento 1 to Magento 2.",
+    context: "Faithful to Nature is one of South Africa's largest online wellness retailers. Rapid expansion into brick-and-mortar stores has moved the platform into a full omnichannel environment. The Magento 1 to Magento 2 migration started around 2020. Multiple designers came and went before I joined as the lone lead UX/UI designer in September 2024.",
     goals: [
-      "Improve product discovery and navigation",
-      "Reduce cart abandonment rate",
-      "Create a cohesive brand experience across desktop and mobile",
-      "Enhance accessibility and inclusivity"
+      "Introduce consistent UX patterns across a fragmented platform",
+      "Design within legacy M1 constraints and staggered data availability",
+      "Advocate for user needs in a dev-first, low-UX-maturity environment",
+      "Deliver omnichannel collection and delivery options"
     ],
-    research: "Conducted extensive qualitative and quantitative research including user interviews, analytics review, competitor analysis, and usability testing of the existing platform. Identified key pain points in the user journey.",
+    research: "Immersed in the existing platform to map UX debt and misaligned historical decisions. Identified filtering inconsistencies across category levels and gaps in delivery and collection options. Mapped omnichannel dependencies across logistics, data availability, and legacy systems.",
     insights: [
-      "Users struggled to find products due to complex category structure",
-      "Mobile experience was significantly underperforming desktop",
-      "Trust indicators were not prominently displayed",
-      "Checkout process had unnecessary friction points"
+      "Dev-first culture created significant UX debt — patterns changed across category levels",
+      "Design was constrained by data availability, not user need",
+      "Legacy M1 dependencies limited what was buildable on M2",
+      "Systems thinking was non-negotiable — every decision had downstream consequences",
+      "Advocating for UX required translating user needs into business and technical language"
     ],
-    iaFlows: "Restructured the information architecture based on card sorting exercises and tree testing. Created user flows that prioritize the most common user tasks while maintaining discoverability of the full product range.",
-    designExploration: "Explored multiple design directions that balanced the brand's organic, natural aesthetic with modern e-commerce best practices. Conducted preference testing with users to validate direction.",
-    finalUI: "Developed a clean, nature-inspired design system with improved typography, sustainable color palette, and clear visual hierarchy. Mobile-first approach ensuring excellent experience across all devices.",
-    testing: "Ongoing usability testing throughout the design process with iterative improvements based on user feedback. A/B testing planned for post-launch optimization.",
-    outcome: "Project currently in development with positive stakeholder feedback. Early user testing shows significant improvements in task completion rates and user satisfaction.",
+    iaFlows: "",
+    designExploration: "",
+    finalUI: "",
+    testing: "Ongoing. Designs reviewed against M1 constraints, data availability, and omnichannel logistics before sign-off. Each feature required cross-functional alignment across tech, product, and operations.",
+    outcome: "Consistent filtering system shipped. Omnichannel collection and delivery options in progress. UX practice established in a previously dev-first environment. Project ongoing.",
     learnings: [
-      "Importance of balancing business goals with user needs",
-      "Value of continuous stakeholder communication",
-      "Benefits of mobile-first design approach"
+      "Balancing UX ideals against data availability and technical constraints is a distinct skill",
+      "Systems thinking at scale requires mapping dependencies before designing solutions",
+      "Low-UX-maturity environments require evidence-led advocacy, not assumption"
     ],
-    images: [
-      { src: "/images/ftn-research.jpg", caption: "User research synthesis and affinity mapping" },
-      { src: "/images/ftn-wireframes.jpg", caption: "Low-fidelity wireframes exploring navigation patterns", wide: true },
-      { src: "/images/ftn-ui.jpg", caption: "Final UI design for homepage and product pages", wide: true }
-    ]
+    images: []
   },
   {
     slug: "yumease",
