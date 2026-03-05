@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import { useState } from "react";
+import { ArrowLeft, ArrowRight, X, Maximize2 } from "lucide-react";
 import type { Project } from "@/lib/projects";
 
 interface Props {
@@ -12,6 +13,8 @@ interface Props {
 }
 
 export function FlanksourceCaseStudy({ project, nextProject, prevProject }: Props) {
+  const [expanded, setExpanded] = useState(false);
+
   return (
     <div>
       {/* Hero */}
@@ -149,33 +152,98 @@ export function FlanksourceCaseStudy({ project, nextProject, prevProject }: Prop
         <div className="max-w-5xl mx-auto px-6 py-16 md:py-20">
           <h2 className="text-3xl font-bold text-[#09332C] tracking-tight mb-12">Before and after</h2>
 
-          <div className="mb-12">
-            <p className="text-xs text-foreground/30 font-medium uppercase tracking-widest mb-4">Before</p>
-            <div className="border border-border overflow-hidden">
-              <Image
-                src="/images/flanksource-after.svg"
-                alt="Flanksource original dashboard layout"
-                width={1800}
-                height={1169}
-                className="w-full h-auto"
-              />
+          {/* Side by side */}
+          <div className="grid md:grid-cols-2 gap-px bg-border">
+            <div className="bg-white">
+              <p className="text-xs text-foreground/30 font-medium uppercase tracking-widest mb-4">Before</p>
+              <div className="border border-border overflow-hidden">
+                <Image
+                  src="/images/flanksource-after.svg"
+                  alt="Flanksource original dashboard layout"
+                  width={1800}
+                  height={1169}
+                  className="w-full h-auto"
+                />
+              </div>
+            </div>
+            <div className="bg-white pl-8">
+              <p className="text-xs text-[#F0531C] font-medium uppercase tracking-widest mb-4">After</p>
+              <div className="border border-border overflow-hidden">
+                <Image
+                  src="/images/flanksource-before.svg"
+                  alt="Flanksource redesigned dashboard"
+                  width={1440}
+                  height={900}
+                  className="w-full h-auto"
+                />
+              </div>
             </div>
           </div>
 
-          <div>
-            <p className="text-xs text-[#F0531C] font-medium uppercase tracking-widest mb-4">After</p>
-            <div className="border border-border overflow-hidden">
-              <Image
-                src="/images/flanksource-before.svg"
-                alt="Flanksource redesigned dashboard"
-                width={1440}
-                height={900}
-                className="w-full h-auto"
-              />
-            </div>
+          {/* Expand CTA */}
+          <div className="flex justify-end mt-4">
+            <button
+              onClick={() => setExpanded(true)}
+              className="inline-flex items-center gap-2 text-xs text-foreground/30 hover:text-[#F0531C] transition-colors duration-200 group"
+            >
+              <Maximize2 size={12} className="group-hover:scale-110 transition-transform duration-200" />
+              Expand views
+            </button>
           </div>
         </div>
       </section>
+
+      {/* Expanded lightbox */}
+      {expanded && (
+        <div
+          className="fixed inset-0 z-50 bg-black/90 overflow-y-auto"
+          onClick={() => setExpanded(false)}
+        >
+          <div
+            className="max-w-6xl mx-auto px-6 py-16"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Close */}
+            <div className="flex justify-end mb-8">
+              <button
+                onClick={() => setExpanded(false)}
+                className="flex items-center gap-2 text-xs text-white/40 hover:text-white transition-colors duration-200"
+              >
+                <X size={14} />
+                Close
+              </button>
+            </div>
+
+            {/* Before */}
+            <div className="mb-12">
+              <p className="text-xs text-white/30 font-medium uppercase tracking-widest mb-4">Before</p>
+              <div className="overflow-hidden">
+                <Image
+                  src="/images/flanksource-after.svg"
+                  alt="Flanksource original dashboard layout"
+                  width={1800}
+                  height={1169}
+                  className="w-full h-auto"
+                />
+              </div>
+            </div>
+
+            {/* After */}
+            <div>
+              <p className="text-xs text-[#F0531C] font-medium uppercase tracking-widest mb-4">After</p>
+              <div className="overflow-hidden">
+                <Image
+                  src="/images/flanksource-before.svg"
+                  alt="Flanksource redesigned dashboard"
+                  width={1440}
+                  height={900}
+                  className="w-full h-auto"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
 
       <div className="max-w-3xl mx-auto px-6 py-20 md:py-28">
 
