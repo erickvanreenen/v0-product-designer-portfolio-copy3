@@ -11,7 +11,7 @@ interface ProjectCardProps {
 export function ProjectCard({ project, featured = false }: ProjectCardProps) {
   return (
     <Link href={`/projects/${project.slug}`} className="group flex flex-col h-full">
-      <article className="flex flex-col h-full border border-border rounded-2xl overflow-hidden bg-white hover:border-foreground/20 transition-colors duration-300">
+      <article className="flex flex-col h-full border border-border rounded-2xl overflow-hidden bg-white hover:border-[#09332C]/30 transition-colors duration-300">
 
         {/* Thumbnail */}
         <div className={`relative bg-[#09332C] overflow-hidden ${featured ? "aspect-[16/10]" : "aspect-[4/3]"}`}>
@@ -28,7 +28,6 @@ export function ProjectCard({ project, featured = false }: ProjectCardProps) {
             </div>
           )}
 
-          {/* Logo badge — bottom left */}
           {project.thumbnailLogo && (
             <div className="absolute bottom-4 left-4">
               <div className="h-8 flex items-center justify-center bg-white/10 backdrop-blur-sm rounded px-2 py-1">
@@ -50,38 +49,48 @@ export function ProjectCard({ project, featured = false }: ProjectCardProps) {
           </div>
         </div>
 
-        {/* Content below image */}
-        <div className="flex flex-col flex-1 p-6">
+        {/* Content */}
+        <div className="flex flex-col flex-1 p-6 gap-4">
 
-          {/* Tags */}
-          <div className="flex flex-wrap gap-1.5 mb-4">
+          {/* Role label */}
+          <p className="text-xs text-foreground/35 font-medium uppercase tracking-widest">
+            {project.role}
+          </p>
+
+          {/* Title + subtitle */}
+          <div>
+            <h3 className="text-2xl font-bold text-[#09332C] group-hover:text-[#F0531C] transition-colors duration-200 leading-snug mb-2">
+              {project.title}
+            </h3>
+            <p className="text-sm text-foreground/55 leading-relaxed">
+              {project.subtitle}
+            </p>
+          </div>
+
+          {/* Divider */}
+          <div className="border-t border-border" />
+
+          {/* Tags — Venetian Lace fill */}
+          <div className="flex flex-wrap gap-2 flex-1">
             {project.tags.slice(0, 3).map((tag) => (
               <span
                 key={tag}
-                className="text-xs text-foreground/50 border border-border rounded-full px-2.5 py-0.5"
+                className="text-xs text-[#09332C]/60 bg-[#F7EDDA] rounded-full px-3 py-1"
               >
                 {tag}
               </span>
             ))}
           </div>
 
-          {/* Title + subtitle */}
-          <h3 className="text-xl font-bold text-[#09332C] group-hover:text-[#F0531C] transition-colors duration-200 mb-2 leading-snug">
-            {project.title}
-          </h3>
-          <p className="text-sm text-foreground/55 leading-relaxed flex-1">
-            {project.subtitle}
-          </p>
-
           {/* Key outcome — featured cards only */}
           {featured && project.outcomes[0] && (
-            <div className="mt-6 pt-5 border-t border-border">
+            <div className="pt-4 border-t border-border">
               <p className="text-xs text-[#F0531C] font-medium uppercase tracking-widest mb-1.5">Key outcome</p>
               <p className="text-sm text-foreground/65 leading-relaxed">{project.outcomes[0]}</p>
             </div>
           )}
-        </div>
 
+        </div>
       </article>
     </Link>
   );
