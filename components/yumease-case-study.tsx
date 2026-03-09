@@ -76,7 +76,7 @@ export function YumeaseCaseStudy({ project, nextProject, prevProject }: Props) {
           <div className="space-y-6">
             {project.goals.map((goal, i) => (
               <div key={i} className="flex items-start gap-6">
-                <span className="text-xs text-[#F0531C] font-bold mt-0.5 shrink-0">{String(i + 1).padStart(2, "0")}</span>
+                <span className="text-xs text-foreground/20 font-bold mt-0.5 shrink-0">{String(i + 1).padStart(2, "0")}</span>
                 <p className="text-sm text-foreground/70 leading-relaxed">{goal}</p>
               </div>
             ))}
@@ -95,7 +95,7 @@ export function YumeaseCaseStudy({ project, nextProject, prevProject }: Props) {
           <div className="space-y-6">
             {project.insights.map((insight, i) => (
               <div key={i} className="flex items-start gap-6">
-                <span className="text-xs text-[#F0531C] font-bold mt-0.5 shrink-0">{String(i + 1).padStart(2, "0")}</span>
+                <span className="text-xs text-foreground/20 font-bold mt-0.5 shrink-0">{String(i + 1).padStart(2, "0")}</span>
                 <p className="text-sm text-foreground/70 leading-relaxed">{insight}</p>
               </div>
             ))}
@@ -113,7 +113,7 @@ export function YumeaseCaseStudy({ project, nextProject, prevProject }: Props) {
               { step: "04", label: "Iterative testing", desc: "Frequent usability tests with internal and external users throughout. Quick feedback loops drove rapid improvements." },
             ].map((item) => (
               <div key={item.step} className="flex items-start gap-6">
-                <span className="text-xs text-[#F0531C] font-bold mt-0.5 shrink-0">{item.step}</span>
+                <span className="text-xs text-foreground/20 font-bold mt-0.5 shrink-0">{item.step}</span>
                 <div>
                   <p className="text-sm font-semibold text-foreground mb-1">{item.label}</p>
                   <p className="text-sm text-foreground/65 leading-relaxed">{item.desc}</p>
@@ -159,7 +159,7 @@ export function YumeaseCaseStudy({ project, nextProject, prevProject }: Props) {
           <div className="space-y-6">
             {project.learnings.map((learning, i) => (
               <div key={i} className="flex items-start gap-6">
-                <span className="text-xs text-[#F0531C] font-bold mt-0.5 shrink-0">{String(i + 1).padStart(2, "0")}</span>
+                <span className="text-xs text-foreground/20 font-bold mt-0.5 shrink-0">{String(i + 1).padStart(2, "0")}</span>
                 <p className="text-sm text-foreground/70 leading-relaxed">{learning}</p>
               </div>
             ))}

@@ -256,7 +256,7 @@ export function FtnCaseStudy({ project, nextProject, prevProject }: FtnCaseStudy
           <div className="space-y-6">
             {project.learnings.map((learning, i) => (
               <div key={i} className="flex items-start gap-6">
-                <span className="text-xs text-[#F0531C] font-bold mt-0.5">{String(i + 1).padStart(2, "0")}</span>
+                <span className="text-xs text-foreground/20 font-bold mt-0.5">{String(i + 1).padStart(2, "0")}</span>
                 <p className="text-sm text-foreground/70 leading-relaxed">{learning}</p>
               </div>
             ))}

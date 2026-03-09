@@ -175,7 +175,7 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
           <div className="space-y-6">
             {project.goals.map((goal, i) => (
               <div key={i} className="flex items-start gap-6">
-                <span className="text-xs text-[#F0531C] font-bold mt-0.5">{String(i + 1).padStart(2, "0")}</span>
+                <span className="text-xs text-foreground/20 font-bold mt-0.5">{String(i + 1).padStart(2, "0")}</span>
                 <p className="text-sm text-foreground/70 leading-relaxed">{goal}</p>
               </div>
             ))}
@@ -216,7 +216,7 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
             ].map((step, i, arr) => (
               <div key={step.step} className="flex gap-6">
                 <div className="flex flex-col items-center">
-                  <span className="text-xs text-[#F0531C] font-bold flex-shrink-0 w-6 text-center pt-0.5">{step.step}</span>
+                  <span className="text-xs text-foreground/20 font-bold flex-shrink-0 w-6 text-center pt-0.5">{step.step}</span>
                   {i < arr.length - 1 && <div className="w-px flex-1 bg-border mt-2" />}
                 </div>
                 <div className="pb-8">
@@ -245,7 +245,7 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
           <div className="space-y-6">
             {project.insights.map((insight, i) => (
               <div key={i} className="flex items-start gap-6">
-                <span className="text-xs text-[#F0531C] font-bold mt-0.5">{String(i + 1).padStart(2, "0")}</span>
+                <span className="text-xs text-foreground/20 font-bold mt-0.5">{String(i + 1).padStart(2, "0")}</span>
                 <p className="text-sm text-foreground/70 leading-relaxed">{insight}</p>
               </div>
             ))}
@@ -265,7 +265,7 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
             <div className="grid grid-cols-3 gap-px bg-border rounded-lg overflow-hidden mb-px">
               {["Meal Kit Page", "Add to Cart", "Checkout"].map((step, i) => (
                 <div key={step} className="bg-white p-5">
-                  <p className="text-xs text-[#F0531C] font-bold mb-2">{String(i + 1).padStart(2, "0")}</p>
+                  <p className="text-xs text-foreground/20 font-bold mb-2">{String(i + 1).padStart(2, "0")}</p>
                   <p className="text-sm text-foreground/60">{step}</p>
                 </div>
               ))}
@@ -479,7 +479,7 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
           <div className="space-y-6">
             {project.learnings.map((learning, i) => (
               <div key={i} className="flex items-start gap-6">
-                <span className="text-xs text-[#F0531C] font-bold mt-0.5">{String(i + 1).padStart(2, "0")}</span>
+                <span className="text-xs text-foreground/20 font-bold mt-0.5">{String(i + 1).padStart(2, "0")}</span>
                 <p className="text-sm text-foreground/70 leading-relaxed">{learning}</p>
               </div>
             ))}
