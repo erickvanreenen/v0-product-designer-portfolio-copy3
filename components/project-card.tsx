@@ -14,9 +14,14 @@ export function ProjectCard({ project, featured = false }: ProjectCardProps) {
       <article className="flex flex-col h-full">
         {/* Content above image — grows to equalise row height */}
         <div className="pb-4 flex-1">
-          <div className="flex flex-wrap gap-1.5 mb-2">
+          <div className="flex flex-wrap gap-1.5 mb-3">
             {project.tags.slice(0, 3).map((tag) => (
-              <span key={tag} className="text-xs text-foreground/40">{tag}</span>
+              <span
+                key={tag}
+                className="text-xs text-foreground/50 border border-border rounded-full px-2.5 py-0.5"
+              >
+                {tag}
+              </span>
             ))}
           </div>
           <h3 className="text-lg font-bold text-[#09332C] group-hover:text-[#F0531C] transition-colors duration-200 mb-1">
