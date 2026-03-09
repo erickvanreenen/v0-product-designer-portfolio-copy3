@@ -31,19 +31,19 @@ export function FtnCaseStudy({ project, nextProject, prevProject }: FtnCaseStudy
           {/* Meta grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-border mt-14">
             <div className="bg-background p-6">
-              <p className="text-xs text-foreground/30 font-medium uppercase tracking-widest mb-2">Role</p>
+              <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-2">Role</p>
               <p className="text-sm text-foreground">{project.role}</p>
             </div>
             <div className="bg-background p-6">
-              <p className="text-xs text-foreground/30 font-medium uppercase tracking-widest mb-2">Timeline</p>
+              <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-2">Timeline</p>
               <p className="text-sm text-foreground">{project.timeline}</p>
             </div>
             <div className="bg-background p-6">
-              <p className="text-xs text-foreground/30 font-medium uppercase tracking-widest mb-2">Tools</p>
+              <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-2">Tools</p>
               <p className="text-sm text-foreground">{project.tools.join(", ")}</p>
             </div>
             <div className="bg-background p-6">
-              <p className="text-xs text-foreground/30 font-medium uppercase tracking-widest mb-2">Status</p>
+              <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-2">Status</p>
               <p className="text-sm text-[#F0531C]">Ongoing</p>
             </div>
           </div>
@@ -132,7 +132,7 @@ export function FtnCaseStudy({ project, nextProject, prevProject }: FtnCaseStudy
           {/* Problem / Solution */}
           <div className="grid md:grid-cols-2 gap-px bg-border mb-12">
             <div className="bg-white p-8">
-              <h3 className="text-xs text-foreground/30 font-medium uppercase tracking-widest mb-4">The problem</h3>
+              <h3 className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-4">The problem</h3>
               <p className="text-sm text-foreground/65 leading-relaxed">Filtering patterns varied across every category level. Users had to relearn navigation at each step.</p>
             </div>
             <div className="bg-white p-8">
@@ -142,7 +142,7 @@ export function FtnCaseStudy({ project, nextProject, prevProject }: FtnCaseStudy
           </div>
 
           {/* Two streams */}
-          <h3 className="text-xs text-foreground/30 font-medium uppercase tracking-widest mb-6">Two search streams</h3>
+          <h3 className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-6">Two search streams</h3>
           <div className="grid md:grid-cols-2 gap-px bg-border mb-10">
             {/* Values */}
             <div className="bg-white p-8">
@@ -159,7 +159,7 @@ export function FtnCaseStudy({ project, nextProject, prevProject }: FtnCaseStudy
             </div>
             {/* Product */}
             <div className="bg-white p-8">
-              <p className="text-xs text-foreground/30 font-medium uppercase tracking-widest mb-3">02 — Product</p>
+              <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-3">02 — Product</p>
               <p className="text-sm font-semibold text-foreground mb-4">Traditional product-led search.</p>
               <p className="text-xs text-foreground/50 leading-relaxed">Search by product type, category, or keyword. Familiar. Fast. Consistent at every level.</p>
             </div>
@@ -168,30 +168,30 @@ export function FtnCaseStudy({ project, nextProject, prevProject }: FtnCaseStudy
           {/* Convergence */}
           <div className="bg-white rounded-lg p-8 text-center">
             <div className="flex items-center justify-center gap-4 mb-3">
-              <span className="text-xs text-foreground/30 uppercase tracking-widest">Values search</span>
+              <span className="text-xs text-foreground/50 uppercase tracking-widest">Values search</span>
               <span className="text-foreground/20">→</span>
               <span className="text-xs text-[#F0531C] font-medium uppercase tracking-widest">Product found</span>
               <span className="text-foreground/20">←</span>
-              <span className="text-xs text-foreground/30 uppercase tracking-widest">Product search</span>
+              <span className="text-xs text-foreground/50 uppercase tracking-widest">Product search</span>
             </div>
-            <p className="text-xs text-foreground/30">Both paths lead to the same destination.</p>
+            <p className="text-xs text-foreground/50">Both paths lead to the same destination.</p>
           </div>
         </section>
 
         {/* Omnichannel collection options */}
         <section className="mb-24">
           <h2 className="text-3xl font-bold text-[#09332C] tracking-tight mb-4">Omnichannel collection options</h2>
-          <p className="text-xs text-foreground/30 font-medium uppercase tracking-widest mb-10">In progress</p>
+          <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-10">In progress</p>
 
           <p className="text-base text-foreground/65 leading-relaxed mb-10">
             Faithful to Nature is opening stores at a rapid rate. The platform needed to reflect this — extending beyond its original delivery model into a true omnichannel experience.
           </p>
 
           {/* Existing vs New */}
-          <h3 className="text-xs text-foreground/30 font-medium uppercase tracking-widest mb-6">Delivery and collection options</h3>
+          <h3 className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-6">Delivery and collection options</h3>
           <div className="grid md:grid-cols-2 gap-px bg-border mb-12">
             <div className="bg-white p-8">
-              <h3 className="text-xs text-foreground/30 font-medium uppercase tracking-widest mb-5">Existing</h3>
+              <h3 className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-5">Existing</h3>
               <div className="space-y-3">
                 {[
                   "Economy delivery",
@@ -272,11 +272,11 @@ export function FtnCaseStudy({ project, nextProject, prevProject }: FtnCaseStudy
             {prevProject ? (
               <Link
                 href={`/projects/${prevProject.slug}`}
-                className="group flex items-center gap-3 text-foreground/30 hover:text-foreground transition-colors duration-200"
+                className="group flex items-center gap-3 text-foreground/50 hover:text-foreground transition-colors duration-200"
               >
                 <ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform duration-200" />
                 <div>
-                  <p className="text-xs text-foreground/30 font-medium uppercase tracking-widest">Previous</p>
+                  <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest">Previous</p>
                   <p className="text-sm text-foreground group-hover:text-[#F0531C] transition-colors duration-200">{prevProject.title}</p>
                 </div>
               </Link>
@@ -284,10 +284,10 @@ export function FtnCaseStudy({ project, nextProject, prevProject }: FtnCaseStudy
             {nextProject && (
               <Link
                 href={`/projects/${nextProject.slug}`}
-                className="group flex items-center gap-3 text-foreground/30 hover:text-foreground transition-colors duration-200 text-right"
+                className="group flex items-center gap-3 text-foreground/50 hover:text-foreground transition-colors duration-200 text-right"
               >
                 <div>
-                  <p className="text-xs text-foreground/30 font-medium uppercase tracking-widest">Next</p>
+                  <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest">Next</p>
                   <p className="text-sm text-foreground group-hover:text-[#F0531C] transition-colors duration-200">{nextProject.title}</p>
                 </div>
                 <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform duration-200" />

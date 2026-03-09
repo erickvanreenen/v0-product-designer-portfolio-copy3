@@ -49,7 +49,7 @@ export function Navbar() {
             href="https://www.linkedin.com/in/erick-van-reenen-b549061a6/"
             target="_blank"
             rel="noopener noreferrer"
-            className="ml-2 p-2 text-foreground/30 hover:text-[#F0531C] transition-colors duration-200"
+            className="ml-2 p-2 text-foreground/50 hover:text-[#F0531C] transition-colors duration-200"
             aria-label="Connect on LinkedIn"
           >
             <Linkedin size={16} />

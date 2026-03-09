@@ -83,19 +83,19 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
           {/* Meta grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-border mt-14">
             <div className="bg-background p-6">
-              <p className="text-xs text-foreground/30 font-medium uppercase tracking-widest mb-2">Role</p>
+              <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-2">Role</p>
               <p className="text-sm text-foreground">{project.role}</p>
             </div>
             <div className="bg-background p-6">
-              <p className="text-xs text-foreground/30 font-medium uppercase tracking-widest mb-2">Company</p>
+              <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-2">Company</p>
               <p className="text-sm text-foreground">Silvertree (UCOOK)</p>
             </div>
             <div className="bg-background p-6">
-              <p className="text-xs text-foreground/30 font-medium uppercase tracking-widest mb-2">Year</p>
+              <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-2">Year</p>
               <p className="text-sm text-foreground">{project.timeline}</p>
             </div>
             <div className="bg-background p-6">
-              <p className="text-xs text-foreground/30 font-medium uppercase tracking-widest mb-2">Methods</p>
+              <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-2">Methods</p>
               <p className="text-sm text-foreground">Mixed methods</p>
             </div>
           </div>
@@ -318,7 +318,7 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
 
           <div className="grid md:grid-cols-2 gap-px bg-border">
             <div className="bg-white p-8">
-              <h3 className="text-xs text-foreground/30 font-medium uppercase tracking-widest mb-4">Quick wins</h3>
+              <h3 className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-4">Quick wins</h3>
               <p className="text-sm text-foreground/50">Communication, navigation, UI clarity.</p>
             </div>
             <div className="bg-white p-8">
@@ -329,7 +329,7 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
 
           {/* Journey map */}
           <div className="mt-16 mb-16">
-            <h3 className="text-xs text-foreground/30 font-medium uppercase tracking-widest mb-6">Revised user journeys</h3>
+            <h3 className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-6">Revised user journeys</h3>
             <div className="border border-border rounded-lg overflow-hidden">
               {[
                 ["Homepage", "Sign Up"],
@@ -359,7 +359,7 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
 
           {/* Wireframes */}
           <div className="mt-16">
-            <h3 className="text-xs text-foreground/30 font-medium uppercase tracking-widest mb-6">Wireframes</h3>
+            <h3 className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-6">Wireframes</h3>
             <div className="grid grid-cols-4 gap-3">
               {wireframes.map((wf, i) => (
                 <div key={i} className="border border-border overflow-hidden bg-white aspect-[3/4]">
@@ -376,7 +376,7 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
           </div>
 
           <div className="mt-10">
-            <h3 className="text-xs text-foreground/30 font-medium uppercase tracking-widest mb-6">Handoff specifications</h3>
+            <h3 className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-6">Handoff specifications</h3>
             <div className="grid sm:grid-cols-2 gap-px bg-border">
               {[
                 { title: "scrollIntoView()", desc: "Step transitions, error states." },
@@ -400,7 +400,7 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
           <div className="grid md:grid-cols-2 gap-12 mb-12">
             {/* Old */}
             <div>
-              <h3 className="text-xs text-foreground/30 font-medium uppercase tracking-widest mb-6">Old funnel</h3>
+              <h3 className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-6">Old funnel</h3>
               <div className="space-y-4">
                 {[
                   { label: "Entered", users: 405, pct: 100 },
@@ -408,7 +408,7 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
                   { label: "Completed", users: 15, pct: 3.7 },
                 ].map((row) => (
                   <div key={row.label}>
-                    <div className="flex justify-between text-xs text-foreground/30 mb-1">
+                    <div className="flex justify-between text-xs text-foreground/50 mb-1">
                       <span>{row.label}</span>
                       <span>{row.users}</span>
                     </div>
@@ -432,7 +432,7 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
                   { label: "Completed", users: 185, pct: 9.3 },
                 ].map((row) => (
                   <div key={row.label}>
-                    <div className="flex justify-between text-xs text-foreground/30 mb-1">
+                    <div className="flex justify-between text-xs text-foreground/50 mb-1">
                       <span>{row.label}</span>
                       <span>{row.users}</span>
                     </div>
@@ -464,7 +464,7 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
 
           {/* Pending */}
           <div className="mt-12 pt-8 border-t border-border">
-            <h3 className="text-xs text-foreground/30 font-medium uppercase tracking-widest mb-4">Pending</h3>
+            <h3 className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-4">Pending</h3>
             <ul className="space-y-2">
               <li className="text-sm text-foreground/40">Payment timing decision outcomes.</li>
               <li className="text-sm text-foreground/40">A/B testing results.</li>
@@ -495,11 +495,11 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
             {prevProject ? (
               <Link
                 href={`/projects/${prevProject.slug}`}
-                className="group flex items-center gap-3 text-foreground/30 hover:text-foreground transition-colors duration-200"
+                className="group flex items-center gap-3 text-foreground/50 hover:text-foreground transition-colors duration-200"
               >
                 <ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform duration-200" />
                 <div>
-                  <p className="text-xs text-foreground/30 font-medium uppercase tracking-widest">Previous</p>
+                  <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest">Previous</p>
                   <p className="text-sm text-foreground group-hover:text-[#F0531C] transition-colors duration-200">{prevProject.title}</p>
                 </div>
               </Link>
@@ -507,10 +507,10 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
             {nextProject && (
               <Link
                 href={`/projects/${nextProject.slug}`}
-                className="group flex items-center gap-3 text-foreground/30 hover:text-foreground transition-colors duration-200 text-right"
+                className="group flex items-center gap-3 text-foreground/50 hover:text-foreground transition-colors duration-200 text-right"
               >
                 <div>
-                  <p className="text-xs text-foreground/30 font-medium uppercase tracking-widest">Next</p>
+                  <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest">Next</p>
                   <p className="text-sm text-foreground group-hover:text-[#F0531C] transition-colors duration-200">{nextProject.title}</p>
                 </div>
                 <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform duration-200" />

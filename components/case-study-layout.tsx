@@ -19,7 +19,7 @@ export function CaseStudyLayout({ project, nextProject, prevProject }: CaseStudy
         <div className="max-w-5xl mx-auto px-6 pt-12 pb-20 md:pt-16 md:pb-28">
           <Link
             href="/projects"
-            className="inline-flex items-center gap-2 text-sm text-foreground/30 hover:text-[#F0531C] transition-colors duration-200 mb-16 group"
+            className="inline-flex items-center gap-2 text-sm text-foreground/50 hover:text-[#F0531C] transition-colors duration-200 mb-16 group"
           >
             <ArrowLeft size={16} className="group-hover:-translate-x-0.5 transition-transform duration-200" />
             Back
@@ -61,7 +61,7 @@ export function CaseStudyLayout({ project, nextProject, prevProject }: CaseStudy
               { label: "Tools", value: project.tools.slice(0, 3).join(", ") },
             ].map((item) => (
               <div key={item.label}>
-                <p className="text-xs text-foreground/30 font-medium uppercase tracking-widest mb-1">{item.label}</p>
+                <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-1">{item.label}</p>
                 <p className="text-sm text-foreground">{item.value}</p>
               </div>
             ))}
@@ -168,11 +168,11 @@ export function CaseStudyLayout({ project, nextProject, prevProject }: CaseStudy
             {prevProject ? (
               <Link
                 href={`/projects/${prevProject.slug}`}
-                className="group flex items-center gap-3 text-foreground/30 hover:text-foreground transition-colors duration-200"
+                className="group flex items-center gap-3 text-foreground/50 hover:text-foreground transition-colors duration-200"
               >
                 <ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform duration-200" />
                 <div>
-                  <p className="text-xs text-foreground/30 font-medium uppercase tracking-widest">Previous</p>
+                  <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest">Previous</p>
                   <p className="text-sm text-foreground group-hover:text-[#F0531C] transition-colors duration-200">{prevProject.title}</p>
                 </div>
               </Link>
@@ -180,10 +180,10 @@ export function CaseStudyLayout({ project, nextProject, prevProject }: CaseStudy
             {nextProject && (
               <Link
                 href={`/projects/${nextProject.slug}`}
-                className="group flex items-center gap-3 text-foreground/30 hover:text-foreground transition-colors duration-200 text-right"
+                className="group flex items-center gap-3 text-foreground/50 hover:text-foreground transition-colors duration-200 text-right"
               >
                 <div>
-                  <p className="text-xs text-foreground/30 font-medium uppercase tracking-widest">Next</p>
+                  <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest">Next</p>
                   <p className="text-sm text-foreground group-hover:text-[#F0531C] transition-colors duration-200">{nextProject.title}</p>
                 </div>
                 <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform duration-200" />

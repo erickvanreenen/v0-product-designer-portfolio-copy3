@@ -97,43 +97,43 @@ export default function ContactPage() {
           {/* Sidebar */}
           <aside className="space-y-10">
             <div>
-              <h2 className="text-xs text-foreground/30 font-medium uppercase tracking-widest mb-4">Direct</h2>
+              <h2 className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-4">Direct</h2>
               <div className="space-y-4">
                 <Link href="mailto:erickvanreenen@gmail.com" className="flex items-center gap-3 text-foreground hover:text-[#F0531C] transition-colors duration-200 group">
-                  <Mail size={16} className="text-foreground/30" />
+                  <Mail size={16} className="text-foreground/50" />
                   <span className="text-sm">erickvanreenen@gmail.com</span>
                   <ArrowUpRight size={12} className="ml-auto opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
                 </Link>
                 <Link href="tel:+27620969497" className="flex items-center gap-3 text-foreground hover:text-[#F0531C] transition-colors duration-200">
-                  <Phone size={16} className="text-foreground/30" />
+                  <Phone size={16} className="text-foreground/50" />
                   <span className="text-sm">+27 620 969 497</span>
                 </Link>
               </div>
             </div>
 
             <div>
-              <h2 className="text-xs text-foreground/30 font-medium uppercase tracking-widest mb-4">Location</h2>
+              <h2 className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-4">Location</h2>
               <div className="flex items-center gap-3 text-foreground">
-                <MapPin size={16} className="text-foreground/30" />
+                <MapPin size={16} className="text-foreground/50" />
                 <span className="text-sm">Cape Town, South Africa</span>
               </div>
             </div>
 
             <div>
-              <h2 className="text-xs text-foreground/30 font-medium uppercase tracking-widest mb-4">Social</h2>
+              <h2 className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-4">Social</h2>
               <Link
                 href="https://www.linkedin.com/in/erick-van-reenen-b549061a6/"
                 target="_blank" rel="noopener noreferrer"
                 className="flex items-center gap-3 text-foreground hover:text-[#F0531C] transition-colors duration-200 group"
               >
-                <Linkedin size={16} className="text-foreground/30" />
+                <Linkedin size={16} className="text-foreground/50" />
                 <span className="text-sm">LinkedIn</span>
                 <ArrowUpRight size={12} className="ml-auto opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
               </Link>
             </div>
 
             <div className="pt-8 border-t border-border">
-              <p className="text-xs text-foreground/30 font-medium uppercase tracking-widest mb-2">Availability</p>
+              <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-2">Availability</p>
               <p className="text-sm text-foreground/50">
                 Open to contract and full-time roles.
               </p>

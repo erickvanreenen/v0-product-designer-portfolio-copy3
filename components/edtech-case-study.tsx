@@ -32,19 +32,19 @@ export function EdtechCaseStudy({ project, nextProject, prevProject }: Props) {
           {/* Meta grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-border mt-14">
             <div className="bg-background p-6">
-              <p className="text-xs text-foreground/30 font-medium uppercase tracking-widest mb-2">Role</p>
+              <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-2">Role</p>
               <p className="text-sm text-foreground">{project.role}</p>
             </div>
             <div className="bg-background p-6">
-              <p className="text-xs text-foreground/30 font-medium uppercase tracking-widest mb-2">Team</p>
+              <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-2">Team</p>
               <p className="text-sm text-foreground">{project.team}</p>
             </div>
             <div className="bg-background p-6">
-              <p className="text-xs text-foreground/30 font-medium uppercase tracking-widest mb-2">Timeline</p>
+              <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-2">Timeline</p>
               <p className="text-sm text-foreground">{project.timeline}</p>
             </div>
             <div className="bg-background p-6">
-              <p className="text-xs text-foreground/30 font-medium uppercase tracking-widest mb-2">Tools</p>
+              <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-2">Tools</p>
               <p className="text-sm text-foreground">{project.tools.join(", ")}</p>
             </div>
           </div>
@@ -179,11 +179,11 @@ export function EdtechCaseStudy({ project, nextProject, prevProject }: Props) {
             {prevProject ? (
               <Link
                 href={`/projects/${prevProject.slug}`}
-                className="group flex items-center gap-3 text-foreground/30 hover:text-foreground transition-colors duration-200"
+                className="group flex items-center gap-3 text-foreground/50 hover:text-foreground transition-colors duration-200"
               >
                 <ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform duration-200" />
                 <div>
-                  <p className="text-xs text-foreground/30 font-medium uppercase tracking-widest">Previous</p>
+                  <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest">Previous</p>
                   <p className="text-sm text-foreground group-hover:text-[#F0531C] transition-colors duration-200">{prevProject.title}</p>
                 </div>
               </Link>
@@ -191,10 +191,10 @@ export function EdtechCaseStudy({ project, nextProject, prevProject }: Props) {
             {nextProject ? (
               <Link
                 href={`/projects/${nextProject.slug}`}
-                className="group flex items-center gap-3 text-foreground/30 hover:text-foreground transition-colors duration-200 text-right"
+                className="group flex items-center gap-3 text-foreground/50 hover:text-foreground transition-colors duration-200 text-right"
               >
                 <div>
-                  <p className="text-xs text-foreground/30 font-medium uppercase tracking-widest">Next</p>
+                  <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest">Next</p>
                   <p className="text-sm text-foreground group-hover:text-[#F0531C] transition-colors duration-200">{nextProject.title}</p>
                 </div>
                 <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform duration-200" />

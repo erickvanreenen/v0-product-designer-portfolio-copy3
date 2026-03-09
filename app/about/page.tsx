@@ -82,7 +82,7 @@ export default function AboutPage() {
             { label: "Status", value: "Open to opportunities" },
           ].map((item) => (
             <div key={item.label}>
-              <p className="text-xs text-foreground/30 font-medium uppercase tracking-widest mb-2">{item.label}</p>
+              <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-2">{item.label}</p>
               <p className="text-sm text-foreground">{item.value}</p>
             </div>
           ))}
@@ -92,7 +92,7 @@ export default function AboutPage() {
         <section className="mb-24 pb-24 border-b border-border">
           <div className="grid lg:grid-cols-2 gap-16">
             <div>
-              <h2 className="text-xs text-foreground/30 font-medium uppercase tracking-widest mb-6">Skills</h2>
+              <h2 className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-6">Skills</h2>
               <div className="flex flex-wrap gap-2">
                 {skills.map((skill) => (
                   <span key={skill} className="text-sm px-3 py-1.5 rounded-full bg-[#09332C] text-[#F7EDDA]">
@@ -102,7 +102,7 @@ export default function AboutPage() {
               </div>
             </div>
             <div>
-              <h2 className="text-xs text-foreground/30 font-medium uppercase tracking-widest mb-6">Tools</h2>
+              <h2 className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-6">Tools</h2>
               <div className="flex flex-wrap gap-2">
                 {tools.map((tool) => (
                   <span key={tool} className="text-sm px-3 py-1.5 rounded-full border border-border text-foreground/60">
@@ -116,7 +116,7 @@ export default function AboutPage() {
 
         {/* AI Tools */}
         <section className="mb-24 pb-24 border-b border-border">
-          <h2 className="text-xs text-foreground/30 font-medium uppercase tracking-widest mb-6">AI Tools</h2>
+          <h2 className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-6">AI Tools</h2>
           <div className="flex flex-wrap gap-2">
             {aiTools.map((tool) => (
               <span key={tool} className="text-sm px-3 py-1.5 rounded-full border border-border text-foreground/60">
@@ -137,7 +137,7 @@ export default function AboutPage() {
                   {i < arr.length - 1 && <div className="w-px flex-1 bg-border" />}
                 </div>
                 <div className="pb-10">
-                  <p className="text-xs text-foreground/30 font-medium mb-1">{exp.period}</p>
+                  <p className="text-xs text-foreground/50 font-medium mb-1">{exp.period}</p>
                   <h3 className="text-base font-bold text-foreground">{exp.title}</h3>
                   <p className="text-sm text-[#F0531C] mb-1">{exp.company}</p>
                   <p className="text-sm text-foreground/50">{exp.desc}</p>
@@ -153,7 +153,7 @@ export default function AboutPage() {
           <div className="space-y-8">
             {education.map((edu) => (
               <div key={edu.title} className="flex items-start gap-8">
-                <span className="text-xs text-foreground/30 font-medium w-12 flex-shrink-0 pt-0.5">{edu.year}</span>
+                <span className="text-xs text-foreground/50 font-medium w-12 flex-shrink-0 pt-0.5">{edu.year}</span>
                 <div>
                   <h3 className="text-base font-bold text-foreground">{edu.title}</h3>
                   <p className="text-sm text-foreground/50">{edu.institution}</p>

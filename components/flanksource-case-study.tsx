@@ -35,11 +35,11 @@ export function FlanksourceCaseStudy({ project, nextProject, prevProject }: Prop
           {/* Meta grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-border mt-14">
             <div className="bg-background p-6">
-              <p className="text-xs text-foreground/30 font-medium uppercase tracking-widest mb-2">Role</p>
+              <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-2">Role</p>
               <p className="text-sm text-foreground">{project.role}</p>
             </div>
             <div className="bg-background p-6">
-              <p className="text-xs text-foreground/30 font-medium uppercase tracking-widest mb-2">Team</p>
+              <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-2">Team</p>
               <a
                 href="https://nygaard.design/"
                 target="_blank"
@@ -50,11 +50,11 @@ export function FlanksourceCaseStudy({ project, nextProject, prevProject }: Prop
               </a>
             </div>
             <div className="bg-background p-6">
-              <p className="text-xs text-foreground/30 font-medium uppercase tracking-widest mb-2">Timeline</p>
+              <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-2">Timeline</p>
               <p className="text-sm text-foreground">{project.timeline}</p>
             </div>
             <div className="bg-background p-6">
-              <p className="text-xs text-foreground/30 font-medium uppercase tracking-widest mb-2">Tools</p>
+              <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-2">Tools</p>
               <p className="text-sm text-foreground">{project.tools.join(", ")}</p>
             </div>
           </div>
@@ -106,7 +106,7 @@ export function FlanksourceCaseStudy({ project, nextProject, prevProject }: Prop
           </p>
 
           {/* Five components */}
-          <h3 className="text-xs text-foreground/30 font-medium uppercase tracking-widest mb-6">Five components to unify</h3>
+          <h3 className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-6">Five components to unify</h3>
           <div className="grid md:grid-cols-2 gap-px bg-border mb-12">
             {[
               { label: "01", title: "Topology", desc: "System relationships and infrastructure map." },
@@ -155,7 +155,7 @@ export function FlanksourceCaseStudy({ project, nextProject, prevProject }: Prop
           {/* Side by side */}
           <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <p className="text-xs text-foreground/30 font-medium uppercase tracking-widest mb-4">Before</p>
+              <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-4">Before</p>
               <div className="border border-border overflow-hidden">
                 <Image
                   src="/images/flanksource-after.svg"
@@ -184,7 +184,7 @@ export function FlanksourceCaseStudy({ project, nextProject, prevProject }: Prop
           <div className="flex justify-end mt-4">
             <button
               onClick={() => setExpanded(true)}
-              className="inline-flex items-center gap-2 text-xs text-foreground/30 hover:text-[#F0531C] transition-colors duration-200 group"
+              className="inline-flex items-center gap-2 text-xs text-foreground/50 hover:text-[#F0531C] transition-colors duration-200 group"
             >
               <Maximize2 size={12} className="group-hover:scale-110 transition-transform duration-200" />
               Expand views
@@ -295,11 +295,11 @@ export function FlanksourceCaseStudy({ project, nextProject, prevProject }: Prop
             {prevProject ? (
               <Link
                 href={`/projects/${prevProject.slug}`}
-                className="group flex items-center gap-3 text-foreground/30 hover:text-foreground transition-colors duration-200"
+                className="group flex items-center gap-3 text-foreground/50 hover:text-foreground transition-colors duration-200"
               >
                 <ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform duration-200" />
                 <div>
-                  <p className="text-xs text-foreground/30 font-medium uppercase tracking-widest">Previous</p>
+                  <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest">Previous</p>
                   <p className="text-sm text-foreground group-hover:text-[#F0531C] transition-colors duration-200">{prevProject.title}</p>
                 </div>
               </Link>
@@ -307,10 +307,10 @@ export function FlanksourceCaseStudy({ project, nextProject, prevProject }: Prop
             {nextProject ? (
               <Link
                 href={`/projects/${nextProject.slug}`}
-                className="group flex items-center gap-3 text-foreground/30 hover:text-foreground transition-colors duration-200 text-right"
+                className="group flex items-center gap-3 text-foreground/50 hover:text-foreground transition-colors duration-200 text-right"
               >
                 <div>
-                  <p className="text-xs text-foreground/30 font-medium uppercase tracking-widest">Next</p>
+                  <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest">Next</p>
                   <p className="text-sm text-foreground group-hover:text-[#F0531C] transition-colors duration-200">{nextProject.title}</p>
                 </div>
                 <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform duration-200" />

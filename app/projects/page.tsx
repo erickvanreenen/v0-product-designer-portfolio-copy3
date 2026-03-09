@@ -69,7 +69,7 @@ export default function ProjectsPage() {
 
         {filteredProjects.length === 0 && (
           <div className="text-center py-20">
-            <p className="text-foreground/30">No projects match this filter.</p>
+            <p className="text-foreground/50">No projects match this filter.</p>
           </div>
         )}
       </div>
