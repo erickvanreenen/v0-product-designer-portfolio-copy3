@@ -11,10 +11,10 @@ interface ProjectCardProps {
 export function ProjectCard({ project, featured = false }: ProjectCardProps) {
   return (
     <Link href={`/projects/${project.slug}`} className="group flex flex-col h-full">
-      <article className="flex flex-col h-full border border-border rounded-2xl overflow-hidden bg-white hover:border-[#09332C]/30 transition-colors duration-300">
+      <article className="flex flex-col h-full rounded-2xl overflow-hidden bg-white">
 
         {/* Thumbnail */}
-        <div className={`relative bg-[#09332C] overflow-hidden ${featured ? "aspect-[16/10]" : "aspect-[4/3]"}`}>
+        <div className="relative bg-[#09332C] overflow-hidden aspect-[16/10]">
           {project.thumbnail ? (
             <Image
               src={project.thumbnail}
@@ -50,7 +50,7 @@ export function ProjectCard({ project, featured = false }: ProjectCardProps) {
         </div>
 
         {/* Content */}
-        <div className="flex flex-col flex-1 p-6 gap-4">
+        <div className="flex flex-col flex-1 pt-5 gap-4">
 
           {/* Role label */}
           <p className="text-xs text-foreground/35 font-medium uppercase tracking-widest">
@@ -75,15 +75,15 @@ export function ProjectCard({ project, featured = false }: ProjectCardProps) {
             {project.tags.slice(0, 3).map((tag) => (
               <span
                 key={tag}
-                className="text-xs text-[#09332C]/60 bg-[#F7EDDA] rounded-full px-3 py-0.5 whitespace-nowrap"
+                className="text-xs text-[#09332C]/60 bg-[#F7EDDA] rounded-md px-3 h-6 inline-flex items-center whitespace-nowrap"
               >
                 {tag}
               </span>
             ))}
           </div>
 
-          {/* Key outcome — featured cards only */}
-          {featured && project.outcomes[0] && (
+          {/* Key outcome */}
+          {project.outcomes[0] && (
             <div className="pt-4 border-t border-border">
               <p className="text-xs text-[#F0531C] font-medium uppercase tracking-widest mb-1.5">Key outcome</p>
               <p className="text-sm text-foreground/65 leading-relaxed">{project.outcomes[0]}</p>
