@@ -11,29 +11,10 @@ interface ProjectCardProps {
 export function ProjectCard({ project, featured = false }: ProjectCardProps) {
   return (
     <Link href={`/projects/${project.slug}`} className="group flex flex-col h-full">
-      <article className="flex flex-col h-full">
-        {/* Content above image — grows to equalise row height */}
-        <div className="pb-4 flex-1">
-          <div className="flex flex-wrap gap-1.5 mb-3">
-            {project.tags.slice(0, 3).map((tag) => (
-              <span
-                key={tag}
-                className="text-xs text-foreground/50 border border-border rounded-full px-2.5 py-0.5"
-              >
-                {tag}
-              </span>
-            ))}
-          </div>
-          <h3 className="text-lg font-bold text-[#09332C] group-hover:text-[#F0531C] transition-colors duration-200 mb-1">
-            {project.title}
-          </h3>
-          <p className="text-sm text-foreground/65 line-clamp-2">
-            {project.subtitle}
-          </p>
-        </div>
+      <article className="flex flex-col h-full border border-border rounded-2xl overflow-hidden bg-white hover:border-foreground/20 transition-colors duration-300">
 
         {/* Thumbnail */}
-        <div className={`relative bg-[#09332C] overflow-hidden rounded-lg ${featured ? "aspect-[16/10]" : "aspect-[4/3]"}`}>
+        <div className={`relative bg-[#09332C] overflow-hidden ${featured ? "aspect-[16/10]" : "aspect-[4/3]"}`}>
           {project.thumbnail ? (
             <Image
               src={project.thumbnail}
@@ -69,12 +50,38 @@ export function ProjectCard({ project, featured = false }: ProjectCardProps) {
           </div>
         </div>
 
-        {featured && project.outcomes[0] && (
-          <div className="mt-4 pt-4">
-            <p className="text-xs text-[#F0531C] font-medium uppercase tracking-widest mb-1">Key outcome</p>
-            <p className="text-sm text-foreground/65">{project.outcomes[0]}</p>
+        {/* Content below image */}
+        <div className="flex flex-col flex-1 p-6">
+
+          {/* Tags */}
+          <div className="flex flex-wrap gap-1.5 mb-4">
+            {project.tags.slice(0, 3).map((tag) => (
+              <span
+                key={tag}
+                className="text-xs text-foreground/50 border border-border rounded-full px-2.5 py-0.5"
+              >
+                {tag}
+              </span>
+            ))}
           </div>
-        )}
+
+          {/* Title + subtitle */}
+          <h3 className="text-xl font-bold text-[#09332C] group-hover:text-[#F0531C] transition-colors duration-200 mb-2 leading-snug">
+            {project.title}
+          </h3>
+          <p className="text-sm text-foreground/55 leading-relaxed flex-1">
+            {project.subtitle}
+          </p>
+
+          {/* Key outcome — featured cards only */}
+          {featured && project.outcomes[0] && (
+            <div className="mt-6 pt-5 border-t border-border">
+              <p className="text-xs text-[#F0531C] font-medium uppercase tracking-widest mb-1.5">Key outcome</p>
+              <p className="text-sm text-foreground/65 leading-relaxed">{project.outcomes[0]}</p>
+            </div>
+          )}
+        </div>
+
       </article>
     </Link>
   );
