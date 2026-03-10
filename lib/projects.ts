@@ -100,7 +100,6 @@ export const projects: Project[] = [
     timeline: "September 2024 – Present",
     tools: ["Figma", "Miro", "Jira"],
     thumbnail: "/images/thumb-ftn.svg",
-    thumbnailLogo: "/images/logo-ftn.svg",
     outcomes: [
       "Consistent filtering system shipped across all category levels",
       "Omnichannel collection options introduced — 17 in-store locations + scheduled delivery",
@@ -145,7 +144,6 @@ export const projects: Project[] = [
     timeline: "2025",
     tools: ["Figma", "Miro"],
     thumbnail: "/images/thumb-flanksource.svg",
-    thumbnailLogo: "/images/logo-flanksource.svg",
     outcomes: [
       "Unified dashboard communicating key system health metrics",
       "Consolidated five major components into one view",
