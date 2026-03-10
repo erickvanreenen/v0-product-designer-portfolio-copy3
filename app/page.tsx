@@ -2,6 +2,7 @@ import Link from "next/link";
 import { projects } from "@/lib/projects";
 import { ProjectCard } from "@/components/project-card";
 import { ArrowRight } from "lucide-react";
+import { LogoMark } from "@/components/logo-mark";
 
 export default function HomePage() {
   const featuredSlugs = ["ucook", "faithful-to-nature", "flanksource", "edtech-interactive-learning"];
@@ -17,9 +18,14 @@ export default function HomePage() {
           <p className="text-xs text-[#F0531C] font-semibold uppercase tracking-widest mb-8">
             UX Designer 75% / UI 25%
           </p>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-[#09332C] max-w-2xl tracking-tight">
-            Fusing user needs with business outcomes.
-          </h1>
+          <div className="flex items-start gap-5 mb-6">
+            <div className="mt-2 shrink-0">
+              <LogoMark size={44} />
+            </div>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-[#09332C] max-w-2xl tracking-tight">
+              Fusing user needs with business outcomes.
+            </h1>
+          </div>
           <p className="text-lg text-foreground/50 mt-6 max-w-xl">
             Designing for e-commerce, omnichannel, and EdTech.
           </p>
