@@ -57,16 +57,14 @@ export default function AboutPage() {
       <section className="bg-white border-b border-border overflow-hidden">
         <div className="max-w-5xl mx-auto px-6 py-20 md:py-28">
 
-          {/* Logo mark + name block */}
+          {/* Logo mark + headline */}
           <div className="flex items-start gap-5 mb-10">
-            <div className="mt-1 shrink-0">
-              <LogoMark size={36} color="#F0531C" />
+            <div className="mt-2 shrink-0">
+              <LogoMark size={44} />
             </div>
-            <div>
-              <h1 className="text-4xl md:text-6xl font-bold text-[#09332C] tracking-tight leading-none">
-                Designer.<br />Researcher.<br />Problem solver.
-              </h1>
-            </div>
+            <h1 className="text-4xl md:text-6xl font-bold text-[#09332C] tracking-tight leading-none">
+              Follow the curiosity.
+            </h1>
           </div>
 
           <p className="text-lg text-foreground/60 max-w-xl leading-relaxed mb-14">
