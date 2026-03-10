@@ -50,7 +50,7 @@ export const projects: Project[] = [
     team: "Product Team, Frontend & Backend Developers, Data Team",
     timeline: "2025",
     tools: ["Figma", "Miro", "Jira", "Google Analytics", "Google Tag Manager", "PostHog", "Maze"],
-    thumbnail: "/images/ucook-thumbnail.jpg",
+    thumbnail: "/images/thumb-ucook.svg",
     outcomes: [
       "Sign-up completion rate increased from 3.7% to 9.3% (+5.6%)",
       "Estimated ~R1,296,000/year revenue impact addressed",
@@ -99,7 +99,7 @@ export const projects: Project[] = [
     team: "CEO, Co-CEO, CTO, BE Architecture Dev, Acumatica Dev, 2× BE Devs, 2× FE Devs, Product Owner, Project Manager, UX/UI Designer",
     timeline: "September 2024 – Present",
     tools: ["Figma", "Miro", "Jira"],
-    thumbnail: "/images/ftn-thumbnail.jpg",
+    thumbnail: "/images/thumb-ftn.svg",
     thumbnailLogo: "/images/logo-ftn.svg",
     outcomes: [
       "Consistent filtering system shipped across all category levels",
@@ -144,7 +144,7 @@ export const projects: Project[] = [
     team: "Nygaard Design",
     timeline: "2025",
     tools: ["Figma", "Miro"],
-    thumbnail: "/images/flanksource-thumbnail.jpg",
+    thumbnail: "/images/thumb-flanksource.svg",
     thumbnailLogo: "/images/logo-flanksource.svg",
     outcomes: [
       "Unified dashboard communicating key system health metrics",
@@ -189,7 +189,7 @@ export const projects: Project[] = [
     team: "Erick van Reenen (UX), Brent Nygaard (UI)",
     timeline: "UX 2 weeks / UI 2 weeks",
     tools: ["Figma", "Miro"],
-    thumbnail: "/images/overture-thumbnail.jpg",
+    thumbnail: "/images/thumb-overture.svg",
     outcomes: [
       "Final product signed off in 4 weeks",
       "Quick iteration skills applied",
@@ -226,7 +226,7 @@ export const projects: Project[] = [
     team: "2 Developers, Product Manager, QA Tester",
     timeline: "July 2023 - August 2024",
     tools: ["Figma", "Miro", "Jira"],
-    thumbnail: "/images/yumease-thumbnail.jpg",
+    thumbnail: "/images/thumb-yumease.svg",
     outcomes: [
       "Successfully launched app",
       "4.5 star average rating",
@@ -273,7 +273,7 @@ export const projects: Project[] = [
     team: "Solo Project",
     timeline: "2024",
     tools: ["Articulate Rise", "Figma", "Miro"],
-    thumbnail: "/images/edtech-thumbnail.jpg",
+    thumbnail: "/images/thumb-edtech.svg",
     outcomes: [
       "Created engaging interactive learning modules",
       "Improved learner engagement through multimedia content",
@@ -320,7 +320,7 @@ export const projects: Project[] = [
     team: "Junior Designers, Learning Designers, Project Manager",
     timeline: "May 2021 - August 2024",
     tools: ["Figma", "Miro", "Articulate 360", "Adobe Creative Suite"],
-    thumbnail: "/images/uni4-thumbnail.jpg",
+    thumbnail: "/images/thumb-uni4.svg",
     outcomes: [
       "Increased team productivity significantly",
       "Met all KPIs consistently",

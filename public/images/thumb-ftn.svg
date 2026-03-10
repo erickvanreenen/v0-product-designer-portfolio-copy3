@@ -1,0 +1,50 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="500" fill="#09332C"/>
+
+  <!-- Filter bar at top -->
+  <rect x="150" y="58" width="500" height="32" rx="16" fill="#F7EDDA" fill-opacity="0.08" stroke="#F7EDDA" stroke-opacity="0.12" stroke-width="1"/>
+  <!-- Filter pills inside bar -->
+  <rect x="166" y="66" width="72" height="16" rx="8" fill="#F0531C" fill-opacity="0.80"/>
+  <rect x="248" y="66" width="64" height="16" rx="8" fill="#F7EDDA" fill-opacity="0.18"/>
+  <rect x="322" y="66" width="80" height="16" rx="8" fill="#F7EDDA" fill-opacity="0.18"/>
+  <rect x="412" y="66" width="56" height="16" rx="8" fill="#F7EDDA" fill-opacity="0.18"/>
+
+  <!-- Product grid — 8 × 5 tiles -->
+  <!-- Row 1 (y=116) -->
+  <rect x="150" y="116" width="72" height="60" rx="5" fill="#F7EDDA" fill-opacity="0.14"/>
+  <rect x="234" y="116" width="72" height="60" rx="5" fill="#F0531C" fill-opacity="0.25"/>
+  <rect x="318" y="116" width="72" height="60" rx="5" fill="#F7EDDA" fill-opacity="0.14"/>
+  <rect x="402" y="116" width="72" height="60" rx="5" fill="#F7EDDA" fill-opacity="0.14"/>
+  <rect x="486" y="116" width="72" height="60" rx="5" fill="#F0531C" fill-opacity="0.25"/>
+  <rect x="570" y="116" width="72" height="60" rx="5" fill="#F7EDDA" fill-opacity="0.14"/>
+
+  <!-- Row 2 (y=192) -->
+  <rect x="150" y="192" width="72" height="60" rx="5" fill="#F0531C" fill-opacity="0.25"/>
+  <rect x="234" y="192" width="72" height="60" rx="5" fill="#F7EDDA" fill-opacity="0.14"/>
+  <rect x="318" y="192" width="72" height="60" rx="5" fill="#F7EDDA" fill-opacity="0.09"/>
+  <rect x="402" y="192" width="72" height="60" rx="5" fill="#F0531C" fill-opacity="0.25"/>
+  <rect x="486" y="192" width="72" height="60" rx="5" fill="#F7EDDA" fill-opacity="0.14"/>
+  <rect x="570" y="192" width="72" height="60" rx="5" fill="#F7EDDA" fill-opacity="0.09"/>
+
+  <!-- Row 3 (y=268) -->
+  <rect x="150" y="268" width="72" height="60" rx="5" fill="#F7EDDA" fill-opacity="0.14"/>
+  <rect x="234" y="268" width="72" height="60" rx="5" fill="#F7EDDA" fill-opacity="0.09"/>
+  <rect x="318" y="268" width="72" height="60" rx="5" fill="#F0531C" fill-opacity="0.25"/>
+  <rect x="402" y="268" width="72" height="60" rx="5" fill="#F7EDDA" fill-opacity="0.14"/>
+  <rect x="486" y="268" width="72" height="60" rx="5" fill="#F7EDDA" fill-opacity="0.09"/>
+  <rect x="570" y="268" width="72" height="60" rx="5" fill="#F0531C" fill-opacity="0.25"/>
+
+  <!-- Row 4 (y=344) -->
+  <rect x="150" y="344" width="72" height="60" rx="5" fill="#F7EDDA" fill-opacity="0.09"/>
+  <rect x="234" y="344" width="72" height="60" rx="5" fill="#F0531C" fill-opacity="0.25"/>
+  <rect x="318" y="344" width="72" height="60" rx="5" fill="#F7EDDA" fill-opacity="0.14"/>
+  <rect x="402" y="344" width="72" height="60" rx="5" fill="#F7EDDA" fill-opacity="0.09"/>
+  <rect x="486" y="344" width="72" height="60" rx="5" fill="#F7EDDA" fill-opacity="0.14"/>
+  <rect x="570" y="344" width="72" height="60" rx="5" fill="#F7EDDA" fill-opacity="0.09"/>
+
+  <!-- Small image placeholder lines inside a few tiles -->
+  <rect x="162" y="130" width="48" height="6" rx="2" fill="#F7EDDA" fill-opacity="0.20"/>
+  <rect x="162" y="158" width="32" height="4" rx="2" fill="#F7EDDA" fill-opacity="0.15"/>
+  <rect x="246" y="130" width="48" height="6" rx="2" fill="#F0531C" fill-opacity="0.40"/>
+  <rect x="246" y="158" width="32" height="4" rx="2" fill="#F0531C" fill-opacity="0.30"/>
+</svg>

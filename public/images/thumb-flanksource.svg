@@ -1,0 +1,60 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="500" fill="#09332C"/>
+
+  <!-- Dashboard header bar -->
+  <rect x="60" y="44" width="680" height="36" rx="5" fill="#F7EDDA" fill-opacity="0.08" stroke="#F7EDDA" stroke-opacity="0.10" stroke-width="1"/>
+  <!-- Nav dots in header -->
+  <circle cx="88" cy="62" r="5" fill="#F7EDDA" fill-opacity="0.25"/>
+  <circle cx="106" cy="62" r="5" fill="#F7EDDA" fill-opacity="0.12"/>
+  <circle cx="124" cy="62" r="5" fill="#F7EDDA" fill-opacity="0.12"/>
+  <!-- Header search bar -->
+  <rect x="300" y="52" width="200" height="16" rx="8" fill="#F7EDDA" fill-opacity="0.06"/>
+
+  <!-- LEFT large card — main topology view -->
+  <rect x="60" y="100" width="420" height="240" rx="6" fill="#F7EDDA" fill-opacity="0.07" stroke="#F7EDDA" stroke-opacity="0.10" stroke-width="1"/>
+  <!-- Card label -->
+  <rect x="78" y="116" width="80" height="8" rx="2" fill="#F7EDDA" fill-opacity="0.25"/>
+  <!-- Bar chart inside (5 bars) -->
+  <rect x="78" y="180" width="28" height="100" rx="2" fill="#F7EDDA" fill-opacity="0.18"/>
+  <rect x="116" y="200" width="28" height="80" rx="2" fill="#F7EDDA" fill-opacity="0.18"/>
+  <rect x="154" y="160" width="28" height="120" rx="2" fill="#F0531C" fill-opacity="0.70"/>
+  <rect x="192" y="210" width="28" height="70" rx="2" fill="#F7EDDA" fill-opacity="0.18"/>
+  <rect x="230" y="190" width="28" height="90" rx="2" fill="#F7EDDA" fill-opacity="0.18"/>
+  <rect x="268" y="220" width="28" height="60" rx="2" fill="#F7EDDA" fill-opacity="0.12"/>
+  <!-- Baseline -->
+  <line x1="78" y1="282" x2="380" y2="282" stroke="#F7EDDA" stroke-opacity="0.10" stroke-width="1"/>
+
+  <!-- TOP RIGHT card — health status -->
+  <rect x="500" y="100" width="240" height="110" rx="6" fill="#F7EDDA" fill-opacity="0.07" stroke="#F7EDDA" stroke-opacity="0.10" stroke-width="1"/>
+  <rect x="518" y="116" width="60" height="8" rx="2" fill="#F7EDDA" fill-opacity="0.25"/>
+  <!-- Status rows -->
+  <circle cx="525" cy="154" r="5" fill="#F0531C" fill-opacity="0.90"/>
+  <rect x="540" y="150" width="100" height="7" rx="2" fill="#F7EDDA" fill-opacity="0.20"/>
+  <circle cx="525" cy="174" r="5" fill="#F7EDDA" fill-opacity="0.35"/>
+  <rect x="540" y="170" width="80" height="7" rx="2" fill="#F7EDDA" fill-opacity="0.15"/>
+  <circle cx="525" cy="194" r="5" fill="#F7EDDA" fill-opacity="0.35"/>
+  <rect x="540" y="190" width="90" height="7" rx="2" fill="#F7EDDA" fill-opacity="0.15"/>
+
+  <!-- MIDDLE RIGHT card — notifications -->
+  <rect x="500" y="228" width="240" height="112" rx="6" fill="#F7EDDA" fill-opacity="0.07" stroke="#F7EDDA" stroke-opacity="0.10" stroke-width="1"/>
+  <rect x="518" y="244" width="70" height="8" rx="2" fill="#F7EDDA" fill-opacity="0.25"/>
+  <!-- Mini line chart -->
+  <polyline points="518,300 550,280 582,295 614,265 646,278 678,258 710,270 726,260" fill="none" stroke="#F0531C" stroke-opacity="0.60" stroke-width="2"/>
+  <polyline points="518,310 550,308 582,312 614,305 646,315 678,302 710,308 726,300" fill="none" stroke="#F7EDDA" stroke-opacity="0.20" stroke-width="1.5"/>
+
+  <!-- BOTTOM ROW — three small cards -->
+  <rect x="60" y="362" width="200" height="88" rx="6" fill="#F7EDDA" fill-opacity="0.07" stroke="#F7EDDA" stroke-opacity="0.08" stroke-width="1"/>
+  <rect x="78" y="376" width="60" height="7" rx="2" fill="#F7EDDA" fill-opacity="0.22"/>
+  <text x="78" y="432" fill="#F0531C" fill-opacity="0.75" font-size="22" font-family="ui-sans-serif,system-ui,sans-serif" font-weight="700">24</text>
+
+  <rect x="280" y="362" width="200" height="88" rx="6" fill="#F7EDDA" fill-opacity="0.07" stroke="#F7EDDA" stroke-opacity="0.08" stroke-width="1"/>
+  <rect x="298" y="376" width="70" height="7" rx="2" fill="#F7EDDA" fill-opacity="0.22"/>
+  <rect x="298" y="400" width="120" height="7" rx="2" fill="#F7EDDA" fill-opacity="0.14"/>
+  <rect x="298" y="416" width="90" height="7" rx="2" fill="#F7EDDA" fill-opacity="0.10"/>
+
+  <rect x="500" y="362" width="240" height="88" rx="6" fill="#F7EDDA" fill-opacity="0.07" stroke="#F7EDDA" stroke-opacity="0.08" stroke-width="1"/>
+  <rect x="518" y="376" width="80" height="7" rx="2" fill="#F7EDDA" fill-opacity="0.22"/>
+  <!-- Small progress bar -->
+  <rect x="518" y="408" width="180" height="8" rx="4" fill="#F7EDDA" fill-opacity="0.10"/>
+  <rect x="518" y="408" width="112" height="8" rx="4" fill="#F0531C" fill-opacity="0.65"/>
+</svg>

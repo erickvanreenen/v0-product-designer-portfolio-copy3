@@ -1,0 +1,62 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="500" fill="#09332C"/>
+
+  <!-- Subtle background grid lines -->
+  <line x1="0" y1="250" x2="800" y2="250" stroke="#F7EDDA" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="400" y1="0" x2="400" y2="500" stroke="#F7EDDA" stroke-opacity="0.04" stroke-width="1"/>
+
+  <!-- Three connected document blocks -->
+
+  <!-- Doc 1 — Promoter (left) -->
+  <rect x="100" y="140" width="160" height="210" rx="8" fill="#F7EDDA" fill-opacity="0.09" stroke="#F7EDDA" stroke-opacity="0.18" stroke-width="1.5"/>
+  <!-- Page fold top right -->
+  <polyline points="236,140 260,140 260,164" fill="none" stroke="#F7EDDA" stroke-opacity="0.25" stroke-width="1.5"/>
+  <polygon points="236,140 260,164 236,164" fill="#F7EDDA" fill-opacity="0.08"/>
+  <!-- Content lines -->
+  <rect x="118" y="178" width="100" height="8" rx="2" fill="#F7EDDA" fill-opacity="0.30"/>
+  <rect x="118" y="198" width="120" height="6" rx="2" fill="#F7EDDA" fill-opacity="0.16"/>
+  <rect x="118" y="214" width="80" height="6" rx="2" fill="#F7EDDA" fill-opacity="0.16"/>
+  <rect x="118" y="230" width="110" height="6" rx="2" fill="#F7EDDA" fill-opacity="0.12"/>
+  <rect x="118" y="246" width="90" height="6" rx="2" fill="#F7EDDA" fill-opacity="0.12"/>
+  <!-- Label bottom -->
+  <rect x="118" y="318" width="60" height="7" rx="2" fill="#F7EDDA" fill-opacity="0.20"/>
+
+  <!-- Arrow 1 → 2 -->
+  <line x1="268" y1="245" x2="318" y2="245" stroke="#F7EDDA" stroke-opacity="0.30" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <polygon points="318,239 332,245 318,251" fill="#F7EDDA" fill-opacity="0.30"/>
+
+  <!-- Doc 2 — Agent (center) — slightly raised and more prominent (orange accent) -->
+  <rect x="320" y="120" width="160" height="230" rx="8" fill="#F0531C" fill-opacity="0.12" stroke="#F0531C" stroke-opacity="0.45" stroke-width="1.5"/>
+  <polyline points="456,120 480,120 480,144" fill="none" stroke="#F0531C" stroke-opacity="0.40" stroke-width="1.5"/>
+  <polygon points="456,120 480,144 456,144" fill="#F0531C" fill-opacity="0.12"/>
+  <!-- Content lines -->
+  <rect x="338" y="158" width="104" height="8" rx="2" fill="#F0531C" fill-opacity="0.55"/>
+  <rect x="338" y="178" width="120" height="6" rx="2" fill="#F7EDDA" fill-opacity="0.18"/>
+  <rect x="338" y="194" width="90" height="6" rx="2" fill="#F7EDDA" fill-opacity="0.18"/>
+  <rect x="338" y="210" width="110" height="6" rx="2" fill="#F7EDDA" fill-opacity="0.14"/>
+  <rect x="338" y="226" width="80" height="6" rx="2" fill="#F7EDDA" fill-opacity="0.14"/>
+  <rect x="338" y="242" width="100" height="6" rx="2" fill="#F7EDDA" fill-opacity="0.10"/>
+  <!-- Orange badge -->
+  <rect x="338" y="306" width="80" height="18" rx="9" fill="#F0531C" fill-opacity="0.60"/>
+
+  <!-- Arrow 2 → 3 -->
+  <line x1="488" y1="245" x2="538" y2="245" stroke="#F7EDDA" stroke-opacity="0.30" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <polygon points="538,239 552,245 538,251" fill="#F7EDDA" fill-opacity="0.30"/>
+
+  <!-- Doc 3 — Artist (right) -->
+  <rect x="540" y="140" width="160" height="210" rx="8" fill="#F7EDDA" fill-opacity="0.09" stroke="#F7EDDA" stroke-opacity="0.18" stroke-width="1.5"/>
+  <polyline points="676,140 700,140 700,164" fill="none" stroke="#F7EDDA" stroke-opacity="0.25" stroke-width="1.5"/>
+  <polygon points="676,140 700,164 676,164" fill="#F7EDDA" fill-opacity="0.08"/>
+  <!-- Content lines -->
+  <rect x="558" y="178" width="100" height="8" rx="2" fill="#F7EDDA" fill-opacity="0.30"/>
+  <rect x="558" y="198" width="120" height="6" rx="2" fill="#F7EDDA" fill-opacity="0.16"/>
+  <rect x="558" y="214" width="80" height="6" rx="2" fill="#F7EDDA" fill-opacity="0.16"/>
+  <rect x="558" y="230" width="110" height="6" rx="2" fill="#F7EDDA" fill-opacity="0.12"/>
+  <rect x="558" y="246" width="90" height="6" rx="2" fill="#F7EDDA" fill-opacity="0.12"/>
+  <rect x="558" y="318" width="60" height="7" rx="2" fill="#F7EDDA" fill-opacity="0.20"/>
+
+  <!-- Role labels below -->
+  <text x="145" y="388" fill="#F7EDDA" fill-opacity="0.22" font-size="10" font-family="ui-sans-serif,system-ui,sans-serif" letter-spacing="2">PROMOTER</text>
+  <text x="352" y="388" fill="#F0531C" fill-opacity="0.50" font-size="10" font-family="ui-sans-serif,system-ui,sans-serif" letter-spacing="2">AGENT</text>
+  <text x="578" y="388" fill="#F7EDDA" fill-opacity="0.22" font-size="10" font-family="ui-sans-serif,system-ui,sans-serif" letter-spacing="2">ARTIST</text>
+</svg>
