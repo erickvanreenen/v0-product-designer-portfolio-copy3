@@ -43,18 +43,39 @@ const aiTools = [
   "Figma AI (Pencil)", "Figma Make", "Stitch by Google",
 ];
 
+const interests = [
+  { label: "Father" },
+  { label: "Trail runner" },
+  { label: "Ocean swimmer" },
+];
+
 export default function AboutPage() {
   return (
     <div>
       {/* Hero */}
-      <section className="bg-white">
+      <section className="bg-white border-b border-border">
         <div className="max-w-5xl mx-auto px-6 py-20 md:py-28">
-          <h1 className="text-4xl md:text-5xl font-bold text-[#09332C] tracking-tight mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold text-[#09332C] tracking-tight mb-4">
             About
           </h1>
-          <p className="text-lg text-[#F0531C] max-w-2xl">
+          <p className="text-lg text-[#F0531C] max-w-2xl mb-14">
             Senior UX Designer. Cape Town.
           </p>
+
+          {/* Contact details — meta tile style */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-border">
+            {[
+              { label: "Location", value: "Cape Town, South Africa" },
+              { label: "Email", value: "erickvanreenen@gmail.com" },
+              { label: "Phone", value: "+27 620 969 497" },
+              { label: "Status", value: "Open to opportunities" },
+            ].map((item) => (
+              <div key={item.label} className="bg-background p-6">
+                <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-2">{item.label}</p>
+                <p className="text-sm text-foreground">{item.value}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -65,63 +86,19 @@ export default function AboutPage() {
           <p className="text-base text-foreground leading-relaxed mb-6">
             I bring a diverse background spanning entrepreneurship, business development, branding, product design, education design, and UX/UI.
           </p>
-          <p className="text-base text-foreground leading-relaxed mb-6">
+          <p className="text-base text-foreground leading-relaxed">
             I work research-first — uncovering user needs and shaping experiences that align with business goals.
           </p>
-          <p className="text-base text-foreground/50 leading-relaxed">
-            Beyond work: father, trail runner, ocean swimmer.
-          </p>
         </section>
 
-        {/* Contact details */}
-        <section className="mb-24 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {[
-            { label: "Location", value: "Cape Town, South Africa" },
-            { label: "Email", value: "erickvanreenen@gmail.com" },
-            { label: "Phone", value: "+27 620 969 497" },
-            { label: "Status", value: "Open to opportunities" },
-          ].map((item) => (
-            <div key={item.label}>
-              <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-2">{item.label}</p>
-              <p className="text-sm text-foreground">{item.value}</p>
-            </div>
-          ))}
-        </section>
-
-        {/* Skills & Tools */}
+        {/* Interests */}
         <section className="mb-24 pb-24 border-b border-border">
-          <div className="grid lg:grid-cols-2 gap-16">
-            <div>
-              <h2 className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-6">Skills</h2>
-              <div className="flex flex-wrap gap-2">
-                {skills.map((skill) => (
-                  <span key={skill} className="text-sm px-3 py-1.5 rounded-full bg-[#09332C] text-[#F7EDDA]">
-                    {skill}
-                  </span>
-                ))}
+          <h2 className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-8">Beyond work</h2>
+          <div className="grid grid-cols-3 gap-px bg-border max-w-lg">
+            {interests.map((item) => (
+              <div key={item.label} className="bg-background p-6">
+                <p className="text-sm text-foreground">{item.label}</p>
               </div>
-            </div>
-            <div>
-              <h2 className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-6">Tools</h2>
-              <div className="flex flex-wrap gap-2">
-                {tools.map((tool) => (
-                  <span key={tool} className="text-sm px-3 py-1.5 rounded-full border border-border text-foreground/60">
-                    {tool}
-                  </span>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* AI Tools */}
-        <section className="mb-24 pb-24 border-b border-border">
-          <h2 className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-6">AI Tools</h2>
-          <div className="flex flex-wrap gap-2">
-            {aiTools.map((tool) => (
-              <span key={tool} className="text-sm px-3 py-1.5 rounded-full border border-border text-foreground/60">
-                {tool}
-              </span>
             ))}
           </div>
         </section>
@@ -163,7 +140,44 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* CTA */}
+        {/* Skills + Tooling */}
+        <section className="mb-24 pb-24 border-b border-border">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#09332C] tracking-tight mb-12">Skills + Tooling</h2>
+          <div className="space-y-12">
+            <div>
+              <h3 className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-6">Skills</h3>
+              <div className="flex flex-wrap gap-2">
+                {skills.map((skill) => (
+                  <span key={skill} className="text-sm px-3 py-1.5 rounded-full bg-[#09332C] text-[#F7EDDA]">
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+            <div>
+              <h3 className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-6">Tools</h3>
+              <div className="flex flex-wrap gap-2">
+                {tools.map((tool) => (
+                  <span key={tool} className="text-sm px-3 py-1.5 rounded-full border border-border text-foreground/60">
+                    {tool}
+                  </span>
+                ))}
+              </div>
+            </div>
+            <div>
+              <h3 className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-6">AI Tools</h3>
+              <div className="flex flex-wrap gap-2">
+                {aiTools.map((tool) => (
+                  <span key={tool} className="text-sm px-3 py-1.5 rounded-full border border-border text-foreground/60">
+                    {tool}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Get in Touch */}
         <section>
           <div className="border-t border-border pt-16">
             <h2 className="text-3xl md:text-4xl font-bold text-[#09332C] tracking-tight mb-4">
@@ -181,6 +195,7 @@ export default function AboutPage() {
             </Link>
           </div>
         </section>
+
       </div>
     </div>
   );
