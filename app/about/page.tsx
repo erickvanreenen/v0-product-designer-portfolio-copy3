@@ -43,19 +43,10 @@ const aiTools = [
   "Figma AI (Pencil)", "Figma Make", "Stitch by Google",
 ];
 
-// The 4-dot logo mark as an inline SVG component
-function LogoMark({ size = 28, color = "#F0531C", opacity = 1 }: { size?: number; color?: string; opacity?: number }) {
-  const r = size * 0.22;
-  const offset = size * 0.26;
-  const mid = size / 2;
+function LogoMark({ size = 28, opacity = 1 }: { size?: number; color?: string; opacity?: number }) {
   return (
-    <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} fill="none" style={{ opacity }}>
-      {/* Cross / diamond: top, left, right, bottom */}
-      <circle cx={mid} cy={mid - offset} r={r} fill={color} />
-      <circle cx={mid - offset} cy={mid} r={r} fill={color} />
-      <circle cx={mid + offset} cy={mid} r={r} fill={color} />
-      <circle cx={mid} cy={mid + offset} r={r} fill={color} />
-    </svg>
+    // eslint-disable-next-line @next/next/no-img-element
+    <img src="/images/erick-logo.svg" width={size} height={size} alt="" style={{ opacity }} />
   );
 }
 
