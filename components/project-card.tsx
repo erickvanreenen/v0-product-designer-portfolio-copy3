@@ -52,11 +52,6 @@ export function ProjectCard({ project, featured = false }: ProjectCardProps) {
         {/* Content */}
         <div className="flex flex-col flex-1 px-6 pt-5 pb-6 gap-4">
 
-          {/* Role label */}
-          <p className="text-xs text-foreground/60 font-medium uppercase tracking-widest">
-            {project.role}
-          </p>
-
           {/* Title + subtitle */}
           <div>
             <h3 className="text-2xl font-bold text-[#09332C] group-hover:text-[#F0531C] transition-colors duration-200 leading-snug mb-2">
