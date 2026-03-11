@@ -97,13 +97,16 @@ export default function AboutPage() {
               I came to UX through a longer route than most.
             </p>
             <p className="text-base text-foreground/65 leading-relaxed mb-5">
-              Retail owner at 19. Clothing designer. Brand director. Learning experience designer. Each chapter taught me something different about people, systems, and what it takes to build things that work.
+              I am an experienced designer with a diverse background in entrepreneurship, business development, branding, product design, visual and online education design, and UX/UI.
             </p>
             <p className="text-base text-foreground/65 leading-relaxed mb-5">
-              Good design changes how people experience the world. I blend creativity, empathy, and curiosity — driven by a deep desire to understand the people I design for and with.
+              I have a passion for how exceptional design impacts users' lives, blending creativity, empathy, and kindness in everything I create. My work is driven by a deep curiosity and an endless desire to understand the intricacies of design, focusing on the people I design for and with.
+            </p>
+            <p className="text-base text-foreground/65 leading-relaxed mb-5">
+              I embrace research as an essential tool for uncovering user needs, shaping experiences that resonate with their motivations and aspirations. I'm a dedicated problem-solver and advocate for quality design, balancing innovation with practical solutions.
             </p>
             <p className="text-base text-foreground/65 leading-relaxed">
-              Research is the foundation. I use it to uncover real needs and shape experiences that resonate with what people actually want. A dedicated problem-solver and advocate for quality — balancing innovation with solutions that hold up under real conditions.
+              Beyond design, I'm a proud father who draws inspiration and solace from nature, Tai Chi, meditation, breathwork, trail running, and early morning swims in the Atlantic Ocean, infusing my work with a sense of calm and reflection.
             </p>
           </div>
         </section>
