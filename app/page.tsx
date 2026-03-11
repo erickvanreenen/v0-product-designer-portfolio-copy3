@@ -13,7 +13,7 @@ export default function HomePage() {
     <div>
       {/* Hero */}
       <section className="bg-white">
-        <div className="max-w-5xl mx-auto px-6 py-20 md:py-28">
+        <div className="max-w-5xl mx-auto px-6 py-20 md:py-32">
           <p className="text-xs text-[#F0531C] font-semibold uppercase tracking-widest mb-8">
             UX Designer 75% / UI 25%
           </p>
