@@ -30,7 +30,7 @@ export function FtnCaseStudy({ project, nextProject, prevProject }: FtnCaseStudy
           </p>
 
           {/* Meta grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 mt-14 border-t border-border">
+          <div className="grid grid-cols-2 md:grid-cols-4 mt-14">
             {[
               { label: "Role", value: project.role, accent: false },
               { label: "Timeline", value: project.timeline, accent: false },
