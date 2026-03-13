@@ -82,14 +82,14 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
           </p>
 
           {/* Meta grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 mt-14 -mx-6 bg-[#F7EDDA]">
+          <div className="grid grid-cols-2 md:grid-cols-4 mt-14">
             {[
               { label: "Role", value: project.role },
               { label: "Company", value: "Silvertree (UCOOK)" },
               { label: "Year", value: project.timeline },
               { label: "Methods", value: "Mixed methods" },
             ].map((item, i) => (
-              <div key={item.label} className={`px-6 py-6 min-w-0 overflow-hidden border-[#E8E0D4] ${
+              <div key={item.label} className={`p-6 min-w-0 overflow-hidden border-border ${
                 i === 1 || i === 3 ? "border-l" : i === 2 ? "md:border-l" : ""
               } ${
                 i === 2 || i === 3 ? "border-t md:border-t-0" : ""
@@ -103,18 +103,18 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
       </section>
 
       {/* Key metrics */}
-      <section className="bg-white border-b border-border">
+      <section className="bg-[#F7EDDA] border-b border-border">
         <div className="max-w-5xl mx-auto px-6 py-12 md:py-16">
-          <div className="grid md:grid-cols-3 gap-px bg-border">
-            <div className="bg-white p-8 text-center">
+          <div className="grid md:grid-cols-3 gap-px bg-[#E8DFD0]">
+            <div className="bg-[#F7EDDA] p-8 text-center">
               <p className="text-4xl md:text-5xl font-bold text-foreground/20">3.7%</p>
               <p className="text-xs text-foreground/55 font-medium uppercase tracking-widest mt-2">old completion rate</p>
             </div>
-            <div className="bg-white p-8 text-center">
+            <div className="bg-[#F7EDDA] p-8 text-center">
               <p className="text-4xl md:text-5xl font-bold text-[#F0531C]">9.3%</p>
               <p className="text-xs text-foreground/55 font-medium uppercase tracking-widest mt-2">new completion rate</p>
             </div>
-            <div className="bg-white p-8 text-center">
+            <div className="bg-[#F7EDDA] p-8 text-center">
               <p className="text-4xl md:text-5xl font-bold text-[#09332C]">~R1.3M</p>
               <p className="text-xs text-foreground/55 font-medium uppercase tracking-widest mt-2">annual revenue at risk</p>
             </div>
