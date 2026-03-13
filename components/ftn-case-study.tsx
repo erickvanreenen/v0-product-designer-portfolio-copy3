@@ -30,23 +30,20 @@ export function FtnCaseStudy({ project, nextProject, prevProject }: FtnCaseStudy
           </p>
 
           {/* Meta grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-border mt-14">
-            <div className="bg-background p-6">
-              <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-2">Role</p>
-              <p className="text-sm text-foreground">{project.role}</p>
-            </div>
-            <div className="bg-background p-6">
-              <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-2">Timeline</p>
-              <p className="text-sm text-foreground">{project.timeline}</p>
-            </div>
-            <div className="bg-background p-6">
-              <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-2">Tools</p>
-              <p className="text-sm text-foreground">{project.tools.join(", ")}</p>
-            </div>
-            <div className="bg-background p-6">
-              <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-2">Status</p>
-              <p className="text-sm text-[#F0531C]">Ongoing</p>
-            </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 mt-14 border-t border-border">
+            {[
+              { label: "Role", value: project.role, accent: false },
+              { label: "Timeline", value: project.timeline, accent: false },
+              { label: "Tools", value: project.tools.join(", "), accent: false },
+              { label: "Status", value: "Ongoing", accent: true },
+            ].map((item, i) => (
+              <div key={item.label} className={`p-6 min-w-0 overflow-hidden border-border ${
+                i === 1 || i === 3 ? "border-l" : i === 2 ? "md:border-l" : ""
+              }`}>
+                <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-2">{item.label}</p>
+                <p className={`text-sm break-words ${item.accent ? "text-[#F0531C]" : "text-foreground"}`}>{item.value}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
