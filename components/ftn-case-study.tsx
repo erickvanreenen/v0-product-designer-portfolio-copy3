@@ -39,6 +39,8 @@ export function FtnCaseStudy({ project, nextProject, prevProject }: FtnCaseStudy
             ].map((item, i) => (
               <div key={item.label} className={`p-6 min-w-0 overflow-hidden border-border ${
                 i === 1 || i === 3 ? "border-l" : i === 2 ? "md:border-l" : ""
+              } ${
+                i === 2 || i === 3 ? "border-t md:border-t-0" : ""
               }`}>
                 <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-2">{item.label}</p>
                 <p className={`text-sm break-words ${item.accent ? "text-[#F0531C]" : "text-foreground"}`}>{item.value}</p>
