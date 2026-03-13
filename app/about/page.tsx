@@ -72,14 +72,19 @@ export default function AboutPage() {
           </p>
 
           {/* Contact details — meta tile style */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-border">
+          <div className="grid grid-cols-2 md:grid-cols-4">
             {[
               { label: "Location", value: "Cape Town, South Africa" },
               { label: "Email", value: "erickvanreenen@gmail.com" },
               { label: "Phone", value: "+27 620 969 497" },
               { label: "Status", value: "Full Time, Contract, Freelance" },
-            ].map((item) => (
-              <div key={item.label} className="bg-transparent p-6 min-w-0 overflow-hidden">
+            ].map((item, i) => (
+              <div
+                key={item.label}
+                className={`p-6 min-w-0 overflow-hidden border-border ${
+                  i === 1 || i === 3 ? "border-l" : i === 2 ? "md:border-l" : ""
+                }`}
+              >
                 <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-2">{item.label}</p>
                 <p className="text-sm text-foreground break-all">{item.value}</p>
               </div>
