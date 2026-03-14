@@ -338,17 +338,17 @@ export const projects: Project[] = [
       "Designers needed clearer project visibility",
       "Regular check-ins improved team morale",
       "Users needed seamless navigation between brands",
-      "Content consistency was crucial for trust"
+      "Content consistency was crucial for trust across multiple educational brands"
     ],
     iaFlows: "Designed information architecture that allowed users to navigate between brands while maintaining clear context. Created unified design patterns that worked across all brands.",
-    designExploration: "Explored approaches that balanced individual brand identities with platform consistency. Tested concepts with stakeholders and end users.",
-    finalUI: "Delivered a cohesive design system that maintained brand distinction while providing a unified user experience across the aggregator platform.",
-    testing: "User testing with students and internal stakeholders to validate navigation patterns and content organization.",
+    designExploration: "Explored approaches that balanced individual brand identities with platform consistency. Tested concepts with stakeholders.",
+    finalUI: "Delivered a cohesive design that maintained brand distinction while providing a unified user experience across the aggregator platform.",
+    testing: "",
     outcome: "Team productivity increased significantly, KPIs were consistently met, and the aggregator platform received positive feedback from stakeholders.",
     learnings: [
       "Leadership requires balancing individual needs with team goals",
-      "Process improvements can dramatically impact output quality",
-      "Design systems need flexibility for multi-brand contexts"
+      "Process improvements can dramatically impact output quality and efficiency",
+      "Platforms needs flexibility for multi-brand contexts under one roof"
     ],
     images: [
       { src: "/images/uni4-kanban.jpg", caption: "Kanban workflow implementation for design team" },

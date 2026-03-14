@@ -15,8 +15,8 @@ export function CaseStudyLayout({ project, nextProject, prevProject }: CaseStudy
   return (
     <div className="min-h-screen">
       {/* Hero */}
-      <section className="bg-white">
-        <div className="max-w-5xl mx-auto px-6 pt-12 pb-20 md:pt-16 md:pb-28">
+      <section className="bg-white border-b border-border">
+        <div className="max-w-5xl mx-auto px-6 py-20 md:py-28">
           <Link
             href="/projects"
             className="inline-flex items-center gap-2 text-sm text-foreground/50 hover:text-[#F0531C] transition-colors duration-200 mb-16 group"
@@ -25,18 +25,16 @@ export function CaseStudyLayout({ project, nextProject, prevProject }: CaseStudy
             Back
           </Link>
 
-          <div className="flex flex-wrap gap-2 mb-6">
+          <div className="flex flex-wrap gap-1.5 mb-6">
             {project.tags.map((tag) => (
-              <span key={tag} className="text-xs px-3 py-1 rounded-full border border-border text-foreground/40">
-                {tag}
-              </span>
+              <span key={tag} className="text-xs text-foreground/40">{tag}</span>
             ))}
           </div>
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#09332C] tracking-tight mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-[#09332C] tracking-tight mb-4 max-w-2xl">
             {project.title}
           </h1>
-          <p className="text-xl text-[#F0531C] font-medium mb-6">
+          <p className="text-lg text-foreground/55 max-w-xl leading-relaxed">
             {project.subtitle}
           </p>
 
@@ -72,12 +70,12 @@ export function CaseStudyLayout({ project, nextProject, prevProject }: CaseStudy
       </section>
 
       {/* Outcomes */}
-      <section className="bg-[#09332C]">
+      <section className="bg-[#f0f0f0]">
         <div className="max-w-5xl mx-auto px-6 py-10">
-          <p className="text-xs text-[#FFA74F] font-medium uppercase tracking-widest mb-6">Outcomes</p>
+          <p className="text-xs text-foreground/40 font-medium uppercase tracking-widest mb-6">Outcomes</p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {project.outcomes.map((outcome, i) => (
-              <p key={i} className="text-sm text-[#F7EDDA]/70 leading-relaxed">{outcome}</p>
+              <p key={i} className="text-sm text-foreground/70 leading-relaxed">{outcome}</p>
             ))}
           </div>
         </div>
@@ -137,10 +135,12 @@ export function CaseStudyLayout({ project, nextProject, prevProject }: CaseStudy
         </section>
 
         {/* Testing */}
-        <section className="mb-24">
-          <h2 className="text-3xl font-bold text-[#09332C] tracking-tight mb-10">Testing</h2>
-          <p className="text-base text-foreground/70 leading-relaxed">{project.testing}</p>
-        </section>
+        {project.testing && (
+          <section className="mb-24">
+            <h2 className="text-3xl font-bold text-[#09332C] tracking-tight mb-10">Testing</h2>
+            <p className="text-base text-foreground/70 leading-relaxed">{project.testing}</p>
+          </section>
+        )}
 
         {/* Outcome */}
         <section className="mb-24 bg-white rounded-lg p-8 md:p-10">
