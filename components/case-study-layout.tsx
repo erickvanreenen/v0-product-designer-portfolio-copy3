@@ -51,7 +51,7 @@ export function CaseStudyLayout({ project, nextProject, prevProject }: CaseStudy
           )}
 
           {/* Meta */}
-          <div className="grid grid-cols-2 md:grid-cols-4 mt-12 pt-8 border-t border-border">
+          <div className="grid grid-cols-2 md:grid-cols-4 mt-12">
             {[
               { label: "Role", value: project.role },
               { label: "Team", value: project.team },
