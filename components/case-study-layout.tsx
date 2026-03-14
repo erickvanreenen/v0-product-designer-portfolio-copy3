@@ -134,24 +134,6 @@ export function CaseStudyLayout({ project, nextProject, prevProject }: CaseStudy
           <p className="text-base text-foreground/70 leading-relaxed">{project.finalUI}</p>
         </section>
 
-        {/* Live Preview */}
-        {project.externalLink && (
-          <section className="mb-24">
-            <h2 className="text-3xl font-bold text-[#09332C] tracking-tight mb-10">Live site</h2>
-            <Link
-              href={project.externalLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group flex items-center justify-between gap-6 bg-[#f0f0f0] rounded-lg px-8 py-6 hover:bg-[#e8e8e8] transition-colors duration-200"
-            >
-              <div>
-                <p className="text-xs text-foreground/40 font-medium uppercase tracking-widest mb-2">View live</p>
-                <p className="text-lg font-semibold text-[#09332C] group-hover:text-[#F0531C] transition-colors duration-200">{project.externalLink}</p>
-              </div>
-              <ExternalLink size={20} className="text-foreground/30 group-hover:text-[#F0531C] shrink-0 transition-colors duration-200" />
-            </Link>
-          </section>
-        )}
 
         {/* Testing */}
         {project.testing && (
