@@ -15,7 +15,7 @@ export function CaseStudyLayout({ project, nextProject, prevProject }: CaseStudy
   return (
     <div className="min-h-screen">
       {/* Hero */}
-      <section className="bg-white border-b border-border">
+      <section className="bg-white">
         <div className="max-w-5xl mx-auto px-6 py-20 md:py-28">
           <Link
             href="/projects"
