@@ -14,13 +14,13 @@ export default function HomePage() {
       {/* Hero */}
       <section className="bg-white">
         <div className="max-w-5xl mx-auto px-6 py-20 md:py-32">
-          <p className="text-xs text-[#F0531C] font-semibold uppercase tracking-widest mb-8">
-            UX Designer 75% / UI 25%
-          </p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-[#09332C] max-w-2xl tracking-tight mb-6">
             Fusing user needs with business outcomes.
           </h1>
-          <p className="text-lg text-foreground/50 mt-6 max-w-xl">
+          <p className="text-xs text-[#F0531C] font-semibold uppercase tracking-widest mb-6">
+            UX Designer 75% / UI 25%
+          </p>
+          <p className="text-lg text-foreground/50 max-w-xl">
             Designing for e-commerce, omnichannel, and EdTech.
           </p>
           <div className="flex gap-4 mt-12">
