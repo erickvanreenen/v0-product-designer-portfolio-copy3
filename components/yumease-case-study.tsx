@@ -31,23 +31,22 @@ export function YumeaseCaseStudy({ project, nextProject, prevProject }: Props) {
           </p>
 
           {/* Meta grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-border mt-14">
-            <div className="bg-background p-6">
-              <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-2">Role</p>
-              <p className="text-sm text-foreground">{project.role}</p>
-            </div>
-            <div className="bg-background p-6">
-              <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-2">Team</p>
-              <p className="text-sm text-foreground">{project.team}</p>
-            </div>
-            <div className="bg-background p-6">
-              <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-2">Timeline</p>
-              <p className="text-sm text-foreground">{project.timeline}</p>
-            </div>
-            <div className="bg-background p-6">
-              <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-2">Tools</p>
-              <p className="text-sm text-foreground">{project.tools.join(", ")}</p>
-            </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 mt-14">
+            {[
+              { label: "Role", value: project.role },
+              { label: "Team", value: project.team },
+              { label: "Timeline", value: project.timeline },
+              { label: "Tools", value: project.tools.join(", ") },
+            ].map((item, i) => (
+              <div key={item.label} className={`p-6 min-w-0 overflow-hidden border-border ${
+                i === 1 || i === 3 ? "border-l" : i === 2 ? "md:border-l" : ""
+              } ${
+                i === 2 || i === 3 ? "border-t md:border-t-0" : ""
+              }`}>
+                <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-2">{item.label}</p>
+                <p className="text-sm text-foreground break-words">{item.value}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>

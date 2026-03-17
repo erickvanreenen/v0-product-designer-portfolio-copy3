@@ -34,30 +34,26 @@ export function FlanksourceCaseStudy({ project, nextProject, prevProject }: Prop
           </p>
 
           {/* Meta grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-border mt-14">
-            <div className="bg-background p-6">
-              <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-2">Role</p>
-              <p className="text-sm text-foreground">{project.role}</p>
-            </div>
-            <div className="bg-background p-6">
-              <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-2">Team</p>
-              <a
-                href="https://nygaard.design/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm text-foreground hover:text-[#F0531C] transition-colors duration-200"
-              >
-                {project.team}
-              </a>
-            </div>
-            <div className="bg-background p-6">
-              <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-2">Timeline</p>
-              <p className="text-sm text-foreground">{project.timeline}</p>
-            </div>
-            <div className="bg-background p-6">
-              <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-2">Tools</p>
-              <p className="text-sm text-foreground">{project.tools.join(", ")}</p>
-            </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 mt-14">
+            {[
+              { label: "Role", content: <p className="text-sm text-foreground break-words">{project.role}</p> },
+              { label: "Team", content: (
+                <a href="https://nygaard.design/" target="_blank" rel="noopener noreferrer" className="text-sm text-foreground hover:text-[#F0531C] transition-colors duration-200 break-words">
+                  {project.team}
+                </a>
+              )},
+              { label: "Timeline", content: <p className="text-sm text-foreground break-words">{project.timeline}</p> },
+              { label: "Tools", content: <p className="text-sm text-foreground break-words">{project.tools.join(", ")}</p> },
+            ].map((item, i) => (
+              <div key={item.label} className={`p-6 min-w-0 overflow-hidden border-border ${
+                i === 1 || i === 3 ? "border-l" : i === 2 ? "md:border-l" : ""
+              } ${
+                i === 2 || i === 3 ? "border-t md:border-t-0" : ""
+              }`}>
+                <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-2">{item.label}</p>
+                {item.content}
+              </div>
+            ))}
           </div>
         </div>
       </section>
