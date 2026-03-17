@@ -98,7 +98,7 @@ export default function HomePage() {
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-[#09332C] text-[#F7EDDA] text-sm font-medium rounded-full hover:bg-[#F0531C] transition-all duration-200 group"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-[#F0531C] text-white text-sm font-medium rounded-full hover:bg-[#09332C] transition-all duration-200 group"
           >
             Get in touch
             <ArrowRight size={16} className="group-hover:translate-x-0.5 transition-transform duration-200" />
