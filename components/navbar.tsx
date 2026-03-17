@@ -38,7 +38,7 @@ export function Navbar() {
                   className={cn(
                     "text-sm px-4 py-2 rounded-full transition-all duration-200",
                     pathname === item.href
-                      ? "bg-[#F0531C] text-white"
+                      ? "bg-[#09332C] text-[#F7EDDA]"
                       : "text-foreground/40 hover:text-foreground"
                   )}
                 >
@@ -80,7 +80,7 @@ export function Navbar() {
                   className={cn(
                     "block text-base py-3 px-4 rounded-lg transition-all duration-200",
                     pathname === item.href
-                      ? "bg-[#F0531C] text-white font-medium"
+                      ? "bg-[#09332C] text-[#F7EDDA] font-medium"
                       : "text-foreground/40"
                   )}
                 >
