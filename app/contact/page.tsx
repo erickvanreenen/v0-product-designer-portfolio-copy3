@@ -35,7 +35,7 @@ export default function ContactPage() {
             <p className="text-xl md:text-2xl font-bold text-[#09332C] leading-snug tracking-tight">
               "The world needs dreamers and the world needs doers. But above all, what the world needs most are dreamers that do."
             </p>
-            <cite className="block text-sm text-foreground/40 mt-4 not-italic">Sarah Ban Breathnach</cite>
+            <cite className="block text-sm text-foreground/58 mt-4 not-italic">Sarah Ban Breathnach</cite>
           </blockquote>
         </div>
       </section>
@@ -47,7 +47,7 @@ export default function ContactPage() {
             {isSubmitted ? (
               <div className="py-16">
                 <h2 className="text-2xl font-bold text-[#09332C] mb-2">Message sent.</h2>
-                <p className="text-foreground/50 mb-6">I will respond within 48 hours.</p>
+                <p className="text-foreground/65 mb-6">I will respond within 48 hours.</p>
                 <button
                   onClick={() => setIsSubmitted(false)}
                   className="text-sm text-[#F0531C] underline underline-offset-4 hover:text-[#09332C] transition-colors duration-200"
@@ -97,44 +97,44 @@ export default function ContactPage() {
           {/* Sidebar */}
           <aside className="space-y-10">
             <div>
-              <h2 className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-4">Direct</h2>
+              <h2 className="text-xs text-foreground/65 font-medium uppercase tracking-widest mb-4">Direct</h2>
               <div className="space-y-4">
                 <Link href="mailto:erickvanreenen@gmail.com" className="flex items-center gap-3 text-foreground hover:text-[#F0531C] transition-colors duration-200 group min-w-0">
-                  <Mail size={16} className="text-foreground/50 shrink-0" />
+                  <Mail size={16} className="text-foreground/65 shrink-0" />
                   <span className="text-sm truncate">erickvanreenen@gmail.com</span>
                   <ArrowUpRight size={12} className="ml-auto opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
                 </Link>
                 <Link href="tel:+27620969497" className="flex items-center gap-3 text-foreground hover:text-[#F0531C] transition-colors duration-200">
-                  <Phone size={16} className="text-foreground/50" />
+                  <Phone size={16} className="text-foreground/65" />
                   <span className="text-sm">+27 620 969 497</span>
                 </Link>
               </div>
             </div>
 
             <div>
-              <h2 className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-4">Location</h2>
+              <h2 className="text-xs text-foreground/65 font-medium uppercase tracking-widest mb-4">Location</h2>
               <div className="flex items-center gap-3 text-foreground">
-                <MapPin size={16} className="text-foreground/50" />
+                <MapPin size={16} className="text-foreground/65" />
                 <span className="text-sm">Cape Town, South Africa</span>
               </div>
             </div>
 
             <div>
-              <h2 className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-4">Social</h2>
+              <h2 className="text-xs text-foreground/65 font-medium uppercase tracking-widest mb-4">Social</h2>
               <Link
                 href="https://www.linkedin.com/in/erick-van-reenen-b549061a6/"
                 target="_blank" rel="noopener noreferrer"
                 className="flex items-center gap-3 text-foreground hover:text-[#F0531C] transition-colors duration-200 group"
               >
-                <Linkedin size={16} className="text-foreground/50" />
+                <Linkedin size={16} className="text-foreground/65" />
                 <span className="text-sm">LinkedIn</span>
                 <ArrowUpRight size={12} className="ml-auto opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
               </Link>
             </div>
 
             <div className="pt-8 border-t border-border">
-              <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-2">Availability</p>
-              <p className="text-sm text-foreground/50">
+              <p className="text-xs text-foreground/65 font-medium uppercase tracking-widest mb-2">Availability</p>
+              <p className="text-sm text-foreground/65">
                 Open to contract and full-time roles.
               </p>
             </div>

@@ -21,14 +21,14 @@ export function OvertureCaseStudy({ project, nextProject, prevProject }: Overtur
         <div className="max-w-5xl mx-auto px-6 py-20 md:py-28">
           <div className="flex flex-wrap gap-1.5 mb-6">
             {project.tags.map((tag) => (
-              <span key={tag} className="text-xs text-foreground/40">{tag}</span>
+              <span key={tag} className="text-xs text-foreground/58">{tag}</span>
             ))}
           </div>
 
           <h1 className="text-4xl md:text-5xl font-bold text-[#09332C] tracking-tight mb-4 max-w-2xl">
             {project.title}
           </h1>
-          <p className="text-lg text-foreground/55 max-w-xl leading-relaxed">
+          <p className="text-lg text-foreground/70 max-w-xl leading-relaxed">
             {project.subtitle}
           </p>
 
@@ -45,7 +45,7 @@ export function OvertureCaseStudy({ project, nextProject, prevProject }: Overtur
               } ${
                 i === 2 || i === 3 ? "border-t md:border-t-0" : ""
               }`}>
-                <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-2">{item.label}</p>
+                <p className="text-xs text-foreground/65 font-medium uppercase tracking-widest mb-2">{item.label}</p>
                 <p className="text-sm text-foreground break-words">{item.value}</p>
               </div>
             ))}
@@ -62,7 +62,7 @@ export function OvertureCaseStudy({ project, nextProject, prevProject }: Overtur
               <LogoMark size={16} opacity={0.25} />
               <h2 className="text-3xl font-bold text-[#09332C] tracking-tight">Brief</h2>
             </div>
-          <p className="text-base text-foreground/70 leading-relaxed">
+          <p className="text-base text-foreground/85 leading-relaxed">
             Design a promoter app that streamlines event documentation, connecting promoters, agents, and artists throughout the advancing stage of event organisation.
           </p>
         </section>
@@ -73,10 +73,10 @@ export function OvertureCaseStudy({ project, nextProject, prevProject }: Overtur
               <LogoMark size={16} opacity={0.25} />
               <h2 className="text-3xl font-bold text-[#09332C] tracking-tight">Research</h2>
             </div>
-          <p className="text-base text-foreground/70 leading-relaxed mb-4">
+          <p className="text-base text-foreground/85 leading-relaxed mb-4">
             Benchmarked leading event platforms globally.
           </p>
-          <p className="text-base text-foreground/70 leading-relaxed">
+          <p className="text-base text-foreground/85 leading-relaxed">
             Mapped user journeys and deliverables across the advancing process.
           </p>
         </section>
@@ -137,8 +137,8 @@ export function OvertureCaseStudy({ project, nextProject, prevProject }: Overtur
               </div>
               {/* Label */}
               <div className="flex items-center justify-center gap-2 mt-8">
-                <p className="text-xs text-foreground/50 uppercase tracking-widest group-hover:text-foreground/50 transition-colors duration-200">Open in Figma</p>
-                <ArrowUpRight size={12} className="text-foreground/50 group-hover:text-[#F0531C] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-200" />
+                <p className="text-xs text-foreground/65 uppercase tracking-widest group-hover:text-foreground/65 transition-colors duration-200">Open in Figma</p>
+                <ArrowUpRight size={12} className="text-foreground/65 group-hover:text-[#F0531C] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-200" />
               </div>
             </div>
           </a>
@@ -168,7 +168,7 @@ export function OvertureCaseStudy({ project, nextProject, prevProject }: Overtur
                 <div className="w-4 h-4 rounded-full border border-[#09332C]/15" />
               </div>
               <div className="flex items-center gap-2">
-                <p className="text-xs text-[#09332C]/40 uppercase tracking-widest group-hover:text-[#09332C]/70 transition-colors duration-200">Open prototype</p>
+                <p className="text-xs text-[#09332C]/58 uppercase tracking-widest group-hover:text-[#09332C]/85 transition-colors duration-200">Open prototype</p>
                 <ArrowUpRight size={12} className="text-[#09332C]/30 group-hover:text-[#F0531C] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-200" />
               </div>
             </div>
@@ -184,7 +184,7 @@ export function OvertureCaseStudy({ project, nextProject, prevProject }: Overtur
           <div className="space-y-4">
             <div>
               <p className="text-sm text-foreground">Erick van Reenen</p>
-              <p className="text-xs text-foreground/40">UX Designer</p>
+              <p className="text-xs text-foreground/58">UX Designer</p>
             </div>
             <div>
               <Link
@@ -195,7 +195,7 @@ export function OvertureCaseStudy({ project, nextProject, prevProject }: Overtur
               >
                 Brent Nygaard
               </Link>
-              <p className="text-xs text-foreground/40">UI Designer</p>
+              <p className="text-xs text-foreground/58">UI Designer</p>
             </div>
           </div>
         </section>
@@ -209,11 +209,11 @@ export function OvertureCaseStudy({ project, nextProject, prevProject }: Overtur
           <div className="grid grid-cols-2 gap-8">
             <div>
               <p className="text-2xl font-bold text-[#09332C]">2 weeks</p>
-              <p className="text-xs text-foreground/40 mt-1">UX</p>
+              <p className="text-xs text-foreground/58 mt-1">UX</p>
             </div>
             <div>
               <p className="text-2xl font-bold text-[#09332C]">2 weeks</p>
-              <p className="text-xs text-foreground/40 mt-1">UI</p>
+              <p className="text-xs text-foreground/58 mt-1">UI</p>
             </div>
           </div>
         </section>
@@ -221,7 +221,7 @@ export function OvertureCaseStudy({ project, nextProject, prevProject }: Overtur
         {/* Outcome */}
         <section className="mb-24 bg-white rounded-lg p-8 md:p-10">
           <h2 className="text-xs text-[#F0531C] font-medium uppercase tracking-widest mb-6">Outcome</h2>
-          <p className="text-base text-foreground/65 leading-relaxed">
+          <p className="text-base text-foreground/80 leading-relaxed">
             Delivered and signed off in 4 weeks.
           </p>
         </section>
@@ -235,11 +235,11 @@ export function OvertureCaseStudy({ project, nextProject, prevProject }: Overtur
             {prevProject ? (
               <Link
                 href={`/projects/${prevProject.slug}`}
-                className="group flex items-center gap-3 text-foreground/50 hover:text-foreground transition-colors duration-200"
+                className="group flex items-center gap-3 text-foreground/65 hover:text-foreground transition-colors duration-200"
               >
                 <ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform duration-200" />
                 <div>
-                  <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest">Previous</p>
+                  <p className="text-xs text-foreground/65 font-medium uppercase tracking-widest">Previous</p>
                   <p className="text-sm text-foreground group-hover:text-[#F0531C] transition-colors duration-200">{prevProject.title}</p>
                 </div>
               </Link>
@@ -247,10 +247,10 @@ export function OvertureCaseStudy({ project, nextProject, prevProject }: Overtur
             {nextProject && (
               <Link
                 href={`/projects/${nextProject.slug}`}
-                className="group flex items-center gap-3 text-foreground/50 hover:text-foreground transition-colors duration-200 text-right"
+                className="group flex items-center gap-3 text-foreground/65 hover:text-foreground transition-colors duration-200 text-right"
               >
                 <div>
-                  <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest">Next</p>
+                  <p className="text-xs text-foreground/65 font-medium uppercase tracking-widest">Next</p>
                   <p className="text-sm text-foreground group-hover:text-[#F0531C] transition-colors duration-200">{nextProject.title}</p>
                 </div>
                 <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform duration-200" />

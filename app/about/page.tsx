@@ -67,7 +67,7 @@ export default function AboutPage() {
             </h1>
           </div>
 
-          <p className="text-lg text-foreground/60 max-w-xl leading-relaxed mb-14">
+          <p className="text-lg text-foreground/75 max-w-xl leading-relaxed mb-14">
             UX-first. Strategic thinking. Fifteen years building things people actually use.
           </p>
 
@@ -87,7 +87,7 @@ export default function AboutPage() {
                   i === 2 || i === 3 ? "border-t md:border-t-0" : ""
                 }`}
               >
-                <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-2">{item.label}</p>
+                <p className="text-xs text-foreground/65 font-medium uppercase tracking-widest mb-2">{item.label}</p>
                 <p className="text-sm text-foreground break-all">{item.value}</p>
               </div>
             ))}
@@ -103,16 +103,16 @@ export default function AboutPage() {
             <p className="text-xl text-foreground font-medium leading-relaxed mb-6">
               I came to UX through a longer route than most.
             </p>
-            <p className="text-base text-foreground/65 leading-relaxed mb-5">
+            <p className="text-base text-foreground/80 leading-relaxed mb-5">
               I am an experienced designer with a diverse background in entrepreneurship, business development, branding, product design, visual and online education design, and UX/UI.
             </p>
-            <p className="text-base text-foreground/65 leading-relaxed mb-5">
+            <p className="text-base text-foreground/80 leading-relaxed mb-5">
               I have a passion for how exceptional design impacts users' lives, blending creativity, empathy, and kindness in everything I create. My work is driven by a deep curiosity and an endless desire to understand the intricacies of design, focusing on the people I design for and with.
             </p>
-            <p className="text-base text-foreground/65 leading-relaxed mb-5">
+            <p className="text-base text-foreground/80 leading-relaxed mb-5">
               I embrace research as an essential tool for uncovering user needs, shaping experiences that resonate with their motivations and aspirations. I'm a dedicated problem-solver and advocate for quality design, balancing innovation with practical solutions.
             </p>
-            <p className="text-base text-foreground/65 leading-relaxed">
+            <p className="text-base text-foreground/80 leading-relaxed">
               Beyond design, I'm a proud father who draws inspiration and solace from nature, Tai Chi, meditation, breathwork, trail running, and early morning swims in the Atlantic Ocean, infusing my work with a sense of calm and reflection.
             </p>
           </div>
@@ -122,11 +122,11 @@ export default function AboutPage() {
         <section className="mb-24 pb-24 border-b border-border">
           <div className="flex items-center gap-3 mb-8">
             <LogoMark size={16} color="#09332C" opacity={0.25} />
-            <h2 className="text-xs text-foreground/50 font-medium uppercase tracking-widest">Beyond work</h2>
+            <h2 className="text-xs text-foreground/65 font-medium uppercase tracking-widest">Beyond work</h2>
           </div>
           <div className="flex flex-wrap gap-3">
             {["Father", "Nature", "Tai Chi", "Meditation", "Breathwork", "Trail runner", "Ocean swimmer"].map((item) => (
-              <span key={item} className="inline-flex items-center gap-2 text-sm text-foreground/70 border border-border rounded-full px-4 py-2">
+              <span key={item} className="inline-flex items-center gap-2 text-sm text-foreground/85 border border-border rounded-full px-4 py-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#F0531C] shrink-0" />
                 {item}
               </span>
@@ -148,10 +148,10 @@ export default function AboutPage() {
                   {i < arr.length - 1 && <div className="w-px flex-1 bg-border mt-1" />}
                 </div>
                 <div className="pb-10">
-                  <p className="text-xs text-foreground/50 font-medium mb-1">{exp.period}</p>
+                  <p className="text-xs text-foreground/65 font-medium mb-1">{exp.period}</p>
                   <h3 className="text-base font-bold text-foreground">{exp.title}</h3>
                   <p className="text-sm text-[#F0531C] mb-1">{exp.company}</p>
-                  <p className="text-sm text-foreground/50">{exp.desc}</p>
+                  <p className="text-sm text-foreground/65">{exp.desc}</p>
                 </div>
               </div>
             ))}
@@ -167,10 +167,10 @@ export default function AboutPage() {
           <div className="space-y-8">
             {education.map((edu) => (
               <div key={edu.title} className="flex items-start gap-8">
-                <span className="text-xs text-foreground/50 font-medium w-12 flex-shrink-0 pt-0.5">{edu.year}</span>
+                <span className="text-xs text-foreground/65 font-medium w-12 flex-shrink-0 pt-0.5">{edu.year}</span>
                 <div>
                   <h3 className="text-base font-bold text-foreground">{edu.title}</h3>
-                  <p className="text-sm text-foreground/50">{edu.institution}</p>
+                  <p className="text-sm text-foreground/65">{edu.institution}</p>
                 </div>
               </div>
             ))}
@@ -185,7 +185,7 @@ export default function AboutPage() {
           </div>
           <div className="space-y-12">
             <div>
-              <h3 className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-6">Skills</h3>
+              <h3 className="text-xs text-foreground/65 font-medium uppercase tracking-widest mb-6">Skills</h3>
               <div className="flex flex-wrap gap-2">
                 {skills.map((skill) => (
                   <span key={skill} className="text-sm px-3 py-1.5 rounded-full bg-[#E2F5EF] text-[#09332C]">
@@ -195,20 +195,20 @@ export default function AboutPage() {
               </div>
             </div>
             <div>
-              <h3 className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-6">Tools</h3>
+              <h3 className="text-xs text-foreground/65 font-medium uppercase tracking-widest mb-6">Tools</h3>
               <div className="flex flex-wrap gap-2">
                 {tools.map((tool) => (
-                  <span key={tool} className="text-sm px-3 py-1.5 rounded-full bg-[#F7EDDA] text-[#09332C]/65">
+                  <span key={tool} className="text-sm px-3 py-1.5 rounded-full bg-[#F7EDDA] text-[#09332C]/80">
                     {tool}
                   </span>
                 ))}
               </div>
             </div>
             <div>
-              <h3 className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-6">AI Tools</h3>
+              <h3 className="text-xs text-foreground/65 font-medium uppercase tracking-widest mb-6">AI Tools</h3>
               <div className="flex flex-wrap gap-2">
                 {aiTools.map((tool) => (
-                  <span key={tool} className="text-sm px-3 py-1.5 rounded-full bg-[#F7DFBA] text-[#09332C]/65">
+                  <span key={tool} className="text-sm px-3 py-1.5 rounded-full bg-[#F7DFBA] text-[#09332C]/80">
                     {tool}
                   </span>
                 ))}
@@ -230,7 +230,7 @@ export default function AboutPage() {
               <h2 className="text-3xl md:text-4xl font-bold text-[#09332C] tracking-tight mb-4">
                 Open to opportunities.
               </h2>
-              <p className="text-foreground/50 mb-8 max-w-md">
+              <p className="text-foreground/65 mb-8 max-w-md">
                 Available for full-time roles, contract work, and interesting problems. Let's talk.
               </p>
               <Link

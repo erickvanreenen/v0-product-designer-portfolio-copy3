@@ -20,7 +20,7 @@ export default function HomePage() {
           <p className="text-sm text-[#F0531C] font-bold uppercase tracking-widest mb-6">
             UX Designer 75% / UI 25%
           </p>
-          <p className="text-lg text-foreground/50 max-w-xl">
+          <p className="text-lg text-foreground/65 max-w-xl">
             Designing for e-commerce, omnichannel, and EdTech.
           </p>
           <div className="flex gap-4 mt-12">
@@ -48,7 +48,7 @@ export default function HomePage() {
             <h2 className="text-3xl md:text-4xl font-bold text-[#09332C] tracking-tight">Selected work</h2>
             <Link
               href="/projects"
-              className="text-sm text-foreground/40 hover:text-[#F0531C] transition-colors duration-200 flex items-center gap-1.5 group"
+              className="text-sm text-foreground/58 hover:text-[#F0531C] transition-colors duration-200 flex items-center gap-1.5 group"
             >
               All projects
               <ArrowRight size={14} className="group-hover:translate-x-0.5 transition-transform duration-200" />
@@ -80,7 +80,7 @@ export default function HomePage() {
               <div key={step.step} className="bg-[#E2F5EF] p-8">
                 <span className="text-xs text-[#F0531C] font-medium">{step.step}</span>
                 <h3 className="text-lg font-bold text-[#09332C] mt-3">{step.title}</h3>
-                <p className="text-sm text-[#09332C]/50 mt-2">{step.desc}</p>
+                <p className="text-sm text-[#09332C]/65 mt-2">{step.desc}</p>
               </div>
             ))}
           </div>
@@ -93,7 +93,7 @@ export default function HomePage() {
           <h2 className="text-3xl md:text-4xl font-bold text-[#09332C] tracking-tight mb-4">
             Open to opportunities.
           </h2>
-          <p className="text-[#09332C]/50 mb-8">
+          <p className="text-[#09332C]/65 mb-8">
             Let's discuss a project or just say hello.
           </p>
           <Link

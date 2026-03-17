@@ -20,13 +20,13 @@ export function YumeaseCaseStudy({ project, nextProject, prevProject }: Props) {
         <div className="max-w-5xl mx-auto px-6 py-20 md:py-28">
           <div className="flex flex-wrap gap-1.5 mb-6">
             {project.tags.map((tag) => (
-              <span key={tag} className="text-xs text-foreground/40">{tag}</span>
+              <span key={tag} className="text-xs text-foreground/58">{tag}</span>
             ))}
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-[#09332C] tracking-tight mb-4 max-w-2xl">
             {project.title}
           </h1>
-          <p className="text-lg text-foreground/55 max-w-xl leading-relaxed">
+          <p className="text-lg text-foreground/70 max-w-xl leading-relaxed">
             {project.subtitle}
           </p>
 
@@ -43,7 +43,7 @@ export function YumeaseCaseStudy({ project, nextProject, prevProject }: Props) {
               } ${
                 i === 2 || i === 3 ? "border-t md:border-t-0" : ""
               }`}>
-                <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-2">{item.label}</p>
+                <p className="text-xs text-foreground/65 font-medium uppercase tracking-widest mb-2">{item.label}</p>
                 <p className="text-sm text-foreground break-words">{item.value}</p>
               </div>
             ))}
@@ -59,7 +59,7 @@ export function YumeaseCaseStudy({ project, nextProject, prevProject }: Props) {
             Sole designer. Full product lifecycle.{" "}
             <strong>Inception to launch in thirteen months.</strong>
           </p>
-          <p className="text-base text-foreground/65 leading-relaxed">
+          <p className="text-base text-foreground/80 leading-relaxed">
             As the only designer on the team, I owned every layer of the experience: from initial research and architecture through to final UI and handoff. The challenge: build something intuitive in a competitive market, fast.
           </p>
         </section>
@@ -71,7 +71,7 @@ export function YumeaseCaseStudy({ project, nextProject, prevProject }: Props) {
               <h2 className="text-3xl font-bold text-[#09332C] tracking-tight">Brief</h2>
             </div>
 
-          <p className="text-base text-foreground/65 leading-relaxed mb-10">
+          <p className="text-base text-foreground/80 leading-relaxed mb-10">
             Design an intuitive mobile app from zero. Prioritise onboarding clarity, core flow efficiency, and a cohesive visual system, all within a tight cross-functional team of two developers, a PM, and QA.
           </p>
 
@@ -79,8 +79,8 @@ export function YumeaseCaseStudy({ project, nextProject, prevProject }: Props) {
           <div className="space-y-6">
             {project.goals.map((goal, i) => (
               <div key={i} className="flex items-start gap-6">
-                <span className="text-xs text-foreground/20 font-bold mt-0.5 shrink-0">{String(i + 1).padStart(2, "0")}</span>
-                <p className="text-sm text-foreground/70 leading-relaxed">{goal}</p>
+                <span className="text-xs text-foreground/35 font-bold mt-0.5 shrink-0">{String(i + 1).padStart(2, "0")}</span>
+                <p className="text-sm text-foreground/85 leading-relaxed">{goal}</p>
               </div>
             ))}
           </div>
@@ -92,17 +92,17 @@ export function YumeaseCaseStudy({ project, nextProject, prevProject }: Props) {
               <LogoMark size={16} opacity={0.25} />
               <h2 className="text-3xl font-bold text-[#09332C] tracking-tight">Research</h2>
             </div>
-          <p className="text-base text-foreground/65 leading-relaxed mb-10">
+          <p className="text-base text-foreground/80 leading-relaxed mb-10">
             User interviews, competitive analysis, and persona development shaped every design decision. Research ran alongside design, not before it.
           </p>
 
           {/* Insights */}
-          <h3 className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-6">What the research surfaced</h3>
+          <h3 className="text-xs text-foreground/65 font-medium uppercase tracking-widest mb-6">What the research surfaced</h3>
           <div className="space-y-6">
             {project.insights.map((insight, i) => (
               <div key={i} className="flex items-start gap-6">
-                <span className="text-xs text-foreground/20 font-bold mt-0.5 shrink-0">{String(i + 1).padStart(2, "0")}</span>
-                <p className="text-sm text-foreground/70 leading-relaxed">{insight}</p>
+                <span className="text-xs text-foreground/35 font-bold mt-0.5 shrink-0">{String(i + 1).padStart(2, "0")}</span>
+                <p className="text-sm text-foreground/85 leading-relaxed">{insight}</p>
               </div>
             ))}
           </div>
@@ -122,10 +122,10 @@ export function YumeaseCaseStudy({ project, nextProject, prevProject }: Props) {
               { step: "04", label: "Iterative testing", desc: "Frequent usability tests with internal and external users throughout. Quick feedback loops drove rapid improvements." },
             ].map((item) => (
               <div key={item.step} className="flex items-start gap-6">
-                <span className="text-xs text-foreground/20 font-bold mt-0.5 shrink-0">{item.step}</span>
+                <span className="text-xs text-foreground/35 font-bold mt-0.5 shrink-0">{item.step}</span>
                 <div>
                   <p className="text-sm font-semibold text-foreground mb-1">{item.label}</p>
-                  <p className="text-sm text-foreground/65 leading-relaxed">{item.desc}</p>
+                  <p className="text-sm text-foreground/80 leading-relaxed">{item.desc}</p>
                 </div>
               </div>
             ))}
@@ -148,7 +148,7 @@ export function YumeaseCaseStudy({ project, nextProject, prevProject }: Props) {
                 className="w-full h-auto"
               />
             </div>
-            <p className="text-xs text-foreground/50">Final app screens. Key user flows.</p>
+            <p className="text-xs text-foreground/65">Final app screens. Key user flows.</p>
           </div>
         </section>
 
@@ -159,7 +159,7 @@ export function YumeaseCaseStudy({ project, nextProject, prevProject }: Props) {
             {project.outcomes.map((outcome, i) => (
               <div key={i} className="flex items-start gap-3">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#F0531C] mt-[0.4rem] shrink-0" />
-                <p className="text-sm text-foreground/65 leading-relaxed">{outcome}</p>
+                <p className="text-sm text-foreground/80 leading-relaxed">{outcome}</p>
               </div>
             ))}
           </div>
@@ -174,8 +174,8 @@ export function YumeaseCaseStudy({ project, nextProject, prevProject }: Props) {
           <div className="space-y-6">
             {project.learnings.map((learning, i) => (
               <div key={i} className="flex items-start gap-6">
-                <span className="text-xs text-foreground/20 font-bold mt-0.5 shrink-0">{String(i + 1).padStart(2, "0")}</span>
-                <p className="text-sm text-foreground/70 leading-relaxed">{learning}</p>
+                <span className="text-xs text-foreground/35 font-bold mt-0.5 shrink-0">{String(i + 1).padStart(2, "0")}</span>
+                <p className="text-sm text-foreground/85 leading-relaxed">{learning}</p>
               </div>
             ))}
           </div>
@@ -190,11 +190,11 @@ export function YumeaseCaseStudy({ project, nextProject, prevProject }: Props) {
             {prevProject ? (
               <Link
                 href={`/projects/${prevProject.slug}`}
-                className="group flex items-center gap-3 text-foreground/50 hover:text-foreground transition-colors duration-200"
+                className="group flex items-center gap-3 text-foreground/65 hover:text-foreground transition-colors duration-200"
               >
                 <ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform duration-200" />
                 <div>
-                  <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest">Previous</p>
+                  <p className="text-xs text-foreground/65 font-medium uppercase tracking-widest">Previous</p>
                   <p className="text-sm text-foreground group-hover:text-[#F0531C] transition-colors duration-200">{prevProject.title}</p>
                 </div>
               </Link>
@@ -202,10 +202,10 @@ export function YumeaseCaseStudy({ project, nextProject, prevProject }: Props) {
             {nextProject ? (
               <Link
                 href={`/projects/${nextProject.slug}`}
-                className="group flex items-center gap-3 text-foreground/50 hover:text-foreground transition-colors duration-200 text-right"
+                className="group flex items-center gap-3 text-foreground/65 hover:text-foreground transition-colors duration-200 text-right"
               >
                 <div>
-                  <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest">Next</p>
+                  <p className="text-xs text-foreground/65 font-medium uppercase tracking-widest">Next</p>
                   <p className="text-sm text-foreground group-hover:text-[#F0531C] transition-colors duration-200">{nextProject.title}</p>
                 </div>
                 <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform duration-200" />

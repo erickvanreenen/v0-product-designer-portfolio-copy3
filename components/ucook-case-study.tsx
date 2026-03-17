@@ -70,14 +70,14 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
         <div className="max-w-5xl mx-auto px-6 py-20 md:py-28">
           <div className="flex flex-wrap gap-1.5 mb-6">
             {project.tags.map((tag) => (
-              <span key={tag} className="text-xs text-foreground/40">{tag}</span>
+              <span key={tag} className="text-xs text-foreground/58">{tag}</span>
             ))}
           </div>
 
           <h1 className="text-4xl md:text-5xl font-bold text-[#09332C] tracking-tight mb-4 max-w-2xl">
             {project.title}
           </h1>
-          <p className="text-lg text-foreground/55 max-w-xl leading-relaxed">
+          <p className="text-lg text-foreground/70 max-w-xl leading-relaxed">
             Sign-up funnel redesign.
           </p>
 
@@ -94,7 +94,7 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
               } ${
                 i === 2 || i === 3 ? "border-t md:border-t-0" : ""
               }`}>
-                <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-2">{item.label}</p>
+                <p className="text-xs text-foreground/65 font-medium uppercase tracking-widest mb-2">{item.label}</p>
                 <p className="text-sm text-foreground break-words">{item.value}</p>
               </div>
             ))}
@@ -107,16 +107,16 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
         <div className="max-w-5xl mx-auto px-6 py-12 md:py-16">
           <div className="grid md:grid-cols-3 gap-px bg-[#dcdcdc]">
             <div className="bg-[#f0f0f0] p-8 text-center">
-              <p className="text-4xl md:text-5xl font-bold text-foreground/20">3.7%</p>
-              <p className="text-xs text-foreground/55 font-medium uppercase tracking-widest mt-2">old completion rate</p>
+              <p className="text-4xl md:text-5xl font-bold text-foreground/35">3.7%</p>
+              <p className="text-xs text-foreground/70 font-medium uppercase tracking-widest mt-2">old completion rate</p>
             </div>
             <div className="bg-[#f0f0f0] p-8 text-center">
               <p className="text-4xl md:text-5xl font-bold text-[#F0531C]">9.3%</p>
-              <p className="text-xs text-foreground/55 font-medium uppercase tracking-widest mt-2">new completion rate</p>
+              <p className="text-xs text-foreground/70 font-medium uppercase tracking-widest mt-2">new completion rate</p>
             </div>
             <div className="bg-[#f0f0f0] p-8 text-center">
               <p className="text-4xl md:text-5xl font-bold text-[#09332C]">~R1.3M</p>
-              <p className="text-xs text-foreground/55 font-medium uppercase tracking-widest mt-2">annual revenue at risk</p>
+              <p className="text-xs text-foreground/70 font-medium uppercase tracking-widest mt-2">annual revenue at risk</p>
             </div>
           </div>
         </div>
@@ -140,7 +140,7 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
               <p className="text-lg text-foreground leading-relaxed">Retention through the path: 1.43%.</p>
             </div>
           </div>
-          <p className="text-base text-foreground/50 mt-6">
+          <p className="text-base text-foreground/65 mt-6">
             This was not on the roadmap. I initiated the investigation.
           </p>
         </section>
@@ -156,17 +156,17 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
             <div>
               <h3 className="text-xs text-[#F0531C] font-medium uppercase tracking-widest mb-6">User pain</h3>
               <ul className="space-y-6">
-                <li className="text-sm text-foreground/70 leading-relaxed">Users confused sign-up with account creation.</li>
-                <li className="text-sm text-foreground/70 leading-relaxed">Could not find meals or navigate back.</li>
-                <li className="text-sm text-foreground/70 leading-relaxed">Subscription vs on-demand was unclear.</li>
+                <li className="text-sm text-foreground/85 leading-relaxed">Users confused sign-up with account creation.</li>
+                <li className="text-sm text-foreground/85 leading-relaxed">Could not find meals or navigate back.</li>
+                <li className="text-sm text-foreground/85 leading-relaxed">Subscription vs on-demand was unclear.</li>
               </ul>
             </div>
             <div>
               <h3 className="text-xs text-[#09332C] font-medium uppercase tracking-widest mb-6">Business pain</h3>
               <ul className="space-y-6">
-                <li className="text-sm text-foreground/70 leading-relaxed">60+ incomplete sign-ups per week.</li>
-                <li className="text-sm text-foreground/70 leading-relaxed">~R1.3M/year revenue leaking through funnel.</li>
-                <li className="text-sm text-foreground/70 leading-relaxed">56% of first billings 1–5 days post sign-up.</li>
+                <li className="text-sm text-foreground/85 leading-relaxed">60+ incomplete sign-ups per week.</li>
+                <li className="text-sm text-foreground/85 leading-relaxed">~R1.3M/year revenue leaking through funnel.</li>
+                <li className="text-sm text-foreground/85 leading-relaxed">56% of first billings 1–5 days post sign-up.</li>
               </ul>
             </div>
           </div>
@@ -181,8 +181,8 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
           <div className="space-y-6">
             {project.goals.map((goal, i) => (
               <div key={i} className="flex items-start gap-6">
-                <span className="text-xs text-foreground/20 font-bold mt-0.5">{String(i + 1).padStart(2, "0")}</span>
-                <p className="text-sm text-foreground/70 leading-relaxed">{goal}</p>
+                <span className="text-xs text-foreground/35 font-bold mt-0.5">{String(i + 1).padStart(2, "0")}</span>
+                <p className="text-sm text-foreground/85 leading-relaxed">{goal}</p>
               </div>
             ))}
           </div>
@@ -199,7 +199,7 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
             ].map((item) => (
               <div key={item} className="flex items-start gap-3">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#F0531C] mt-[0.4rem] shrink-0" />
-                <p className="text-sm text-foreground/65 leading-relaxed">{item}</p>
+                <p className="text-sm text-foreground/80 leading-relaxed">{item}</p>
               </div>
             ))}
           </div>
@@ -211,7 +211,7 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
               <LogoMark size={16} opacity={0.25} />
               <h2 className="text-3xl font-bold text-[#09332C] tracking-tight">Research</h2>
             </div>
-          <p className="text-sm text-foreground/40 mb-10">Seven stages. Mixed methods.</p>
+          <p className="text-sm text-foreground/58 mb-10">Seven stages. Mixed methods.</p>
 
           <div className="space-y-0">
             {[
@@ -225,12 +225,12 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
             ].map((step, i, arr) => (
               <div key={step.step} className="flex gap-6">
                 <div className="flex flex-col items-center">
-                  <span className="text-xs text-foreground/20 font-bold flex-shrink-0 w-6 text-center pt-0.5">{step.step}</span>
+                  <span className="text-xs text-foreground/35 font-bold flex-shrink-0 w-6 text-center pt-0.5">{step.step}</span>
                   {i < arr.length - 1 && <div className="w-px flex-1 bg-border mt-2" />}
                 </div>
                 <div className="pb-8">
                   <h3 className="text-sm font-bold text-[#09332C]">{step.title}</h3>
-                  <p className="text-sm text-foreground/50 mt-1">{step.desc}</p>
+                  <p className="text-sm text-foreground/65 mt-1">{step.desc}</p>
                 </div>
               </div>
             ))}
@@ -243,7 +243,7 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
           <p className="text-base text-[#09332C] font-bold leading-relaxed">
             All participants expected to pay immediately. Payment was the task completion signal.
           </p>
-          <p className="text-sm text-foreground/50 mt-3">
+          <p className="text-sm text-foreground/65 mt-3">
             This single insight reshaped the solution.
           </p>
         </section>
@@ -257,8 +257,8 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
           <div className="space-y-6">
             {project.insights.map((insight, i) => (
               <div key={i} className="flex items-start gap-6">
-                <span className="text-xs text-foreground/20 font-bold mt-0.5">{String(i + 1).padStart(2, "0")}</span>
-                <p className="text-sm text-foreground/70 leading-relaxed">{insight}</p>
+                <span className="text-xs text-foreground/35 font-bold mt-0.5">{String(i + 1).padStart(2, "0")}</span>
+                <p className="text-sm text-foreground/85 leading-relaxed">{insight}</p>
               </div>
             ))}
           </div>
@@ -273,7 +273,7 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
               <h2 className="text-3xl font-bold text-[#09332C] tracking-tight">Pay on Sign Up</h2>
             </div>
           </div>
-          <p className="text-base text-foreground/70 leading-relaxed mb-10">
+          <p className="text-base text-foreground/85 leading-relaxed mb-10">
             Move payment to the start. Use the cart as the entry point. Auto-deduce customer profile from order.
           </p>
 
@@ -282,8 +282,8 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
             <div className="grid grid-cols-3 gap-px bg-border rounded-lg overflow-hidden mb-px">
               {["Meal Kit Page", "Add to Cart", "Checkout"].map((step, i) => (
                 <div key={step} className="bg-white p-5">
-                  <p className="text-xs text-foreground/20 font-bold mb-2">{String(i + 1).padStart(2, "0")}</p>
-                  <p className="text-sm text-foreground/60">{step}</p>
+                  <p className="text-xs text-foreground/35 font-bold mb-2">{String(i + 1).padStart(2, "0")}</p>
+                  <p className="text-sm text-foreground/75">{step}</p>
                 </div>
               ))}
             </div>
@@ -294,8 +294,8 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
                 { label: "Auto-profile", step: 6 },
               ].map(({ label, step, accent }) => (
                 <div key={label} className={`p-5 ${accent ? "bg-[#F0531C]/5" : "bg-background"}`}>
-                  <p className={`text-xs font-bold mb-2 ${accent ? "text-[#F0531C]/30" : "text-foreground/20"}`}>{String(step).padStart(2, "0")}</p>
-                  <p className={`text-sm ${accent ? "text-[#F0531C]/60" : "text-foreground/60"}`}>{label}</p>
+                  <p className={`text-xs font-bold mb-2 ${accent ? "text-[#F0531C]/30" : "text-foreground/35"}`}>{String(step).padStart(2, "0")}</p>
+                  <p className={`text-sm ${accent ? "text-[#F0531C]/60" : "text-foreground/75"}`}>{label}</p>
                 </div>
               ))}
             </div>
@@ -307,19 +307,19 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
             <div className="space-y-6">
               <div className="flex items-start gap-6">
                 <span className="text-xs text-[#F0531C]/30 font-bold mt-0.5">01</span>
-                <p className="text-sm text-foreground/65 leading-relaxed">Subscription model not communicated before payment. Users commit without understanding recurring billing.</p>
+                <p className="text-sm text-foreground/80 leading-relaxed">Subscription model not communicated before payment. Users commit without understanding recurring billing.</p>
               </div>
               <div className="flex items-start gap-6">
                 <span className="text-xs text-[#F0531C]/30 font-bold mt-0.5">02</span>
-                <p className="text-sm text-foreground/65 leading-relaxed">Pause and cancel functionality unclear at point of commitment.</p>
+                <p className="text-sm text-foreground/80 leading-relaxed">Pause and cancel functionality unclear at point of commitment.</p>
               </div>
               <div className="flex items-start gap-6">
                 <span className="text-xs text-[#F0531C]/30 font-bold mt-0.5">03</span>
-                <p className="text-sm text-foreground/65 leading-relaxed">Solves acquisition only. The retention problem remains unresolved.</p>
+                <p className="text-sm text-foreground/80 leading-relaxed">Solves acquisition only. The retention problem remains unresolved.</p>
               </div>
               <div className="flex items-start gap-6">
                 <span className="text-xs text-[#F0531C]/30 font-bold mt-0.5">04</span>
-                <p className="text-sm text-foreground/65 leading-relaxed">Order changes post-payment introduce refund risk. Reduced orders take 2+ days to reflect, creating billing confusion at the point of highest user trust.</p>
+                <p className="text-sm text-foreground/80 leading-relaxed">Order changes post-payment introduce refund risk. Reduced orders take 2+ days to reflect, creating billing confusion at the point of highest user trust.</p>
               </div>
             </div>
           </div>
@@ -332,24 +332,24 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
               <h2 className="text-3xl font-bold text-[#09332C] tracking-tight">Solution</h2>
             </div>
 
-          <p className="text-base text-foreground/70 leading-relaxed mb-10">
+          <p className="text-base text-foreground/85 leading-relaxed mb-10">
             Two workstreams. Quick wins shipped independently. The structural redesign tackled the funnel itself.
           </p>
 
           <div className="grid md:grid-cols-2 gap-px bg-border">
             <div className="bg-white p-8">
-              <h3 className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-4">Quick wins</h3>
-              <p className="text-sm text-foreground/50">Communication, navigation, UI clarity.</p>
+              <h3 className="text-xs text-foreground/65 font-medium uppercase tracking-widest mb-4">Quick wins</h3>
+              <p className="text-sm text-foreground/65">Communication, navigation, UI clarity.</p>
             </div>
             <div className="bg-white p-8">
               <h3 className="text-xs text-[#F0531C] font-medium uppercase tracking-widest mb-4">Structural redesign</h3>
-              <p className="text-sm text-foreground/50">Measurable funnel with payment decision.</p>
+              <p className="text-sm text-foreground/65">Measurable funnel with payment decision.</p>
             </div>
           </div>
 
           {/* Journey map */}
           <div className="mt-16 mb-16">
-            <h3 className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-6">Revised user journeys</h3>
+            <h3 className="text-xs text-foreground/65 font-medium uppercase tracking-widest mb-6">Revised user journeys</h3>
             <div className="border border-border rounded-lg overflow-hidden">
               {[
                 ["Homepage", "Sign Up"],
@@ -361,13 +361,13 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
                   <div className="flex items-center gap-1.5 flex-wrap">
                     {steps.map((step, j) => (
                       <React.Fragment key={j}>
-                        <span className="text-xs text-foreground/40">{step}</span>
+                        <span className="text-xs text-foreground/58">{step}</span>
                         <span className="text-foreground/15 text-xs">→</span>
                       </React.Fragment>
                     ))}
                   </div>
                   <div className="flex items-center gap-1.5 shrink-0">
-                    <span className="text-xs px-3 py-1.5 bg-[#E2F5EF] text-[#09332C]/70 rounded font-medium">Plans</span>
+                    <span className="text-xs px-3 py-1.5 bg-[#E2F5EF] text-[#09332C]/85 rounded font-medium">Plans</span>
                     <span className="text-foreground/15 text-xs">→</span>
                     <span className="text-xs px-3 py-1.5 border border-[#F0531C]/25 text-[#F0531C] rounded font-medium">Activated</span>
                   </div>
@@ -379,7 +379,7 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
 
           {/* Wireframes */}
           <div className="mt-16">
-            <h3 className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-6">Wireframes</h3>
+            <h3 className="text-xs text-foreground/65 font-medium uppercase tracking-widest mb-6">Wireframes</h3>
             <div className="grid grid-cols-4 gap-3">
               {wireframes.map((wf, i) => (
                 <div key={i} className="border border-border overflow-hidden bg-white aspect-[3/4]">
@@ -396,7 +396,7 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
           </div>
 
           <div className="mt-10">
-            <h3 className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-6">Handoff specifications</h3>
+            <h3 className="text-xs text-foreground/65 font-medium uppercase tracking-widest mb-6">Handoff specifications</h3>
             <div className="grid sm:grid-cols-2 gap-px bg-border">
               {[
                 { title: "scrollIntoView()", desc: "Step transitions, error states." },
@@ -406,7 +406,7 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
               ].map((spec) => (
                 <div key={spec.title} className="bg-white p-6">
                   <p className="text-sm font-mono font-bold text-[#09332C]">{spec.title}</p>
-                  <p className="text-xs text-foreground/40 mt-1">{spec.desc}</p>
+                  <p className="text-xs text-foreground/58 mt-1">{spec.desc}</p>
                 </div>
               ))}
             </div>
@@ -423,7 +423,7 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
           <div className="grid md:grid-cols-2 gap-12 mb-12">
             {/* Old */}
             <div>
-              <h3 className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-6">Old funnel</h3>
+              <h3 className="text-xs text-foreground/65 font-medium uppercase tracking-widest mb-6">Old funnel</h3>
               <div className="space-y-4">
                 {[
                   { label: "Entered", users: 405, pct: 100 },
@@ -431,7 +431,7 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
                   { label: "Completed", users: 15, pct: 3.7 },
                 ].map((row) => (
                   <div key={row.label}>
-                    <div className="flex justify-between text-xs text-foreground/50 mb-1">
+                    <div className="flex justify-between text-xs text-foreground/65 mb-1">
                       <span>{row.label}</span>
                       <span>{row.users}</span>
                     </div>
@@ -441,7 +441,7 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
                   </div>
                 ))}
               </div>
-              <p className="text-3xl font-bold text-foreground/20 mt-6">3.7%</p>
+              <p className="text-3xl font-bold text-foreground/35 mt-6">3.7%</p>
             </div>
 
             {/* New */}
@@ -455,7 +455,7 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
                   { label: "Completed", users: 185, pct: 9.3 },
                 ].map((row) => (
                   <div key={row.label}>
-                    <div className="flex justify-between text-xs text-foreground/50 mb-1">
+                    <div className="flex justify-between text-xs text-foreground/65 mb-1">
                       <span>{row.label}</span>
                       <span>{row.users}</span>
                     </div>
@@ -472,7 +472,7 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
           {/* Net result */}
           <div className="border-t border-border pt-10">
             <p className="text-4xl md:text-5xl font-bold text-[#F0531C]">+5.6%</p>
-            <p className="text-sm text-foreground/50 mt-2 max-w-lg">
+            <p className="text-sm text-foreground/65 mt-2 max-w-lg">
               Absolute increase. Abandonment at the top of the funnel dropped from 91.1% to 75%. More users reached later stages.
             </p>
           </div>
@@ -480,18 +480,18 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
           {/* ROI context */}
           <div className="border-t border-border pt-10 mt-10">
             <p className="text-4xl md:text-5xl font-bold text-[#F0531C]">~R255k</p>
-            <p className="text-sm text-foreground/50 mt-2 max-w-lg">
+            <p className="text-sm text-foreground/65 mt-2 max-w-lg">
               6-month ROI (Aug–Jan). 10% of users who started sign-up completed it, constituting 100% of new clients and R405k in revenue. The old funnel at 3.7% would have captured only 37% of that cohort. The redesign unlocked the remaining 63%.
             </p>
           </div>
 
           {/* Pending */}
           <div className="mt-12 pt-8 border-t border-border">
-            <h3 className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-4">Pending</h3>
+            <h3 className="text-xs text-foreground/65 font-medium uppercase tracking-widest mb-4">Pending</h3>
             <ul className="space-y-2">
-              <li className="text-sm text-foreground/40">Payment timing decision outcomes.</li>
-              <li className="text-sm text-foreground/40">A/B testing results.</li>
-              <li className="text-sm text-foreground/40">Post-release refund and billing impact.</li>
+              <li className="text-sm text-foreground/58">Payment timing decision outcomes.</li>
+              <li className="text-sm text-foreground/58">A/B testing results.</li>
+              <li className="text-sm text-foreground/58">Post-release refund and billing impact.</li>
             </ul>
           </div>
         </section>
@@ -505,8 +505,8 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
           <div className="space-y-6">
             {project.learnings.map((learning, i) => (
               <div key={i} className="flex items-start gap-6">
-                <span className="text-xs text-foreground/20 font-bold mt-0.5">{String(i + 1).padStart(2, "0")}</span>
-                <p className="text-sm text-foreground/70 leading-relaxed">{learning}</p>
+                <span className="text-xs text-foreground/35 font-bold mt-0.5">{String(i + 1).padStart(2, "0")}</span>
+                <p className="text-sm text-foreground/85 leading-relaxed">{learning}</p>
               </div>
             ))}
           </div>
@@ -521,11 +521,11 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
             {prevProject ? (
               <Link
                 href={`/projects/${prevProject.slug}`}
-                className="group flex items-center gap-3 text-foreground/50 hover:text-foreground transition-colors duration-200"
+                className="group flex items-center gap-3 text-foreground/65 hover:text-foreground transition-colors duration-200"
               >
                 <ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform duration-200" />
                 <div>
-                  <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest">Previous</p>
+                  <p className="text-xs text-foreground/65 font-medium uppercase tracking-widest">Previous</p>
                   <p className="text-sm text-foreground group-hover:text-[#F0531C] transition-colors duration-200">{prevProject.title}</p>
                 </div>
               </Link>
@@ -533,10 +533,10 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
             {nextProject && (
               <Link
                 href={`/projects/${nextProject.slug}`}
-                className="group flex items-center gap-3 text-foreground/50 hover:text-foreground transition-colors duration-200 text-right"
+                className="group flex items-center gap-3 text-foreground/65 hover:text-foreground transition-colors duration-200 text-right"
               >
                 <div>
-                  <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest">Next</p>
+                  <p className="text-xs text-foreground/65 font-medium uppercase tracking-widest">Next</p>
                   <p className="text-sm text-foreground group-hover:text-[#F0531C] transition-colors duration-200">{nextProject.title}</p>
                 </div>
                 <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform duration-200" />

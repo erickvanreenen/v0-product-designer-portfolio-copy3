@@ -39,7 +39,7 @@ export function Navbar() {
                     "text-sm px-4 py-2 rounded-full transition-all duration-200",
                     pathname === item.href
                       ? "bg-[#09332C] text-[#F7EDDA]"
-                      : "text-foreground/40 hover:text-foreground"
+                      : "text-foreground/58 hover:text-foreground"
                   )}
                 >
                   {item.label}
@@ -51,7 +51,7 @@ export function Navbar() {
             href="https://www.linkedin.com/in/erick-van-reenen-b549061a6/"
             target="_blank"
             rel="noopener noreferrer"
-            className="ml-2 p-2 text-foreground/50 hover:text-[#F0531C] transition-colors duration-200"
+            className="ml-2 p-2 text-foreground/65 hover:text-[#F0531C] transition-colors duration-200"
             aria-label="Connect on LinkedIn"
           >
             <Linkedin size={16} />
@@ -60,7 +60,7 @@ export function Navbar() {
 
         {/* Mobile toggle */}
         <button
-          className="md:hidden p-2 text-foreground/40 hover:text-foreground transition-colors duration-200"
+          className="md:hidden p-2 text-foreground/58 hover:text-foreground transition-colors duration-200"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
         >
@@ -81,7 +81,7 @@ export function Navbar() {
                     "block text-base py-3 px-4 rounded-lg transition-all duration-200",
                     pathname === item.href
                       ? "bg-[#09332C] text-[#F7EDDA] font-medium"
-                      : "text-foreground/40"
+                      : "text-foreground/58"
                   )}
                 >
                   {item.label}
@@ -94,7 +94,7 @@ export function Navbar() {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setMobileMenuOpen(false)}
-                className="block text-base py-3 px-4 text-foreground/40 hover:text-[#F0531C]"
+                className="block text-base py-3 px-4 text-foreground/58 hover:text-[#F0531C]"
               >
                 LinkedIn
               </Link>

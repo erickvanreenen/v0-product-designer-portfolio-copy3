@@ -19,13 +19,13 @@ export function FtnCaseStudy({ project, nextProject, prevProject }: FtnCaseStudy
         <div className="max-w-5xl mx-auto px-6 py-20 md:py-28">
           <div className="flex flex-wrap gap-1.5 mb-6">
             {project.tags.map((tag) => (
-              <span key={tag} className="text-xs text-foreground/40">{tag}</span>
+              <span key={tag} className="text-xs text-foreground/58">{tag}</span>
             ))}
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-[#09332C] tracking-tight mb-4 max-w-2xl">
             {project.title}
           </h1>
-          <p className="text-lg text-foreground/55 max-w-xl leading-relaxed">
+          <p className="text-lg text-foreground/70 max-w-xl leading-relaxed">
             {project.subtitle}
           </p>
 
@@ -42,7 +42,7 @@ export function FtnCaseStudy({ project, nextProject, prevProject }: FtnCaseStudy
               } ${
                 i === 2 || i === 3 ? "border-t md:border-t-0" : ""
               }`}>
-                <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-2">{item.label}</p>
+                <p className="text-xs text-foreground/65 font-medium uppercase tracking-widest mb-2">{item.label}</p>
                 <p className={`text-sm break-words ${item.accent ? "text-[#F0531C]" : "text-foreground"}`}>{item.value}</p>
               </div>
             ))}
@@ -58,10 +58,10 @@ export function FtnCaseStudy({ project, nextProject, prevProject }: FtnCaseStudy
             One of South Africa's largest online wellness retailers.{" "}
             <strong>Rapid store expansion has moved the platform into a full omnichannel environment.</strong>
           </p>
-          <p className="text-base text-foreground/65 leading-relaxed mb-4">
+          <p className="text-base text-foreground/80 leading-relaxed mb-4">
             The Magento 1 to Magento 2 migration started around 2020. Multiple designers passed through. I joined as the lone lead UX/UI designer in September 2024.
           </p>
-          <p className="text-base text-foreground/65 leading-relaxed">
+          <p className="text-base text-foreground/80 leading-relaxed">
             The platform was live. Revenue was flowing. But years of dev-first decisions had accumulated into significant UX debt. No single designer had stayed long enough to address it systematically.
           </p>
         </section>
@@ -85,16 +85,16 @@ export function FtnCaseStudy({ project, nextProject, prevProject }: FtnCaseStudy
               ].map((item) => (
                 <div key={item} className="flex items-start gap-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#F0531C] mt-[0.4rem] shrink-0" />
-                  <p className="text-sm text-foreground/65 leading-relaxed">{item}</p>
+                  <p className="text-sm text-foreground/80 leading-relaxed">{item}</p>
                 </div>
               ))}
             </div>
           </section>
 
-          <p className="text-base text-foreground/65 leading-relaxed mb-4">
+          <p className="text-base text-foreground/80 leading-relaxed mb-4">
             Systems thinking became non-negotiable. Every design decision had downstream consequences: across tech, logistics, data, and operations.
           </p>
-          <p className="text-base text-foreground/65 leading-relaxed">
+          <p className="text-base text-foreground/80 leading-relaxed">
             Advocating for good UX here means translating user needs into business outcomes and technical language simultaneously. It is a skill. It has become one of my strongest.
           </p>
         </section>
@@ -120,7 +120,7 @@ export function FtnCaseStudy({ project, nextProject, prevProject }: FtnCaseStudy
             ].map((member) => (
               <div key={member} className="bg-white p-5 flex items-center gap-3">
                 <span className="w-1.5 h-1.5 rounded-full bg-border shrink-0" />
-                <p className="text-sm text-foreground/65">{member}</p>
+                <p className="text-sm text-foreground/80">{member}</p>
               </div>
             ))}
           </div>
@@ -134,24 +134,24 @@ export function FtnCaseStudy({ project, nextProject, prevProject }: FtnCaseStudy
             </div>
           <p className="text-xs text-[#F0531C] font-medium uppercase tracking-widest mb-10">Shipped</p>
 
-          <p className="text-base text-foreground/65 leading-relaxed mb-10">
+          <p className="text-base text-foreground/80 leading-relaxed mb-10">
             When I joined, filtering changed structure between category levels. L1 looked different from L2. L2 from L3. No shared logic. No shared pattern.
           </p>
 
           {/* Problem / Solution */}
           <div className="grid md:grid-cols-2 gap-px bg-border mb-12">
             <div className="bg-white p-8">
-              <h3 className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-4">The problem</h3>
-              <p className="text-sm text-foreground/65 leading-relaxed">Filtering patterns varied across every category level. Users had to relearn navigation at each step.</p>
+              <h3 className="text-xs text-foreground/65 font-medium uppercase tracking-widest mb-4">The problem</h3>
+              <p className="text-sm text-foreground/80 leading-relaxed">Filtering patterns varied across every category level. Users had to relearn navigation at each step.</p>
             </div>
             <div className="bg-white p-8">
               <h3 className="text-xs text-[#F0531C] font-medium uppercase tracking-widest mb-4">The solution</h3>
-              <p className="text-sm text-foreground/65 leading-relaxed">One consistent filtering system. Two search streams. Applied at every level of the platform.</p>
+              <p className="text-sm text-foreground/80 leading-relaxed">One consistent filtering system. Two search streams. Applied at every level of the platform.</p>
             </div>
           </div>
 
           {/* Two streams */}
-          <h3 className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-6">Two search streams</h3>
+          <h3 className="text-xs text-foreground/65 font-medium uppercase tracking-widest mb-6">Two search streams</h3>
           <div className="grid md:grid-cols-2 gap-px bg-border mb-10">
             {/* Values */}
             <div className="bg-white p-8">
@@ -161,29 +161,29 @@ export function FtnCaseStudy({ project, nextProject, prevProject }: FtnCaseStudy
                 {["Social values", "Environmental values", "Business values", "Ingredient values"].map((v) => (
                   <div key={v} className="flex items-center gap-2">
                     <span className="w-1 h-1 rounded-full bg-[#F0531C]/40 shrink-0" />
-                    <p className="text-xs text-foreground/50">{v}</p>
+                    <p className="text-xs text-foreground/65">{v}</p>
                   </div>
                 ))}
               </div>
             </div>
             {/* Product */}
             <div className="bg-white p-8">
-              <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-3">02: Product</p>
+              <p className="text-xs text-foreground/65 font-medium uppercase tracking-widest mb-3">02: Product</p>
               <p className="text-sm font-semibold text-foreground mb-4">Traditional product-led search.</p>
-              <p className="text-xs text-foreground/50 leading-relaxed">Search by product type, category, or keyword. Familiar. Fast. Consistent at every level.</p>
+              <p className="text-xs text-foreground/65 leading-relaxed">Search by product type, category, or keyword. Familiar. Fast. Consistent at every level.</p>
             </div>
           </div>
 
           {/* Convergence */}
           <div className="bg-white rounded-lg p-8 text-center">
             <div className="flex items-center justify-center gap-4 mb-3">
-              <span className="text-xs text-foreground/50 uppercase tracking-widest">Values search</span>
-              <span className="text-foreground/20">→</span>
+              <span className="text-xs text-foreground/65 uppercase tracking-widest">Values search</span>
+              <span className="text-foreground/35">→</span>
               <span className="text-xs text-[#F0531C] font-medium uppercase tracking-widest">Product found</span>
-              <span className="text-foreground/20">←</span>
-              <span className="text-xs text-foreground/50 uppercase tracking-widest">Product search</span>
+              <span className="text-foreground/35">←</span>
+              <span className="text-xs text-foreground/65 uppercase tracking-widest">Product search</span>
             </div>
-            <p className="text-xs text-foreground/50">Both paths lead to the same destination.</p>
+            <p className="text-xs text-foreground/65">Both paths lead to the same destination.</p>
           </div>
         </section>
 
@@ -193,17 +193,17 @@ export function FtnCaseStudy({ project, nextProject, prevProject }: FtnCaseStudy
               <LogoMark size={16} opacity={0.25} />
               <h2 className="text-3xl font-bold text-[#09332C] tracking-tight">Omnichannel collection options</h2>
             </div>
-          <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-10">In progress</p>
+          <p className="text-xs text-foreground/65 font-medium uppercase tracking-widest mb-10">In progress</p>
 
-          <p className="text-base text-foreground/65 leading-relaxed mb-10">
+          <p className="text-base text-foreground/80 leading-relaxed mb-10">
             Faithful to Nature is opening stores at a rapid rate. The platform needed to reflect this, extending beyond its original delivery model into a true omnichannel experience.
           </p>
 
           {/* Existing vs New */}
-          <h3 className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-6">Delivery and collection options</h3>
+          <h3 className="text-xs text-foreground/65 font-medium uppercase tracking-widest mb-6">Delivery and collection options</h3>
           <div className="grid md:grid-cols-2 gap-px bg-border mb-12">
             <div className="bg-white p-8">
-              <h3 className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-5">Existing</h3>
+              <h3 className="text-xs text-foreground/65 font-medium uppercase tracking-widest mb-5">Existing</h3>
               <div className="space-y-3">
                 {[
                   "Economy delivery",
@@ -214,7 +214,7 @@ export function FtnCaseStudy({ project, nextProject, prevProject }: FtnCaseStudy
                 ].map((opt) => (
                   <div key={opt} className="flex items-start gap-3">
                     <span className="w-1.5 h-1.5 rounded-full bg-border mt-[0.35rem] shrink-0" />
-                    <p className="text-sm text-foreground/50">{opt}</p>
+                    <p className="text-sm text-foreground/65">{opt}</p>
                   </div>
                 ))}
               </div>
@@ -228,7 +228,7 @@ export function FtnCaseStudy({ project, nextProject, prevProject }: FtnCaseStudy
                 ].map((opt) => (
                   <div key={opt} className="flex items-start gap-3">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#F0531C] mt-[0.35rem] shrink-0" />
-                    <p className="text-sm text-foreground/65">{opt}</p>
+                    <p className="text-sm text-foreground/80">{opt}</p>
                   </div>
                 ))}
               </div>
@@ -247,7 +247,7 @@ export function FtnCaseStudy({ project, nextProject, prevProject }: FtnCaseStudy
               ].map((item) => (
                 <div key={item} className="flex items-start gap-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#F0531C] mt-[0.4rem] shrink-0" />
-                  <p className="text-sm text-foreground/65 leading-relaxed">{item}</p>
+                  <p className="text-sm text-foreground/80 leading-relaxed">{item}</p>
                 </div>
               ))}
             </div>
@@ -257,7 +257,7 @@ export function FtnCaseStudy({ project, nextProject, prevProject }: FtnCaseStudy
         {/* Outcome */}
         <section className="mb-24 bg-white rounded-lg p-8 md:p-10">
           <h2 className="text-xs text-[#F0531C] font-medium uppercase tracking-widest mb-6">Outcome</h2>
-          <p className="text-base text-foreground/65 leading-relaxed">
+          <p className="text-base text-foreground/80 leading-relaxed">
             Consistent filtering system shipped. Omnichannel collection options in active design. UX practice embedded in a team that had none. Project ongoing.
           </p>
         </section>
@@ -271,8 +271,8 @@ export function FtnCaseStudy({ project, nextProject, prevProject }: FtnCaseStudy
           <div className="space-y-6">
             {project.learnings.map((learning, i) => (
               <div key={i} className="flex items-start gap-6">
-                <span className="text-xs text-foreground/20 font-bold mt-0.5">{String(i + 1).padStart(2, "0")}</span>
-                <p className="text-sm text-foreground/70 leading-relaxed">{learning}</p>
+                <span className="text-xs text-foreground/35 font-bold mt-0.5">{String(i + 1).padStart(2, "0")}</span>
+                <p className="text-sm text-foreground/85 leading-relaxed">{learning}</p>
               </div>
             ))}
           </div>
@@ -287,11 +287,11 @@ export function FtnCaseStudy({ project, nextProject, prevProject }: FtnCaseStudy
             {prevProject ? (
               <Link
                 href={`/projects/${prevProject.slug}`}
-                className="group flex items-center gap-3 text-foreground/50 hover:text-foreground transition-colors duration-200"
+                className="group flex items-center gap-3 text-foreground/65 hover:text-foreground transition-colors duration-200"
               >
                 <ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform duration-200" />
                 <div>
-                  <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest">Previous</p>
+                  <p className="text-xs text-foreground/65 font-medium uppercase tracking-widest">Previous</p>
                   <p className="text-sm text-foreground group-hover:text-[#F0531C] transition-colors duration-200">{prevProject.title}</p>
                 </div>
               </Link>
@@ -299,10 +299,10 @@ export function FtnCaseStudy({ project, nextProject, prevProject }: FtnCaseStudy
             {nextProject && (
               <Link
                 href={`/projects/${nextProject.slug}`}
-                className="group flex items-center gap-3 text-foreground/50 hover:text-foreground transition-colors duration-200 text-right"
+                className="group flex items-center gap-3 text-foreground/65 hover:text-foreground transition-colors duration-200 text-right"
               >
                 <div>
-                  <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest">Next</p>
+                  <p className="text-xs text-foreground/65 font-medium uppercase tracking-widest">Next</p>
                   <p className="text-sm text-foreground group-hover:text-[#F0531C] transition-colors duration-200">{nextProject.title}</p>
                 </div>
                 <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform duration-200" />

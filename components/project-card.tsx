@@ -57,7 +57,7 @@ export function ProjectCard({ project, featured = false }: ProjectCardProps) {
             <h3 className="text-2xl font-bold text-[#09332C] group-hover:text-[#F0531C] transition-colors duration-200 leading-snug mb-2">
               {project.title}
             </h3>
-            <p className="text-sm text-foreground/55 leading-relaxed">
+            <p className="text-sm text-foreground/70 leading-relaxed">
               {project.subtitle}
             </p>
           </div>
@@ -70,7 +70,7 @@ export function ProjectCard({ project, featured = false }: ProjectCardProps) {
             {project.tags.slice(0, 3).map((tag) => (
               <span
                 key={tag}
-                className="text-xs text-[#09332C]/60 bg-[#F7EDDA] rounded-md px-3 h-6 inline-flex items-center whitespace-nowrap"
+                className="text-xs text-[#09332C]/75 bg-[#F7EDDA] rounded-md px-3 h-6 inline-flex items-center whitespace-nowrap"
               >
                 {tag}
               </span>
@@ -81,7 +81,7 @@ export function ProjectCard({ project, featured = false }: ProjectCardProps) {
           {project.outcomes[0] && (
             <div className="pt-4 border-t border-border">
               <p className="text-xs text-[#F0531C] font-medium uppercase tracking-widest mb-1.5">Key outcome</p>
-              <p className="text-sm text-foreground/65 leading-relaxed">{project.outcomes[0]}</p>
+              <p className="text-sm text-foreground/80 leading-relaxed">{project.outcomes[0]}</p>
             </div>
           )}
 

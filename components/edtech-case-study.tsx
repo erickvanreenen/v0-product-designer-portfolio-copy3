@@ -20,7 +20,7 @@ export function EdtechCaseStudy({ project, nextProject, prevProject }: Props) {
         <div className="max-w-5xl mx-auto px-6 py-20 md:py-28">
           <Link
             href="/projects"
-            className="inline-flex items-center gap-2 text-sm text-foreground/50 hover:text-[#F0531C] transition-colors duration-200 mb-16 group"
+            className="inline-flex items-center gap-2 text-sm text-foreground/65 hover:text-[#F0531C] transition-colors duration-200 mb-16 group"
           >
             <ArrowLeft size={16} className="group-hover:-translate-x-0.5 transition-transform duration-200" />
             Back
@@ -28,13 +28,13 @@ export function EdtechCaseStudy({ project, nextProject, prevProject }: Props) {
 
           <div className="flex flex-wrap gap-1.5 mb-6">
             {project.tags.map((tag) => (
-              <span key={tag} className="text-xs text-foreground/40">{tag}</span>
+              <span key={tag} className="text-xs text-foreground/58">{tag}</span>
             ))}
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-[#09332C] tracking-tight mb-4 max-w-2xl">
             {project.title}
           </h1>
-          <p className="text-lg text-foreground/55 max-w-xl leading-relaxed mb-8">
+          <p className="text-lg text-foreground/70 max-w-xl leading-relaxed mb-8">
             {project.subtitle}
           </p>
 
@@ -63,7 +63,7 @@ export function EdtechCaseStudy({ project, nextProject, prevProject }: Props) {
               } ${
                 i === 2 || i === 3 ? "border-t md:border-t-0" : ""
               }`}>
-                <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-2">{item.label}</p>
+                <p className="text-xs text-foreground/65 font-medium uppercase tracking-widest mb-2">{item.label}</p>
                 <p className="text-sm text-foreground break-words">{item.value}</p>
               </div>
             ))}
@@ -78,10 +78,10 @@ export function EdtechCaseStudy({ project, nextProject, prevProject }: Props) {
           <p className="text-xl text-foreground font-medium leading-relaxed mb-6">
             Visual design for a Business Systems Analysis course on Masterstart, Stellenbosch Business School's online platform.
           </p>
-          <p className="text-base text-foreground/65 leading-relaxed mb-5">
+          <p className="text-base text-foreground/80 leading-relaxed mb-5">
             I worked alongside a subject matter expert and a learning designer. My role was visual and layout design: generating infographic assets that made complex BA concepts clear and engaging.
           </p>
-          <p className="text-base text-foreground/65 leading-relaxed">
+          <p className="text-base text-foreground/80 leading-relaxed">
             Seeing course content come to life in Articulate Rise is something I genuinely enjoy. This project sits at the intersection of visual communication, instructional logic, and layout discipline.
           </p>
         </section>
@@ -92,15 +92,15 @@ export function EdtechCaseStudy({ project, nextProject, prevProject }: Props) {
               <LogoMark size={16} opacity={0.25} />
               <h2 className="text-3xl font-bold text-[#09332C] tracking-tight">Brief</h2>
             </div>
-          <p className="text-base text-foreground/65 leading-relaxed mb-10">
+          <p className="text-base text-foreground/80 leading-relaxed mb-10">
             Create visual and infographic assets for a Business Systems Analysis course built in Articulate Rise. Work within the learning designer's content structure. Communicate complex conceptual models clearly and accessibly.
           </p>
 
           <div className="space-y-6">
             {project.goals.map((goal, i) => (
               <div key={i} className="flex items-start gap-6">
-                <span className="text-xs text-foreground/20 font-bold mt-0.5 shrink-0">{String(i + 1).padStart(2, "0")}</span>
-                <p className="text-sm text-foreground/70 leading-relaxed">{goal}</p>
+                <span className="text-xs text-foreground/35 font-bold mt-0.5 shrink-0">{String(i + 1).padStart(2, "0")}</span>
+                <p className="text-sm text-foreground/85 leading-relaxed">{goal}</p>
               </div>
             ))}
           </div>
@@ -124,7 +124,7 @@ export function EdtechCaseStudy({ project, nextProject, prevProject }: Props) {
               <div key={item.label} className="bg-white p-8">
                 <p className="text-xs text-[#F0531C] font-medium uppercase tracking-widest mb-2">{item.label}</p>
                 <p className="text-sm font-semibold text-foreground mb-2">{item.title}</p>
-                <p className="text-xs text-foreground/50 leading-relaxed">{item.desc}</p>
+                <p className="text-xs text-foreground/65 leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -139,8 +139,8 @@ export function EdtechCaseStudy({ project, nextProject, prevProject }: Props) {
           <div className="space-y-6">
             {project.insights.map((insight, i) => (
               <div key={i} className="flex items-start gap-6">
-                <span className="text-xs text-foreground/20 font-bold mt-0.5 shrink-0">{String(i + 1).padStart(2, "0")}</span>
-                <p className="text-sm text-foreground/70 leading-relaxed">{insight}</p>
+                <span className="text-xs text-foreground/35 font-bold mt-0.5 shrink-0">{String(i + 1).padStart(2, "0")}</span>
+                <p className="text-sm text-foreground/85 leading-relaxed">{insight}</p>
               </div>
             ))}
           </div>
@@ -170,7 +170,7 @@ export function EdtechCaseStudy({ project, nextProject, prevProject }: Props) {
                   <div className="h-5 bg-[#F0531C]/25 rounded" />
                 </div>
                 <div className="flex items-center gap-2">
-                  <p className="text-xs text-[#09332C]/40 uppercase tracking-widest group-hover:text-[#09332C]/70 transition-colors duration-200">Open in Articulate Rise</p>
+                  <p className="text-xs text-[#09332C]/58 uppercase tracking-widest group-hover:text-[#09332C]/85 transition-colors duration-200">Open in Articulate Rise</p>
                   <ArrowUpRight size={12} className="text-[#09332C]/30 group-hover:text-[#F0531C] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-200" />
                 </div>
               </div>
@@ -185,7 +185,7 @@ export function EdtechCaseStudy({ project, nextProject, prevProject }: Props) {
             {project.outcomes.map((outcome, i) => (
               <div key={i} className="flex items-start gap-3">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#F0531C] mt-[0.4rem] shrink-0" />
-                <p className="text-sm text-foreground/65 leading-relaxed">{outcome}</p>
+                <p className="text-sm text-foreground/80 leading-relaxed">{outcome}</p>
               </div>
             ))}
           </div>
@@ -200,8 +200,8 @@ export function EdtechCaseStudy({ project, nextProject, prevProject }: Props) {
           <div className="space-y-6">
             {project.learnings.map((learning, i) => (
               <div key={i} className="flex items-start gap-6">
-                <span className="text-xs text-foreground/20 font-bold mt-0.5 shrink-0">{String(i + 1).padStart(2, "0")}</span>
-                <p className="text-sm text-foreground/70 leading-relaxed">{learning}</p>
+                <span className="text-xs text-foreground/35 font-bold mt-0.5 shrink-0">{String(i + 1).padStart(2, "0")}</span>
+                <p className="text-sm text-foreground/85 leading-relaxed">{learning}</p>
               </div>
             ))}
           </div>
@@ -216,11 +216,11 @@ export function EdtechCaseStudy({ project, nextProject, prevProject }: Props) {
             {prevProject ? (
               <Link
                 href={`/projects/${prevProject.slug}`}
-                className="group flex items-center gap-3 text-foreground/50 hover:text-foreground transition-colors duration-200"
+                className="group flex items-center gap-3 text-foreground/65 hover:text-foreground transition-colors duration-200"
               >
                 <ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform duration-200" />
                 <div>
-                  <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest">Previous</p>
+                  <p className="text-xs text-foreground/65 font-medium uppercase tracking-widest">Previous</p>
                   <p className="text-sm text-foreground group-hover:text-[#F0531C] transition-colors duration-200">{prevProject.title}</p>
                 </div>
               </Link>
@@ -228,10 +228,10 @@ export function EdtechCaseStudy({ project, nextProject, prevProject }: Props) {
             {nextProject ? (
               <Link
                 href={`/projects/${nextProject.slug}`}
-                className="group flex items-center gap-3 text-foreground/50 hover:text-foreground transition-colors duration-200 text-right"
+                className="group flex items-center gap-3 text-foreground/65 hover:text-foreground transition-colors duration-200 text-right"
               >
                 <div>
-                  <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest">Next</p>
+                  <p className="text-xs text-foreground/65 font-medium uppercase tracking-widest">Next</p>
                   <p className="text-sm text-foreground group-hover:text-[#F0531C] transition-colors duration-200">{nextProject.title}</p>
                 </div>
                 <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform duration-200" />

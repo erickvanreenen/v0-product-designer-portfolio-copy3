@@ -23,13 +23,13 @@ export function FlanksourceCaseStudy({ project, nextProject, prevProject }: Prop
         <div className="max-w-5xl mx-auto px-6 py-20 md:py-28">
           <div className="flex flex-wrap gap-1.5 mb-6">
             {project.tags.map((tag) => (
-              <span key={tag} className="text-xs text-foreground/40">{tag}</span>
+              <span key={tag} className="text-xs text-foreground/58">{tag}</span>
             ))}
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-[#09332C] tracking-tight mb-4 max-w-2xl">
             {project.title}
           </h1>
-          <p className="text-lg text-foreground/55 max-w-xl leading-relaxed">
+          <p className="text-lg text-foreground/70 max-w-xl leading-relaxed">
             {project.subtitle}
           </p>
 
@@ -50,7 +50,7 @@ export function FlanksourceCaseStudy({ project, nextProject, prevProject }: Prop
               } ${
                 i === 2 || i === 3 ? "border-t md:border-t-0" : ""
               }`}>
-                <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-2">{item.label}</p>
+                <p className="text-xs text-foreground/65 font-medium uppercase tracking-widest mb-2">{item.label}</p>
                 {item.content}
               </div>
             ))}
@@ -66,7 +66,7 @@ export function FlanksourceCaseStudy({ project, nextProject, prevProject }: Prop
             Flanksource began as a Kubernetes consulting firm. Teams were drowning in data but lacked context.{" "}
             <strong>Mission Control was built to close that gap.</strong>
           </p>
-          <p className="text-base text-foreground/65 leading-relaxed">
+          <p className="text-base text-foreground/80 leading-relaxed">
             They had metrics dashboards, log tools, and Git for config, but nothing tying them together. Engineers needed one place to understand the health of their systems and act on it.
           </p>
         </section>
@@ -89,7 +89,7 @@ export function FlanksourceCaseStudy({ project, nextProject, prevProject }: Prop
               ].map((item) => (
                 <div key={item} className="flex items-start gap-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#F0531C] mt-[0.4rem] shrink-0" />
-                  <p className="text-sm text-foreground/65 leading-relaxed">{item}</p>
+                  <p className="text-sm text-foreground/80 leading-relaxed">{item}</p>
                 </div>
               ))}
             </div>
@@ -104,12 +104,12 @@ export function FlanksourceCaseStudy({ project, nextProject, prevProject }: Prop
             </div>
           <p className="text-xs text-[#F0531C] font-medium uppercase tracking-widest mb-10">Dashboard redesign</p>
 
-          <p className="text-base text-foreground/65 leading-relaxed mb-10">
+          <p className="text-base text-foreground/80 leading-relaxed mb-10">
             Design a single dashboard that surfaces actionable insights and system health, consolidating five major platform components into one scannable view.
           </p>
 
           {/* Five components */}
-          <h3 className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-6">Five components to unify</h3>
+          <h3 className="text-xs text-foreground/65 font-medium uppercase tracking-widest mb-6">Five components to unify</h3>
           <div className="grid md:grid-cols-2 gap-px bg-border mb-12">
             {[
               { label: "01", title: "Topology", desc: "System relationships and infrastructure map." },
@@ -121,7 +121,7 @@ export function FlanksourceCaseStudy({ project, nextProject, prevProject }: Prop
               <div key={item.label} className="bg-white p-8">
                 <p className="text-xs text-[#F0531C] font-medium uppercase tracking-widest mb-2">{item.label}</p>
                 <p className="text-sm font-semibold text-foreground mb-2">{item.title}</p>
-                <p className="text-xs text-foreground/50 leading-relaxed">{item.desc}</p>
+                <p className="text-xs text-foreground/65 leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -141,10 +141,10 @@ export function FlanksourceCaseStudy({ project, nextProject, prevProject }: Prop
               { step: "04", label: "Structural design", desc: "Produced final dashboard representations for review with the Flanksource product team." },
             ].map((item) => (
               <div key={item.step} className="flex items-start gap-6">
-                <span className="text-xs text-foreground/20 font-bold mt-0.5 shrink-0">{item.step}</span>
+                <span className="text-xs text-foreground/35 font-bold mt-0.5 shrink-0">{item.step}</span>
                 <div>
                   <p className="text-sm font-semibold text-foreground mb-1">{item.label}</p>
-                  <p className="text-sm text-foreground/65 leading-relaxed">{item.desc}</p>
+                  <p className="text-sm text-foreground/80 leading-relaxed">{item.desc}</p>
                 </div>
               </div>
             ))}
@@ -164,7 +164,7 @@ export function FlanksourceCaseStudy({ project, nextProject, prevProject }: Prop
           {/* Side by side */}
           <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-4">Before</p>
+              <p className="text-xs text-foreground/65 font-medium uppercase tracking-widest mb-4">Before</p>
               <div className="border border-border overflow-hidden">
                 <Image
                   src="/images/flanksource-after.svg"
@@ -193,7 +193,7 @@ export function FlanksourceCaseStudy({ project, nextProject, prevProject }: Prop
           <div className="flex justify-end mt-4">
             <button
               onClick={() => setExpanded(true)}
-              className="inline-flex items-center gap-2 text-xs text-foreground/50 hover:text-[#F0531C] transition-colors duration-200 group"
+              className="inline-flex items-center gap-2 text-xs text-foreground/65 hover:text-[#F0531C] transition-colors duration-200 group"
             >
               <Maximize2 size={12} className="group-hover:scale-110 transition-transform duration-200" />
               Expand views
@@ -265,8 +265,8 @@ export function FlanksourceCaseStudy({ project, nextProject, prevProject }: Prop
           <div className="space-y-6">
             {project.insights.map((insight, i) => (
               <div key={i} className="flex items-start gap-6">
-                <span className="text-xs text-foreground/20 font-bold mt-0.5 shrink-0">{String(i + 1).padStart(2, "0")}</span>
-                <p className="text-sm text-foreground/70 leading-relaxed">{insight}</p>
+                <span className="text-xs text-foreground/35 font-bold mt-0.5 shrink-0">{String(i + 1).padStart(2, "0")}</span>
+                <p className="text-sm text-foreground/85 leading-relaxed">{insight}</p>
               </div>
             ))}
           </div>
@@ -279,7 +279,7 @@ export function FlanksourceCaseStudy({ project, nextProject, prevProject }: Prop
             {project.outcomes.map((outcome, i) => (
               <div key={i} className="flex items-start gap-3">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#F0531C] mt-[0.4rem] shrink-0" />
-                <p className="text-sm text-foreground/65 leading-relaxed">{outcome}</p>
+                <p className="text-sm text-foreground/80 leading-relaxed">{outcome}</p>
               </div>
             ))}
           </div>
@@ -294,8 +294,8 @@ export function FlanksourceCaseStudy({ project, nextProject, prevProject }: Prop
           <div className="space-y-6">
             {project.learnings.map((learning, i) => (
               <div key={i} className="flex items-start gap-6">
-                <span className="text-xs text-foreground/20 font-bold mt-0.5 shrink-0">{String(i + 1).padStart(2, "0")}</span>
-                <p className="text-sm text-foreground/70 leading-relaxed">{learning}</p>
+                <span className="text-xs text-foreground/35 font-bold mt-0.5 shrink-0">{String(i + 1).padStart(2, "0")}</span>
+                <p className="text-sm text-foreground/85 leading-relaxed">{learning}</p>
               </div>
             ))}
           </div>
@@ -310,11 +310,11 @@ export function FlanksourceCaseStudy({ project, nextProject, prevProject }: Prop
             {prevProject ? (
               <Link
                 href={`/projects/${prevProject.slug}`}
-                className="group flex items-center gap-3 text-foreground/50 hover:text-foreground transition-colors duration-200"
+                className="group flex items-center gap-3 text-foreground/65 hover:text-foreground transition-colors duration-200"
               >
                 <ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform duration-200" />
                 <div>
-                  <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest">Previous</p>
+                  <p className="text-xs text-foreground/65 font-medium uppercase tracking-widest">Previous</p>
                   <p className="text-sm text-foreground group-hover:text-[#F0531C] transition-colors duration-200">{prevProject.title}</p>
                 </div>
               </Link>
@@ -322,10 +322,10 @@ export function FlanksourceCaseStudy({ project, nextProject, prevProject }: Prop
             {nextProject ? (
               <Link
                 href={`/projects/${nextProject.slug}`}
-                className="group flex items-center gap-3 text-foreground/50 hover:text-foreground transition-colors duration-200 text-right"
+                className="group flex items-center gap-3 text-foreground/65 hover:text-foreground transition-colors duration-200 text-right"
               >
                 <div>
-                  <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest">Next</p>
+                  <p className="text-xs text-foreground/65 font-medium uppercase tracking-widest">Next</p>
                   <p className="text-sm text-foreground group-hover:text-[#F0531C] transition-colors duration-200">{nextProject.title}</p>
                 </div>
                 <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform duration-200" />

@@ -114,7 +114,7 @@ export function EduvosCaseStudy({ project, nextProject, prevProject }: EduvosCas
         <div className="max-w-5xl mx-auto px-6 py-20 md:py-28">
           <Link
             href="/projects"
-            className="inline-flex items-center gap-2 text-sm text-foreground/50 hover:text-[#F0531C] transition-colors duration-200 mb-16 group"
+            className="inline-flex items-center gap-2 text-sm text-foreground/65 hover:text-[#F0531C] transition-colors duration-200 mb-16 group"
           >
             <ArrowLeft size={16} className="group-hover:-translate-x-0.5 transition-transform duration-200" />
             Back
@@ -122,14 +122,14 @@ export function EduvosCaseStudy({ project, nextProject, prevProject }: EduvosCas
 
           <div className="flex flex-wrap gap-1.5 mb-6">
             {project.tags.map((tag) => (
-              <span key={tag} className="text-xs text-foreground/40">{tag}</span>
+              <span key={tag} className="text-xs text-foreground/58">{tag}</span>
             ))}
           </div>
 
           <h1 className="text-4xl md:text-5xl font-bold text-[#09332C] tracking-tight mb-4 max-w-2xl">
             {project.title}
           </h1>
-          <p className="text-lg text-foreground/55 max-w-xl leading-relaxed">
+          <p className="text-lg text-foreground/70 max-w-xl leading-relaxed">
             {project.subtitle}
           </p>
 
@@ -146,7 +146,7 @@ export function EduvosCaseStudy({ project, nextProject, prevProject }: EduvosCas
               } ${
                 i === 2 || i === 3 ? "border-t md:border-t-0" : ""
               }`}>
-                <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-2">{item.label}</p>
+                <p className="text-xs text-foreground/65 font-medium uppercase tracking-widest mb-2">{item.label}</p>
                 <p className="text-sm text-foreground break-words">{item.value}</p>
               </div>
             ))}
@@ -157,10 +157,10 @@ export function EduvosCaseStudy({ project, nextProject, prevProject }: EduvosCas
       {/* Outcomes */}
       <section className="bg-[#f0f0f0]">
         <div className="max-w-5xl mx-auto px-6 py-10">
-          <p className="text-xs text-foreground/40 font-medium uppercase tracking-widest mb-6">Outcomes</p>
+          <p className="text-xs text-foreground/58 font-medium uppercase tracking-widest mb-6">Outcomes</p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {project.outcomes.map((outcome, i) => (
-              <p key={i} className="text-sm text-foreground/70 leading-relaxed">{outcome}</p>
+              <p key={i} className="text-sm text-foreground/85 leading-relaxed">{outcome}</p>
             ))}
           </div>
         </div>
@@ -174,13 +174,13 @@ export function EduvosCaseStudy({ project, nextProject, prevProject }: EduvosCas
           <p className="text-xl text-foreground font-medium leading-relaxed mb-6">
             I started doing content writing and course creation at Eduvos in May 2024.
           </p>
-          <p className="text-base text-foreground/65 leading-relaxed mb-5">
+          <p className="text-base text-foreground/80 leading-relaxed mb-5">
             I was tasked to merge and consolidate the UX and UI modules into the three-year Digital Design degree programme as a unified module.
           </p>
-          <p className="text-base text-foreground/65 leading-relaxed mb-5">
+          <p className="text-base text-foreground/80 leading-relaxed mb-5">
             It involved evaluating the relevance of existing content, determining what to retain, discard, or introduce. This included crafting both formative and summative assessments, as well as developing lesson content through educational writing and design.
           </p>
-          <p className="text-base text-foreground/65 leading-relaxed">
+          <p className="text-base text-foreground/80 leading-relaxed">
             I enjoyed this work as it challenged me to really think and assess what the most relevant things are to introduce into the learning path.
           </p>
         </section>
@@ -202,7 +202,7 @@ export function EduvosCaseStudy({ project, nextProject, prevProject }: EduvosCas
               ].map((item) => (
                 <div key={item} className="flex items-start gap-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#F0531C] mt-[0.4rem] shrink-0" />
-                  <p className="text-sm text-foreground/65 leading-relaxed">{item}</p>
+                  <p className="text-sm text-foreground/80 leading-relaxed">{item}</p>
                 </div>
               ))}
             </div>
@@ -215,10 +215,10 @@ export function EduvosCaseStudy({ project, nextProject, prevProject }: EduvosCas
             <LogoMark size={16} opacity={0.25} />
             <h2 className="text-3xl font-bold text-[#09332C] tracking-tight">Approach</h2>
           </div>
-          <p className="text-base text-foreground/65 leading-relaxed mb-6">
+          <p className="text-base text-foreground/80 leading-relaxed mb-6">
             Structured the unified module so each exercise builds progressively toward the summative assessment. Clear learning objectives anchored every piece of content.
           </p>
-          <p className="text-base text-foreground/65 leading-relaxed">
+          <p className="text-base text-foreground/80 leading-relaxed">
             Explored how to balance theory with practical application across six weeks of formative exercises. Each brief was designed to mirror real industry workflows, culminating in a live presentation and full portfolio submission.
           </p>
         </section>
@@ -231,8 +231,8 @@ export function EduvosCaseStudy({ project, nextProject, prevProject }: EduvosCas
           </div>
 
           <div className="bg-[#f0f0f0] rounded-lg p-8 md:p-10 mb-12">
-            <p className="text-xs text-foreground/40 font-medium uppercase tracking-widest mb-4">Learning objective</p>
-            <p className="text-base text-foreground/70 leading-relaxed">
+            <p className="text-xs text-foreground/58 font-medium uppercase tracking-widest mb-4">Learning objective</p>
+            <p className="text-base text-foreground/85 leading-relaxed">
               This brief aims to immerse students in the core principles of UI and UX design, applying them in a real-world scenario by revamping a non-profit organisation's website. Through a series of hands-on exercises, students will develop user personas, create mid-fidelity prototypes, and select the best platform for implementation. The project culminates in usability testing, ensuring the design enhances user interaction while staying true to the non-profit's mission and brand identity.
             </p>
           </div>
@@ -241,12 +241,12 @@ export function EduvosCaseStudy({ project, nextProject, prevProject }: EduvosCas
           <div className="grid md:grid-cols-2 gap-6 mb-12">
             <div className="bg-white rounded-lg p-8">
               <p className="text-xs text-[#F0531C] font-medium uppercase tracking-widest mb-4">Brief topic</p>
-              <p className="text-sm text-foreground/65 leading-relaxed">
+              <p className="text-sm text-foreground/80 leading-relaxed">
                 Identify an existing non-profit with a poorly designed website and revamp it using modern UI/UX principles. Includes personas, mid-fidelity prototype, usability testing, and a live presentation.
               </p>
             </div>
             <div className="bg-white rounded-lg p-8">
-              <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-4">Delivery requirements</p>
+              <p className="text-xs text-foreground/65 font-medium uppercase tracking-widest mb-4">Delivery requirements</p>
               <div className="space-y-3">
                 {[
                   "Digital portfolio with all deliverables",
@@ -255,7 +255,7 @@ export function EduvosCaseStudy({ project, nextProject, prevProject }: EduvosCas
                 ].map((req) => (
                   <div key={req} className="flex items-start gap-3">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#09332C]/20 mt-[0.4rem] shrink-0" />
-                    <p className="text-xs text-foreground/60 leading-relaxed">{req}</p>
+                    <p className="text-xs text-foreground/75 leading-relaxed">{req}</p>
                   </div>
                 ))}
               </div>
@@ -271,27 +271,27 @@ export function EduvosCaseStudy({ project, nextProject, prevProject }: EduvosCas
               <div key={ex.week} className="bg-white rounded-lg p-8 md:p-10">
                 <div className="flex items-center gap-3 mb-5">
                   <span className="text-xs text-[#F0531C] font-medium uppercase tracking-widest">{ex.week}</span>
-                  <span className="text-foreground/20">/</span>
-                  <span className="text-xs text-foreground/40 font-medium uppercase tracking-widest">Exercise {i + 1}</span>
+                  <span className="text-foreground/35">/</span>
+                  <span className="text-xs text-foreground/58 font-medium uppercase tracking-widest">Exercise {i + 1}</span>
                 </div>
                 <h3 className="text-lg font-bold text-[#09332C] tracking-tight mb-2">{ex.title}</h3>
-                <p className="text-sm text-foreground/50 leading-relaxed mb-6">{ex.objective}</p>
+                <p className="text-sm text-foreground/65 leading-relaxed mb-6">{ex.objective}</p>
                 <div className="space-y-3 mb-8">
                   {ex.instructions.map((ins) => (
                     <div key={ins} className="flex items-start gap-3">
                       <span className="w-1.5 h-1.5 rounded-full bg-[#F0531C]/40 mt-[0.4rem] shrink-0" />
-                      <p className="text-sm text-foreground/65 leading-relaxed">{ins}</p>
+                      <p className="text-sm text-foreground/80 leading-relaxed">{ins}</p>
                     </div>
                   ))}
                 </div>
                 <div className="grid md:grid-cols-2 gap-4 pt-6 border-t border-border">
                   <div>
-                    <p className="text-xs text-foreground/40 font-medium uppercase tracking-widest mb-2">Deliverable</p>
-                    <p className="text-xs text-foreground/60 leading-relaxed">{ex.deliverable}</p>
+                    <p className="text-xs text-foreground/58 font-medium uppercase tracking-widest mb-2">Deliverable</p>
+                    <p className="text-xs text-foreground/75 leading-relaxed">{ex.deliverable}</p>
                   </div>
                   <div>
-                    <p className="text-xs text-foreground/40 font-medium uppercase tracking-widest mb-2">Tools</p>
-                    <p className="text-xs text-foreground/60 leading-relaxed">{ex.tools}</p>
+                    <p className="text-xs text-foreground/58 font-medium uppercase tracking-widest mb-2">Tools</p>
+                    <p className="text-xs text-foreground/75 leading-relaxed">{ex.tools}</p>
                   </div>
                 </div>
               </div>
@@ -307,27 +307,27 @@ export function EduvosCaseStudy({ project, nextProject, prevProject }: EduvosCas
               <div key={ex.week} className="bg-[#E2F5EF] rounded-lg p-8 md:p-10">
                 <div className="flex items-center gap-3 mb-5">
                   <span className="text-xs text-[#F0531C] font-medium uppercase tracking-widest">{ex.week}</span>
-                  <span className="text-[#09332C]/20">/</span>
-                  <span className="text-xs text-[#09332C]/40 font-medium uppercase tracking-widest">Exercise {i + 7}</span>
+                  <span className="text-[#09332C]/35">/</span>
+                  <span className="text-xs text-[#09332C]/58 font-medium uppercase tracking-widest">Exercise {i + 7}</span>
                 </div>
                 <h3 className="text-lg font-bold text-[#09332C] tracking-tight mb-2">{ex.title}</h3>
-                <p className="text-sm text-[#09332C]/55 leading-relaxed mb-6">{ex.objective}</p>
+                <p className="text-sm text-[#09332C]/70 leading-relaxed mb-6">{ex.objective}</p>
                 <div className="space-y-3 mb-8">
                   {ex.instructions.map((ins) => (
                     <div key={ins} className="flex items-start gap-3">
                       <span className="w-1.5 h-1.5 rounded-full bg-[#F0531C]/50 mt-[0.4rem] shrink-0" />
-                      <p className="text-sm text-[#09332C]/65 leading-relaxed">{ins}</p>
+                      <p className="text-sm text-[#09332C]/80 leading-relaxed">{ins}</p>
                     </div>
                   ))}
                 </div>
                 <div className="grid md:grid-cols-2 gap-4 pt-6 border-t border-[#09332C]/10">
                   <div>
                     <p className="text-xs text-[#F0531C] font-medium uppercase tracking-widest mb-2">Deliverable</p>
-                    <p className="text-xs text-[#09332C]/60 leading-relaxed">{ex.deliverable}</p>
+                    <p className="text-xs text-[#09332C]/75 leading-relaxed">{ex.deliverable}</p>
                   </div>
                   <div>
                     <p className="text-xs text-[#F0531C] font-medium uppercase tracking-widest mb-2">Tools</p>
-                    <p className="text-xs text-[#09332C]/60 leading-relaxed">{ex.tools}</p>
+                    <p className="text-xs text-[#09332C]/75 leading-relaxed">{ex.tools}</p>
                   </div>
                 </div>
               </div>
@@ -338,7 +338,7 @@ export function EduvosCaseStudy({ project, nextProject, prevProject }: EduvosCas
         {/* Outcome */}
         <section className="mb-24 bg-white rounded-lg p-8 md:p-10">
           <p className="text-xs text-[#F0531C] font-medium uppercase tracking-widest mb-6">Outcome</p>
-          <p className="text-base text-foreground/65 leading-relaxed">{project.outcome}</p>
+          <p className="text-base text-foreground/80 leading-relaxed">{project.outcome}</p>
         </section>
 
         {/* Reflection */}
@@ -350,8 +350,8 @@ export function EduvosCaseStudy({ project, nextProject, prevProject }: EduvosCas
           <div className="space-y-6">
             {project.learnings.map((learning, i) => (
               <div key={i} className="flex items-start gap-6">
-                <span className="text-xs text-foreground/20 font-bold mt-0.5">{String(i + 1).padStart(2, "0")}</span>
-                <p className="text-sm text-foreground/70 leading-relaxed">{learning}</p>
+                <span className="text-xs text-foreground/35 font-bold mt-0.5">{String(i + 1).padStart(2, "0")}</span>
+                <p className="text-sm text-foreground/85 leading-relaxed">{learning}</p>
               </div>
             ))}
           </div>
@@ -366,11 +366,11 @@ export function EduvosCaseStudy({ project, nextProject, prevProject }: EduvosCas
             {prevProject ? (
               <Link
                 href={`/projects/${prevProject.slug}`}
-                className="group flex items-center gap-3 text-foreground/50 hover:text-foreground transition-colors duration-200"
+                className="group flex items-center gap-3 text-foreground/65 hover:text-foreground transition-colors duration-200"
               >
                 <ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform duration-200" />
                 <div>
-                  <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest">Previous</p>
+                  <p className="text-xs text-foreground/65 font-medium uppercase tracking-widest">Previous</p>
                   <p className="text-sm text-foreground group-hover:text-[#F0531C] transition-colors duration-200">{prevProject.title}</p>
                 </div>
               </Link>
@@ -378,10 +378,10 @@ export function EduvosCaseStudy({ project, nextProject, prevProject }: EduvosCas
             {nextProject && (
               <Link
                 href={`/projects/${nextProject.slug}`}
-                className="group flex items-center gap-3 text-foreground/50 hover:text-foreground transition-colors duration-200 text-right"
+                className="group flex items-center gap-3 text-foreground/65 hover:text-foreground transition-colors duration-200 text-right"
               >
                 <div>
-                  <p className="text-xs text-foreground/50 font-medium uppercase tracking-widest">Next</p>
+                  <p className="text-xs text-foreground/65 font-medium uppercase tracking-widest">Next</p>
                   <p className="text-sm text-foreground group-hover:text-[#F0531C] transition-colors duration-200">{nextProject.title}</p>
                 </div>
                 <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform duration-200" />

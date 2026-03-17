@@ -18,7 +18,7 @@ export function TagFilter({ tags, activeTag, onTagChange }: TagFilterProps) {
           "text-sm px-4 py-2 rounded-full border transition-all duration-200",
           activeTag === null
             ? "bg-[#F0531C] text-white border-[#F0531C]"
-            : "bg-transparent text-foreground/60 border-border"
+            : "bg-transparent text-foreground/75 border-border"
         )}
       >
         All
@@ -31,7 +31,7 @@ export function TagFilter({ tags, activeTag, onTagChange }: TagFilterProps) {
             "text-sm px-4 py-2 rounded-full border transition-all duration-200",
             activeTag === tag
               ? "bg-[#F0531C] text-white border-[#F0531C]"
-              : "bg-transparent text-foreground/60 border-border"
+              : "bg-transparent text-foreground/75 border-border"
           )}
         >
           {tag}
