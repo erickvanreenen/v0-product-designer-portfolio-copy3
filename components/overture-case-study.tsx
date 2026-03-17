@@ -157,20 +157,20 @@ export function OvertureCaseStudy({ project, nextProject, prevProject }: Overtur
             rel="noopener noreferrer"
             className="block group"
           >
-            <div className="bg-[#09332C] rounded-lg px-8 py-14 flex flex-col items-center justify-center text-center group-hover:bg-[#09332C]/90 transition-colors duration-300">
+            <div className="bg-[#E2F5EF] rounded-lg px-8 py-14 flex flex-col items-center justify-center text-center group-hover:bg-[#E2F5EF]/70 transition-colors duration-300">
               {/* Phone outline */}
-              <div className="w-20 h-36 border-2 border-[#F7EDDA]/15 rounded-2xl mb-8 flex flex-col items-center justify-between py-3 group-hover:border-[#F7EDDA]/30 transition-colors duration-300">
-                <div className="w-5 h-1 bg-[#F7EDDA]/20 rounded-full" />
+              <div className="w-20 h-36 border-2 border-[#09332C]/15 rounded-2xl mb-8 flex flex-col items-center justify-between py-3 group-hover:border-[#09332C]/25 transition-colors duration-300">
+                <div className="w-5 h-1 bg-[#09332C]/20 rounded-full" />
                 <div className="space-y-1.5 w-full px-2">
-                  <div className="h-1 bg-[#F7EDDA]/10 rounded w-full" />
-                  <div className="h-1 bg-[#F7EDDA]/10 rounded w-3/4" />
+                  <div className="h-1 bg-[#09332C]/10 rounded w-full" />
+                  <div className="h-1 bg-[#09332C]/10 rounded w-3/4" />
                   <div className="h-4 bg-[#F0531C]/25 rounded mt-2" />
                 </div>
-                <div className="w-4 h-4 rounded-full border border-[#F7EDDA]/15" />
+                <div className="w-4 h-4 rounded-full border border-[#09332C]/15" />
               </div>
               <div className="flex items-center gap-2">
-                <p className="text-xs text-[#F7EDDA]/40 uppercase tracking-widest group-hover:text-[#F7EDDA]/70 transition-colors duration-200">Open prototype</p>
-                <ArrowUpRight size={12} className="text-[#F7EDDA]/30 group-hover:text-[#F0531C] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-200" />
+                <p className="text-xs text-[#09332C]/40 uppercase tracking-widest group-hover:text-[#09332C]/70 transition-colors duration-200">Open prototype</p>
+                <ArrowUpRight size={12} className="text-[#09332C]/30 group-hover:text-[#F0531C] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-200" />
               </div>
             </div>
           </a>

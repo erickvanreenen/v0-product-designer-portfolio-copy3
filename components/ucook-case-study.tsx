@@ -367,7 +367,7 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
                     ))}
                   </div>
                   <div className="flex items-center gap-1.5 shrink-0">
-                    <span className="text-xs px-3 py-1.5 bg-[#09332C] text-[#F7EDDA]/70 rounded font-medium">Plans</span>
+                    <span className="text-xs px-3 py-1.5 bg-[#E2F5EF] text-[#09332C]/70 rounded font-medium">Plans</span>
                     <span className="text-foreground/15 text-xs">→</span>
                     <span className="text-xs px-3 py-1.5 border border-[#F0531C]/25 text-[#F0531C] rounded font-medium">Activated</span>
                   </div>

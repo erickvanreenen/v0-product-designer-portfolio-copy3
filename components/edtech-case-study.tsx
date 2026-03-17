@@ -138,19 +138,19 @@ export function EdtechCaseStudy({ project, nextProject, prevProject }: Props) {
               rel="noopener noreferrer"
               className="block group"
             >
-              <div className="bg-[#09332C] rounded-lg px-8 py-14 flex flex-col items-center justify-center text-center group-hover:bg-[#09332C]/90 transition-colors duration-300">
+              <div className="bg-[#E2F5EF] rounded-lg px-8 py-14 flex flex-col items-center justify-center text-center group-hover:bg-[#E2F5EF]/70 transition-colors duration-300">
                 {/* Abstract content indicator */}
-                <div className="w-40 h-24 border border-[#F7EDDA]/10 rounded-lg mb-8 flex flex-col justify-between p-4 group-hover:border-[#F7EDDA]/25 transition-colors duration-300">
+                <div className="w-40 h-24 border border-[#09332C]/10 rounded-lg mb-8 flex flex-col justify-between p-4 group-hover:border-[#09332C]/20 transition-colors duration-300">
                   <div className="space-y-1.5">
-                    <div className="h-1 bg-[#F7EDDA]/10 rounded w-full" />
-                    <div className="h-1 bg-[#F7EDDA]/10 rounded w-4/5" />
-                    <div className="h-1 bg-[#F7EDDA]/10 rounded w-3/5" />
+                    <div className="h-1 bg-[#09332C]/10 rounded w-full" />
+                    <div className="h-1 bg-[#09332C]/10 rounded w-4/5" />
+                    <div className="h-1 bg-[#09332C]/10 rounded w-3/5" />
                   </div>
                   <div className="h-5 bg-[#F0531C]/25 rounded" />
                 </div>
                 <div className="flex items-center gap-2">
-                  <p className="text-xs text-[#F7EDDA]/40 uppercase tracking-widest group-hover:text-[#F7EDDA]/70 transition-colors duration-200">Open in Articulate Rise</p>
-                  <ArrowUpRight size={12} className="text-[#F7EDDA]/30 group-hover:text-[#F0531C] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-200" />
+                  <p className="text-xs text-[#09332C]/40 uppercase tracking-widest group-hover:text-[#09332C]/70 transition-colors duration-200">Open in Articulate Rise</p>
+                  <ArrowUpRight size={12} className="text-[#09332C]/30 group-hover:text-[#F0531C] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-200" />
                 </div>
               </div>
             </a>

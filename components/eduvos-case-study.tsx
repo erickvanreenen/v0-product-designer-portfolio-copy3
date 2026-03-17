@@ -304,30 +304,30 @@ export function EduvosCaseStudy({ project, nextProject, prevProject }: EduvosCas
           <p className="text-xs text-[#F0531C] font-medium uppercase tracking-widest mb-10">Summative assessment — Weeks 7 and 8</p>
           <div className="space-y-4">
             {summativeExercises.map((ex, i) => (
-              <div key={ex.week} className="bg-[#09332C] rounded-lg p-8 md:p-10">
+              <div key={ex.week} className="bg-[#E2F5EF] rounded-lg p-8 md:p-10">
                 <div className="flex items-center gap-3 mb-5">
-                  <span className="text-xs text-[#FFA74F] font-medium uppercase tracking-widest">{ex.week}</span>
-                  <span className="text-white/20">/</span>
-                  <span className="text-xs text-white/40 font-medium uppercase tracking-widest">Exercise {i + 7}</span>
+                  <span className="text-xs text-[#F0531C] font-medium uppercase tracking-widest">{ex.week}</span>
+                  <span className="text-[#09332C]/20">/</span>
+                  <span className="text-xs text-[#09332C]/40 font-medium uppercase tracking-widest">Exercise {i + 7}</span>
                 </div>
-                <h3 className="text-lg font-bold text-[#F7EDDA] tracking-tight mb-2">{ex.title}</h3>
-                <p className="text-sm text-[#F7EDDA]/50 leading-relaxed mb-6">{ex.objective}</p>
+                <h3 className="text-lg font-bold text-[#09332C] tracking-tight mb-2">{ex.title}</h3>
+                <p className="text-sm text-[#09332C]/55 leading-relaxed mb-6">{ex.objective}</p>
                 <div className="space-y-3 mb-8">
                   {ex.instructions.map((ins) => (
                     <div key={ins} className="flex items-start gap-3">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#FFA74F]/60 mt-[0.4rem] shrink-0" />
-                      <p className="text-sm text-[#F7EDDA]/65 leading-relaxed">{ins}</p>
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#F0531C]/50 mt-[0.4rem] shrink-0" />
+                      <p className="text-sm text-[#09332C]/65 leading-relaxed">{ins}</p>
                     </div>
                   ))}
                 </div>
-                <div className="grid md:grid-cols-2 gap-4 pt-6 border-t border-white/10">
+                <div className="grid md:grid-cols-2 gap-4 pt-6 border-t border-[#09332C]/10">
                   <div>
-                    <p className="text-xs text-[#FFA74F]/70 font-medium uppercase tracking-widest mb-2">Deliverable</p>
-                    <p className="text-xs text-[#F7EDDA]/60 leading-relaxed">{ex.deliverable}</p>
+                    <p className="text-xs text-[#F0531C] font-medium uppercase tracking-widest mb-2">Deliverable</p>
+                    <p className="text-xs text-[#09332C]/60 leading-relaxed">{ex.deliverable}</p>
                   </div>
                   <div>
-                    <p className="text-xs text-[#FFA74F]/70 font-medium uppercase tracking-widest mb-2">Tools</p>
-                    <p className="text-xs text-[#F7EDDA]/60 leading-relaxed">{ex.tools}</p>
+                    <p className="text-xs text-[#F0531C] font-medium uppercase tracking-widest mb-2">Tools</p>
+                    <p className="text-xs text-[#09332C]/60 leading-relaxed">{ex.tools}</p>
                   </div>
                 </div>
               </div>

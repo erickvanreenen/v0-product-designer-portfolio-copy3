@@ -14,7 +14,7 @@ export function ProjectCard({ project, featured = false }: ProjectCardProps) {
       <article className="flex flex-col h-full rounded-2xl overflow-hidden bg-white">
 
         {/* Thumbnail */}
-        <div className="relative bg-[#09332C] overflow-hidden aspect-[16/10]">
+        <div className="relative bg-[#E2F5EF] overflow-hidden aspect-[16/10]">
           {project.thumbnail ? (
             <Image
               src={project.thumbnail}

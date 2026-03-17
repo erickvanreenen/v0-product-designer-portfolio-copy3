@@ -188,7 +188,7 @@ export default function AboutPage() {
               <h3 className="text-xs text-foreground/50 font-medium uppercase tracking-widest mb-6">Skills</h3>
               <div className="flex flex-wrap gap-2">
                 {skills.map((skill) => (
-                  <span key={skill} className="text-sm px-3 py-1.5 rounded-full bg-[#09332C] text-[#F7EDDA]">
+                  <span key={skill} className="text-sm px-3 py-1.5 rounded-full bg-[#E2F5EF] text-[#09332C]">
                     {skill}
                   </span>
                 ))}
