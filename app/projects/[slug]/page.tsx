@@ -8,6 +8,7 @@ import { FtnCaseStudy } from "@/components/ftn-case-study";
 import { YumeaseCaseStudy } from "@/components/yumease-case-study";
 import { EdtechCaseStudy } from "@/components/edtech-case-study";
 import { EduvosCaseStudy } from "@/components/eduvos-case-study";
+import { AdaCaseStudy } from "@/components/ada-case-study";
 import { Metadata } from "next";
 
 interface PageProps {
@@ -108,6 +109,16 @@ export default async function CaseStudyPage({ params }: PageProps) {
   if (slug === "edtech-interactive-learning") {
     return (
       <EdtechCaseStudy
+        project={project}
+        nextProject={nextProject}
+        prevProject={prevProject}
+      />
+    );
+  }
+
+  if (slug === "ada-ux-design") {
+    return (
+      <AdaCaseStudy
         project={project}
         nextProject={nextProject}
         prevProject={prevProject}

@@ -354,6 +354,49 @@ export const projects: Project[] = [
     ]
   },
   {
+    slug: "ada-ux-design",
+    title: "Academy of Digital Arts",
+    subtitle: "UX design lecturing for a Higher Certificate in Web Publishing and Interactive Media",
+    tags: ["EdTech", "Content Design"],
+    role: "Lecturer",
+    team: "Independent",
+    timeline: "Jan 2024 – Mar 2025",
+    tools: ["Figma", "Adobe Creative Suite", "Google Slides"],
+    thumbnail: "/images/thumb-edtech.svg",
+    outcomes: [
+      "UX design module delivered across two academic terms",
+      "Two summative assessments authored and assessed",
+      "Slide content covering foundational UX theory and practice",
+      "Students guided from research to wireframes to presentation"
+    ],
+    summary: "Freelance UX design lecturer at the Academy of Digital Arts, delivering a module on the Higher Certificate in Web Publishing and Interactive Media. Covered foundational theory, industry roles, and practical research methods across two academic terms.",
+    context: "The Academy of Digital Arts is a private higher education institution. I was contracted as a freelance lecturer to deliver a UX design module as part of a Higher Certificate in Web Publishing and Interactive Media. The role covered lesson delivery, content creation, and assessment design.",
+    goals: [
+      "Deliver foundational UX theory in a clear and accessible way",
+      "Bridge the gap between academic content and industry practice",
+      "Design assessments that mirror real-world UX workflows",
+      "Guide students from research and benchmarking to wireframes and presentation"
+    ],
+    research: "Developed lesson content drawing on industry experience. Structured slide decks to cover UX roles, the history of the discipline, and practical research methods. Assessment briefs were written to reflect real project constraints.",
+    insights: [
+      "Students engage more deeply when briefs use real-world apps and contexts",
+      "Foundational theory lands better when anchored to recognisable industry examples",
+      "Marking rubrics need to be explicit to support fair and consistent assessment",
+      "Teaching UX sharpens your own articulation of what the discipline is and why it matters"
+    ],
+    iaFlows: "Structured lesson content to build progressively. Roles and history laid the conceptual foundation. Assessments required students to apply research methods, competitive benchmarking, and wireframing in sequence.",
+    designExploration: "",
+    finalUI: "",
+    testing: "",
+    outcome: "Delivered two full academic terms of UX design content at the Academy of Digital Arts. Students completed research-led assessments involving real apps, usability testing, and final presentations.",
+    learnings: [
+      "Designing for learning is a distinct discipline. Clarity and sequence matter as much as content.",
+      "Students respond to authentic briefs. Hypothetical scenarios produce weaker work.",
+      "Assessment design requires you to define success before you can teach toward it."
+    ],
+    images: []
+  },
+  {
     slug: "eduvos-content-writing",
     title: "Eduvos Digital Design Curriculum",
     subtitle: "Merging UX and UI into a unified degree programme module",
