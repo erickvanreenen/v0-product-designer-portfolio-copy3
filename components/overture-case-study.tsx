@@ -15,12 +15,17 @@ interface OvertureCaseStudyProps {
 
 export function OvertureCaseStudy({ project, nextProject, prevProject }: OvertureCaseStudyProps) {
   const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [protoLightboxOpen, setProtoLightboxOpen] = useState(false);
 
   useEffect(() => {
     const handleKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") setLightboxOpen(false);
+      if (e.key === "Escape") {
+        setLightboxOpen(false);
+        setProtoLightboxOpen(false);
+      }
     };
-    if (lightboxOpen) {
+    const anyOpen = lightboxOpen || protoLightboxOpen;
+    if (anyOpen) {
       document.addEventListener("keydown", handleKey);
       document.body.style.overflow = "hidden";
     } else {
@@ -30,7 +35,7 @@ export function OvertureCaseStudy({ project, nextProject, prevProject }: Overtur
       document.removeEventListener("keydown", handleKey);
       document.body.style.overflow = "";
     };
-  }, [lightboxOpen]);
+  }, [lightboxOpen, protoLightboxOpen]);
 
   return (
     <div>
@@ -149,34 +154,49 @@ export function OvertureCaseStudy({ project, nextProject, prevProject }: Overtur
         {/* Prototype */}
         <section className="mb-24">
           <div className="flex items-center gap-3 mb-10">
-              <LogoMark size={16} opacity={0.25} />
-              <h2 className="text-3xl font-bold text-foreground tracking-tight">Prototype</h2>
+            <LogoMark size={16} opacity={0.25} />
+            <h2 className="text-3xl font-bold text-foreground tracking-tight">Prototype</h2>
+          </div>
+          <div
+            className="bg-[#E2F5EF] rounded-lg cursor-zoom-in relative group p-6 md:p-10"
+            onClick={() => setProtoLightboxOpen(true)}
+          >
+            <div className="overflow-hidden rounded-md">
+              <img
+                src="/images/overture-prototype.svg"
+                alt="Overture prototype screens"
+                className="w-full transition-transform duration-300 group-hover:scale-[1.01]"
+              />
             </div>
-          <div className="bg-[#E2F5EF] rounded-lg p-8 md:p-10">
-            <p className="text-xs text-foreground/58 font-medium uppercase tracking-widest mb-6">What's in the prototype</p>
-            <div className="grid md:grid-cols-3 gap-4 mb-8">
-              {[
-                { label: "Event creation", desc: "Promoter creates event with key details and document requirements." },
-                { label: "Document requests", desc: "Requests sent to agents and artists with deadlines and status tracking." },
-                { label: "Advancing flow", desc: "All parties complete document submission in a single coordinated workflow." },
-              ].map((item) => (
-                <div key={item.label} className="bg-white/70 rounded-lg p-5">
-                  <p className="text-xs font-semibold text-foreground mb-2">{item.label}</p>
-                  <p className="text-xs text-foreground/65 leading-relaxed">{item.desc}</p>
-                </div>
-              ))}
+            <div className="absolute bottom-8 right-8 bg-[#09332C] rounded-full px-3 py-1.5 flex items-center gap-1.5 text-xs font-medium text-white pointer-events-none">
+              <ZoomIn size={12} />
+              Expand
             </div>
-            <a
-              href="https://www.figma.com/proto/QdoSI1orZciqLgNdeuwweb/Overture---Promoter-App?node-id=324-839&t=hzQyEkisr6EUwGlc-1&scaling=scale-down-width&content-scaling=fixed&page-id=1%3A6&starting-point-node-id=266%3A670&show-proto-sidebar=1"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-xs font-medium text-[#F0531C] hover:text-[#09332C] transition-colors duration-200 group"
-            >
-              Open prototype
-              <ArrowUpRight size={12} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200" />
-            </a>
           </div>
         </section>
+
+        {/* Prototype lightbox */}
+        {protoLightboxOpen && (
+          <div
+            className="fixed inset-0 z-50 bg-[#E2F5EF] flex items-start justify-center overflow-auto p-6 md:p-12"
+            onClick={() => setProtoLightboxOpen(false)}
+          >
+            <div className="relative w-full max-w-7xl" onClick={(e) => e.stopPropagation()}>
+              <button
+                onClick={() => setProtoLightboxOpen(false)}
+                className="sticky top-0 left-full mb-4 flex items-center gap-2 bg-[#09332C] hover:bg-[#09332C]/80 text-white rounded-full px-4 py-2 text-xs font-medium transition-colors duration-200 ml-auto"
+              >
+                <X size={14} />
+                Close
+              </button>
+              <img
+                src="/images/overture-prototype.svg"
+                alt="Overture prototype screens"
+                className="w-full rounded-lg"
+              />
+            </div>
+          </div>
+        )}
 
         {/* Team */}
         <section className="mb-24">
