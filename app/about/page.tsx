@@ -177,6 +177,50 @@ export default function AboutPage() {
           </div>
         </section>
 
+        {/* Recommendations */}
+        <section className="mb-24 pb-24 border-b border-border">
+          <div className="flex items-center gap-3 mb-12">
+            <LogoMark size={16} color="#09332C" opacity={0.25} />
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">Recommendations</h2>
+          </div>
+          <div className="space-y-6">
+
+            {/* Kerry — UX / collaboration focus */}
+            <div className="bg-[#E2F5EF] rounded-lg p-8 md:p-10">
+              <p className="text-base text-foreground/80 leading-relaxed mb-4">
+                "Erick's ability to identify and define complex design problems and find simple solutions makes him a pleasure to work with on UX and UI tasks. The best leaders naturally inspire others. His positive mindset and clear communication motivates his team to work well together. His natural curiosity and proactivity makes him a vital asset for any task."
+              </p>
+              <div>
+                <p className="text-sm font-bold text-foreground">Kerry Sillifant</p>
+                <p className="text-xs text-foreground/58 mt-0.5">Senior UX Designer</p>
+              </div>
+            </div>
+
+            {/* Bernadine — strategic / technical */}
+            <div className="bg-[#F7EDDA]/60 rounded-lg p-8 md:p-10">
+              <p className="text-base text-foreground/80 leading-relaxed mb-4">
+                "His ability to translate complex concepts into clear, compelling visuals is genuinely remarkable. He possesses exceptional technical skills and ensures every design is both functional and considered."
+              </p>
+              <div>
+                <p className="text-sm font-bold text-foreground">Bernadine Mons</p>
+                <p className="text-xs text-foreground/58 mt-0.5">Senior Visual Designer</p>
+              </div>
+            </div>
+
+            {/* Jabulani — delivery / quality */}
+            <div className="bg-[#F7EDDA]/60 rounded-lg p-8 md:p-10">
+              <p className="text-base text-foreground/80 leading-relaxed mb-4">
+                "Erick consistently delivers work that meets and often exceeds client expectations. His attention to detail is unmatched, and his ability to transform ideas into engaging, functional designs sets him apart."
+              </p>
+              <div>
+                <p className="text-sm font-bold text-foreground">Jabulani Magidivana</p>
+                <p className="text-xs text-foreground/58 mt-0.5">Colleague</p>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
         {/* Skills + Tooling */}
         <section className="mb-0 pb-24 border-b border-border">
           <div className="flex items-center gap-3 mb-12">
