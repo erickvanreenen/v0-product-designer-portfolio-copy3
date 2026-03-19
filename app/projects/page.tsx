@@ -4,7 +4,7 @@ import { projects, getAllTags, ProjectTag } from "@/lib/projects";
 import { ProjectCard } from "@/components/project-card";
 import { TagFilter } from "@/components/tag-filter";
 
-const EDTECH_SLUGS = ["edtech-interactive-learning", "uni4-online", "ada-ux-design"];
+const EDTECH_SLUGS = ["edtech-interactive-learning", "uni4-online", "ada-ux-design", "eduvos-content-writing"];
 
 export default function ProjectsPage() {
   const [activeTag, setActiveTag] = useState<ProjectTag | null>(null);
