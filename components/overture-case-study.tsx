@@ -87,29 +87,26 @@ export function OvertureCaseStudy({ project, nextProject, prevProject }: Overtur
               <LogoMark size={16} opacity={0.25} />
               <h2 className="text-3xl font-bold text-foreground tracking-tight">Wireframes</h2>
             </div>
-          <div className="bg-[#F7EDDA]/50 rounded-lg p-8 md:p-10">
-            <p className="text-xs text-foreground/58 font-medium uppercase tracking-widest mb-6">Screens covered</p>
-            <div className="grid md:grid-cols-3 gap-4 mb-8">
-              {[
-                { label: "Event dashboard", desc: "Overview of all active events and outstanding document requests." },
-                { label: "Artist profile", desc: "Artist details, tech rider, and document submission status in one view." },
-                { label: "Document upload", desc: "Step-by-step upload flow with clear status feedback for all parties." },
-              ].map((item) => (
-                <div key={item.label} className="bg-white rounded-lg p-5">
-                  <p className="text-xs font-semibold text-foreground mb-2">{item.label}</p>
-                  <p className="text-xs text-foreground/65 leading-relaxed">{item.desc}</p>
-                </div>
-              ))}
+          <div className="bg-[#F7EDDA]/50 rounded-lg overflow-hidden">
+            <div className="overflow-x-auto">
+              <img
+                src="/images/overture-wireframes.svg"
+                alt="Overture wireframe screens"
+                className="w-full max-w-none"
+                style={{ minWidth: "800px" }}
+              />
             </div>
-            <a
-              href="https://www.figma.com/design/QdoSI1orZciqLgNdeuwweb/Overture---Promoter-App?node-id=204-473&t=u2tQAugiWCBFyvqv-1"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-xs font-medium text-[#F0531C] hover:text-[#09332C] transition-colors duration-200 group"
-            >
-              Open in Figma
-              <ArrowUpRight size={12} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200" />
-            </a>
+            <div className="px-8 pb-8 pt-6">
+              <a
+                href="https://www.figma.com/design/QdoSI1orZciqLgNdeuwweb/Overture---Promoter-App?node-id=204-473&t=u2tQAugiWCBFyvqv-1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-xs font-medium text-[#F0531C] hover:text-[#09332C] transition-colors duration-200 group"
+              >
+                Open in Figma
+                <ArrowUpRight size={12} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200" />
+              </a>
+            </div>
           </div>
         </section>
 
