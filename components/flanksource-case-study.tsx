@@ -26,7 +26,7 @@ export function FlanksourceCaseStudy({ project, nextProject, prevProject }: Prop
               <span key={tag} className="text-xs text-foreground/58">{tag}</span>
             ))}
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-[#09332C] tracking-tight mb-4 max-w-2xl">
+          <h1 className="text-4xl md:text-5xl font-bold text-[#09332C]/60 tracking-tight mb-4 max-w-2xl">
             {project.title}
           </h1>
           <p className="text-lg text-foreground/70 max-w-xl leading-relaxed">
@@ -75,7 +75,7 @@ export function FlanksourceCaseStudy({ project, nextProject, prevProject }: Prop
         <section className="mb-24">
           <div className="flex items-center gap-3 mb-10">
               <LogoMark size={16} opacity={0.25} />
-              <h2 className="text-3xl font-bold text-[#09332C] tracking-tight">The Challenge</h2>
+              <h2 className="text-3xl font-bold text-[#09332C]/60 tracking-tight">The Challenge</h2>
             </div>
 
           <section className="mb-10 bg-white rounded-lg p-8 md:p-10">
@@ -100,7 +100,7 @@ export function FlanksourceCaseStudy({ project, nextProject, prevProject }: Prop
         <section className="mb-24">
           <div className="flex items-center gap-3 mb-4">
               <LogoMark size={16} opacity={0.25} />
-              <h2 className="text-3xl font-bold text-[#09332C] tracking-tight">Brief</h2>
+              <h2 className="text-3xl font-bold text-[#09332C]/60 tracking-tight">Brief</h2>
             </div>
           <p className="text-xs text-[#F0531C] font-medium uppercase tracking-widest mb-10">Dashboard redesign</p>
 
@@ -131,7 +131,7 @@ export function FlanksourceCaseStudy({ project, nextProject, prevProject }: Prop
         <section className="mb-24">
           <div className="flex items-center gap-3 mb-10">
               <LogoMark size={16} opacity={0.25} />
-              <h2 className="text-3xl font-bold text-[#09332C] tracking-tight">Process</h2>
+              <h2 className="text-3xl font-bold text-[#09332C]/60 tracking-tight">Process</h2>
             </div>
           <div className="space-y-6">
             {[
@@ -158,7 +158,7 @@ export function FlanksourceCaseStudy({ project, nextProject, prevProject }: Prop
         <div className="max-w-5xl mx-auto px-6 py-16 md:py-20">
           <div className="flex items-center gap-3 mb-12">
               <LogoMark size={16} opacity={0.25} />
-              <h2 className="text-3xl font-bold text-[#09332C] tracking-tight">Before and after</h2>
+              <h2 className="text-3xl font-bold text-[#09332C]/60 tracking-tight">Before and after</h2>
             </div>
 
           {/* Side by side */}
@@ -260,7 +260,7 @@ export function FlanksourceCaseStudy({ project, nextProject, prevProject }: Prop
         <section className="mb-24">
           <div className="flex items-center gap-3 mb-10">
               <LogoMark size={16} opacity={0.25} />
-              <h2 className="text-3xl font-bold text-[#09332C] tracking-tight">Insights</h2>
+              <h2 className="text-3xl font-bold text-[#09332C]/60 tracking-tight">Insights</h2>
             </div>
           <div className="space-y-6">
             {project.insights.map((insight, i) => (
@@ -289,7 +289,7 @@ export function FlanksourceCaseStudy({ project, nextProject, prevProject }: Prop
         <section className="mb-24">
           <div className="flex items-center gap-3 mb-10">
               <LogoMark size={16} opacity={0.25} />
-              <h2 className="text-3xl font-bold text-[#09332C] tracking-tight">Reflection</h2>
+              <h2 className="text-3xl font-bold text-[#09332C]/60 tracking-tight">Reflection</h2>
             </div>
           <div className="space-y-6">
             {project.learnings.map((learning, i) => (

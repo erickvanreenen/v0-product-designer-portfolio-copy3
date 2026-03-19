@@ -126,7 +126,7 @@ export function EduvosCaseStudy({ project, nextProject, prevProject }: EduvosCas
             ))}
           </div>
 
-          <h1 className="text-4xl md:text-5xl font-bold text-[#09332C] tracking-tight mb-4 max-w-2xl">
+          <h1 className="text-4xl md:text-5xl font-bold text-[#09332C]/60 tracking-tight mb-4 max-w-2xl">
             {project.title}
           </h1>
           <p className="text-lg text-foreground/70 max-w-xl leading-relaxed">
@@ -189,7 +189,7 @@ export function EduvosCaseStudy({ project, nextProject, prevProject }: EduvosCas
         <section className="mb-24">
           <div className="flex items-center gap-3 mb-10">
             <LogoMark size={16} opacity={0.25} />
-            <h2 className="text-3xl font-bold text-[#09332C] tracking-tight">The challenge</h2>
+            <h2 className="text-3xl font-bold text-[#09332C]/60 tracking-tight">The challenge</h2>
           </div>
           <section className="bg-white rounded-lg p-8 md:p-10 mb-8">
             <p className="text-xs text-[#F0531C] font-medium uppercase tracking-widest mb-8">What needed solving</p>
@@ -213,7 +213,7 @@ export function EduvosCaseStudy({ project, nextProject, prevProject }: EduvosCas
         <section className="mb-24">
           <div className="flex items-center gap-3 mb-10">
             <LogoMark size={16} opacity={0.25} />
-            <h2 className="text-3xl font-bold text-[#09332C] tracking-tight">Approach</h2>
+            <h2 className="text-3xl font-bold text-[#09332C]/60 tracking-tight">Approach</h2>
           </div>
           <p className="text-base text-foreground/80 leading-relaxed mb-6">
             Structured the unified module so each exercise builds progressively toward the summative assessment. Clear learning objectives anchored every piece of content.
@@ -227,7 +227,7 @@ export function EduvosCaseStudy({ project, nextProject, prevProject }: EduvosCas
         <section className="mb-16">
           <div className="flex items-center gap-3 mb-10">
             <LogoMark size={16} opacity={0.25} />
-            <h2 className="text-3xl font-bold text-[#09332C] tracking-tight">Formative assessment</h2>
+            <h2 className="text-3xl font-bold text-[#09332C]/60 tracking-tight">Formative assessment</h2>
           </div>
 
           <div className="bg-[#f0f0f0] rounded-lg p-8 md:p-10 mb-12">
@@ -274,7 +274,7 @@ export function EduvosCaseStudy({ project, nextProject, prevProject }: EduvosCas
                   <span className="text-foreground/35">/</span>
                   <span className="text-xs text-foreground/58 font-medium uppercase tracking-widest">Exercise {i + 1}</span>
                 </div>
-                <h3 className="text-lg font-bold text-[#09332C] tracking-tight mb-2">{ex.title}</h3>
+                <h3 className="text-lg font-bold text-[#09332C]/60 tracking-tight mb-2">{ex.title}</h3>
                 <p className="text-sm text-foreground/65 leading-relaxed mb-6">{ex.objective}</p>
                 <div className="space-y-3 mb-8">
                   {ex.instructions.map((ins) => (
@@ -310,7 +310,7 @@ export function EduvosCaseStudy({ project, nextProject, prevProject }: EduvosCas
                   <span className="text-[#09332C]/35">/</span>
                   <span className="text-xs text-[#09332C]/58 font-medium uppercase tracking-widest">Exercise {i + 7}</span>
                 </div>
-                <h3 className="text-lg font-bold text-[#09332C] tracking-tight mb-2">{ex.title}</h3>
+                <h3 className="text-lg font-bold text-[#09332C]/60 tracking-tight mb-2">{ex.title}</h3>
                 <p className="text-sm text-[#09332C]/70 leading-relaxed mb-6">{ex.objective}</p>
                 <div className="space-y-3 mb-8">
                   {ex.instructions.map((ins) => (
@@ -345,7 +345,7 @@ export function EduvosCaseStudy({ project, nextProject, prevProject }: EduvosCas
         <section className="mb-24">
           <div className="flex items-center gap-3 mb-10">
             <LogoMark size={16} opacity={0.25} />
-            <h2 className="text-3xl font-bold text-[#09332C] tracking-tight">Reflection</h2>
+            <h2 className="text-3xl font-bold text-[#09332C]/60 tracking-tight">Reflection</h2>
           </div>
           <div className="space-y-6">
             {project.learnings.map((learning, i) => (

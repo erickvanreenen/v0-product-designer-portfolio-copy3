@@ -116,7 +116,7 @@ export function AdaCaseStudy({ project, nextProject, prevProject }: AdaCaseStudy
             ))}
           </div>
 
-          <h1 className="text-4xl md:text-5xl font-bold text-[#09332C] tracking-tight mb-4 max-w-2xl">
+          <h1 className="text-4xl md:text-5xl font-bold text-[#09332C]/60 tracking-tight mb-4 max-w-2xl">
             {project.title}
           </h1>
           <p className="text-lg text-foreground/70 max-w-xl leading-relaxed">
@@ -176,7 +176,7 @@ export function AdaCaseStudy({ project, nextProject, prevProject }: AdaCaseStudy
         <section className="mb-24">
           <div className="flex items-center gap-3 mb-10">
             <LogoMark size={16} opacity={0.25} />
-            <h2 className="text-3xl font-bold text-[#09332C] tracking-tight">What I taught</h2>
+            <h2 className="text-3xl font-bold text-[#09332C]/60 tracking-tight">What I taught</h2>
           </div>
 
           <div className="space-y-4">
@@ -185,7 +185,7 @@ export function AdaCaseStudy({ project, nextProject, prevProject }: AdaCaseStudy
                 <div className="flex items-center gap-3 mb-5">
                   <span className="text-xs text-[#F0531C] font-medium uppercase tracking-widest">{lesson.module}</span>
                 </div>
-                <h3 className="text-lg font-bold text-[#09332C] tracking-tight mb-2">{lesson.title}</h3>
+                <h3 className="text-lg font-bold text-[#09332C]/60 tracking-tight mb-2">{lesson.title}</h3>
                 <p className="text-sm text-foreground/65 leading-relaxed mb-8">{lesson.description}</p>
                 <div className="grid md:grid-cols-2 gap-4">
                   {lesson.topics.map((topic) => (
@@ -207,7 +207,7 @@ export function AdaCaseStudy({ project, nextProject, prevProject }: AdaCaseStudy
         <section className="mb-16">
           <div className="flex items-center gap-3 mb-10">
             <LogoMark size={16} opacity={0.25} />
-            <h2 className="text-3xl font-bold text-[#09332C] tracking-tight">Assessments</h2>
+            <h2 className="text-3xl font-bold text-[#09332C]/60 tracking-tight">Assessments</h2>
           </div>
           <p className="text-base text-foreground/80 leading-relaxed mb-12">
             Both summative assessments were designed to mirror real industry workflows. Students were not given hypothetical scenarios -- they worked with real apps, real competitors, and real users.
@@ -225,7 +225,7 @@ export function AdaCaseStudy({ project, nextProject, prevProject }: AdaCaseStudy
               <span className="text-foreground/35">/</span>
               <span className="text-xs text-foreground/58 font-medium uppercase tracking-widest">{module1Assessment.weighting}</span>
             </div>
-            <h3 className="text-lg font-bold text-[#09332C] tracking-tight mb-3">{module1Assessment.title}</h3>
+            <h3 className="text-lg font-bold text-[#09332C]/60 tracking-tight mb-3">{module1Assessment.title}</h3>
             <p className="text-sm text-foreground/70 leading-relaxed mb-8">{module1Assessment.description}</p>
 
             {/* Persona */}
@@ -234,15 +234,15 @@ export function AdaCaseStudy({ project, nextProject, prevProject }: AdaCaseStudy
               <div className="flex flex-wrap gap-6">
                 <div>
                   <p className="text-xs text-foreground/45 mb-0.5">Name</p>
-                  <p className="text-sm font-semibold text-[#09332C]">{module1Assessment.persona.name}</p>
+                  <p className="text-sm font-semibold text-[#09332C]/60">{module1Assessment.persona.name}</p>
                 </div>
                 <div>
                   <p className="text-xs text-foreground/45 mb-0.5">Age</p>
-                  <p className="text-sm font-semibold text-[#09332C]">{module1Assessment.persona.age}</p>
+                  <p className="text-sm font-semibold text-[#09332C]/60">{module1Assessment.persona.age}</p>
                 </div>
                 <div>
                   <p className="text-xs text-foreground/45 mb-0.5">Role</p>
-                  <p className="text-sm font-semibold text-[#09332C]">{module1Assessment.persona.role}</p>
+                  <p className="text-sm font-semibold text-[#09332C]/60">{module1Assessment.persona.role}</p>
                 </div>
               </div>
               <p className="text-xs text-foreground/65 leading-relaxed mt-4">{module1Assessment.persona.context}</p>
@@ -267,7 +267,7 @@ export function AdaCaseStudy({ project, nextProject, prevProject }: AdaCaseStudy
                   {module1Assessment.marking.map((m) => (
                     <div key={m.criterion} className="flex justify-between items-center">
                       <p className="text-xs text-foreground/75">{m.criterion}</p>
-                      <p className="text-xs font-semibold text-[#09332C]">{m.weight}</p>
+                      <p className="text-xs font-semibold text-[#09332C]/60">{m.weight}</p>
                     </div>
                   ))}
                 </div>
@@ -287,14 +287,14 @@ export function AdaCaseStudy({ project, nextProject, prevProject }: AdaCaseStudy
               <span className="text-[#09332C]/35">/</span>
               <span className="text-xs text-[#09332C]/58 font-medium uppercase tracking-widest">{module3Assessment.weighting}</span>
             </div>
-            <h3 className="text-lg font-bold text-[#09332C] tracking-tight mb-3">{module3Assessment.title}</h3>
+            <h3 className="text-lg font-bold text-[#09332C]/60 tracking-tight mb-3">{module3Assessment.title}</h3>
             <p className="text-sm text-[#09332C]/70 leading-relaxed mb-8">{module3Assessment.description}</p>
 
             {/* Apps benchmarked */}
             <div className="flex gap-3 mb-8">
               <p className="text-xs text-[#09332C]/58 font-medium uppercase tracking-widest mr-2">Apps benchmarked</p>
               {module3Assessment.apps.map((app) => (
-                <span key={app} className="text-xs font-semibold text-[#09332C] bg-white/60 rounded px-3 py-1">{app}</span>
+                <span key={app} className="text-xs font-semibold text-[#09332C]/60 bg-white/60 rounded px-3 py-1">{app}</span>
               ))}
             </div>
 
@@ -317,7 +317,7 @@ export function AdaCaseStudy({ project, nextProject, prevProject }: AdaCaseStudy
                   {module3Assessment.marking.map((m) => (
                     <div key={m.criterion} className="flex justify-between items-center">
                       <p className="text-xs text-[#09332C]/75">{m.criterion}</p>
-                      <p className="text-xs font-semibold text-[#09332C]">{m.weight}</p>
+                      <p className="text-xs font-semibold text-[#09332C]/60">{m.weight}</p>
                     </div>
                   ))}
                 </div>
@@ -336,7 +336,7 @@ export function AdaCaseStudy({ project, nextProject, prevProject }: AdaCaseStudy
         <section className="mb-24">
           <div className="flex items-center gap-3 mb-10">
             <LogoMark size={16} opacity={0.25} />
-            <h2 className="text-3xl font-bold text-[#09332C] tracking-tight">Reflection</h2>
+            <h2 className="text-3xl font-bold text-[#09332C]/60 tracking-tight">Reflection</h2>
           </div>
           <div className="space-y-6">
             {project.learnings.map((learning, i) => (

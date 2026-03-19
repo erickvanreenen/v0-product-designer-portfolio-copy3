@@ -14,7 +14,7 @@ export default function HomePage() {
       {/* Hero */}
       <section className="bg-white">
         <div className="max-w-5xl mx-auto px-6 py-20 md:py-32">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-[#09332C] max-w-2xl tracking-tight mb-6">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-[#09332C]/60 max-w-2xl tracking-tight mb-6">
             Fusing user needs with business outcomes.
           </h1>
           <p className="text-sm text-[#F0531C] font-bold uppercase tracking-widest mb-6">
@@ -33,7 +33,7 @@ export default function HomePage() {
             </Link>
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 px-6 py-3 border border-[#09332C]/15 text-[#09332C] text-sm font-medium rounded-full hover:bg-[#09332C]/5 transition-all duration-200"
+              className="inline-flex items-center gap-2 px-6 py-3 border border-[#09332C]/15 text-[#09332C]/60 text-sm font-medium rounded-full hover:bg-[#09332C]/5 transition-all duration-200"
             >
               Get in touch
             </Link>
@@ -45,7 +45,7 @@ export default function HomePage() {
       <section className="py-24 md:py-32">
         <div className="max-w-5xl mx-auto px-6">
           <div className="flex items-end justify-between mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#09332C] tracking-tight">Selected work</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#09332C]/60 tracking-tight">Selected work</h2>
             <Link
               href="/projects"
               className="text-sm text-foreground/58 hover:text-[#F0531C] transition-colors duration-200 flex items-center gap-1.5 group"
@@ -66,7 +66,7 @@ export default function HomePage() {
       {/* Process */}
       <section className="py-24 md:py-32 bg-[#E2F5EF]">
         <div className="max-w-5xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#09332C] tracking-tight mb-16">Process</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#09332C]/60 tracking-tight mb-16">Process</h2>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-[#09332C]/10">
             {[
@@ -79,7 +79,7 @@ export default function HomePage() {
             ].map((step) => (
               <div key={step.step} className="bg-[#E2F5EF] p-8">
                 <span className="text-xs text-[#F0531C] font-medium">{step.step}</span>
-                <h3 className="text-lg font-bold text-[#09332C] mt-3">{step.title}</h3>
+                <h3 className="text-lg font-bold text-[#09332C]/60 mt-3">{step.title}</h3>
                 <p className="text-sm text-[#09332C]/65 mt-2">{step.desc}</p>
               </div>
             ))}
@@ -90,7 +90,7 @@ export default function HomePage() {
       {/* CTA */}
       <section className="py-24 md:py-32 bg-[#F7EDDA]">
         <div className="max-w-5xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#09332C] tracking-tight mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#09332C]/60 tracking-tight mb-4">
             Open to opportunities.
           </h2>
           <p className="text-[#09332C]/65 mb-8">

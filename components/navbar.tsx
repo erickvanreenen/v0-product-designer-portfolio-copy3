@@ -23,7 +23,7 @@ export function Navbar() {
         <Link href="/" className="group flex items-center gap-2.5">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/images/erick-logo.svg" width={20} height={20} alt="" />
-          <span className="text-sm font-bold tracking-tight text-[#09332C] group-hover:text-[#F0531C] transition-colors duration-200">
+          <span className="text-sm font-bold tracking-tight text-[#09332C]/60 group-hover:text-[#F0531C] transition-colors duration-200">
             Erick van Reenen
           </span>
         </Link>

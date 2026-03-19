@@ -25,7 +25,7 @@ export function OvertureCaseStudy({ project, nextProject, prevProject }: Overtur
             ))}
           </div>
 
-          <h1 className="text-4xl md:text-5xl font-bold text-[#09332C] tracking-tight mb-4 max-w-2xl">
+          <h1 className="text-4xl md:text-5xl font-bold text-[#09332C]/60 tracking-tight mb-4 max-w-2xl">
             {project.title}
           </h1>
           <p className="text-lg text-foreground/70 max-w-xl leading-relaxed">
@@ -60,7 +60,7 @@ export function OvertureCaseStudy({ project, nextProject, prevProject }: Overtur
         <section className="mb-24">
           <div className="flex items-center gap-3 mb-10">
               <LogoMark size={16} opacity={0.25} />
-              <h2 className="text-3xl font-bold text-[#09332C] tracking-tight">Brief</h2>
+              <h2 className="text-3xl font-bold text-[#09332C]/60 tracking-tight">Brief</h2>
             </div>
           <p className="text-base text-foreground/85 leading-relaxed">
             Design a promoter app that streamlines event documentation, connecting promoters, agents, and artists throughout the advancing stage of event organisation.
@@ -71,7 +71,7 @@ export function OvertureCaseStudy({ project, nextProject, prevProject }: Overtur
         <section className="mb-24">
           <div className="flex items-center gap-3 mb-10">
               <LogoMark size={16} opacity={0.25} />
-              <h2 className="text-3xl font-bold text-[#09332C] tracking-tight">Research</h2>
+              <h2 className="text-3xl font-bold text-[#09332C]/60 tracking-tight">Research</h2>
             </div>
           <p className="text-base text-foreground/85 leading-relaxed mb-4">
             Benchmarked leading event platforms globally.
@@ -85,7 +85,7 @@ export function OvertureCaseStudy({ project, nextProject, prevProject }: Overtur
         <section className="mb-24">
           <div className="flex items-center gap-3 mb-10">
               <LogoMark size={16} opacity={0.25} />
-              <h2 className="text-3xl font-bold text-[#09332C] tracking-tight">Wireframes</h2>
+              <h2 className="text-3xl font-bold text-[#09332C]/60 tracking-tight">Wireframes</h2>
             </div>
           <a
             href="https://www.figma.com/design/QdoSI1orZciqLgNdeuwweb/Overture---Promoter-App?node-id=204-473&t=u2tQAugiWCBFyvqv-1"
@@ -148,7 +148,7 @@ export function OvertureCaseStudy({ project, nextProject, prevProject }: Overtur
         <section className="mb-24">
           <div className="flex items-center gap-3 mb-10">
               <LogoMark size={16} opacity={0.25} />
-              <h2 className="text-3xl font-bold text-[#09332C] tracking-tight">Prototype</h2>
+              <h2 className="text-3xl font-bold text-[#09332C]/60 tracking-tight">Prototype</h2>
             </div>
           <a
             href="https://www.figma.com/proto/QdoSI1orZciqLgNdeuwweb/Overture---Promoter-App?node-id=324-839&t=hzQyEkisr6EUwGlc-1&scaling=scale-down-width&content-scaling=fixed&page-id=1%3A6&starting-point-node-id=266%3A670&show-proto-sidebar=1"
@@ -179,7 +179,7 @@ export function OvertureCaseStudy({ project, nextProject, prevProject }: Overtur
         <section className="mb-24">
           <div className="flex items-center gap-3 mb-10">
               <LogoMark size={16} opacity={0.25} />
-              <h2 className="text-3xl font-bold text-[#09332C] tracking-tight">Team</h2>
+              <h2 className="text-3xl font-bold text-[#09332C]/60 tracking-tight">Team</h2>
             </div>
           <div className="space-y-4">
             <div>
@@ -204,15 +204,15 @@ export function OvertureCaseStudy({ project, nextProject, prevProject }: Overtur
         <section className="mb-24">
           <div className="flex items-center gap-3 mb-10">
               <LogoMark size={16} opacity={0.25} />
-              <h2 className="text-3xl font-bold text-[#09332C] tracking-tight">Timeline</h2>
+              <h2 className="text-3xl font-bold text-[#09332C]/60 tracking-tight">Timeline</h2>
             </div>
           <div className="grid grid-cols-2 gap-8">
             <div>
-              <p className="text-2xl font-bold text-[#09332C]">2 weeks</p>
+              <p className="text-2xl font-bold text-[#09332C]/60">2 weeks</p>
               <p className="text-xs text-foreground/58 mt-1">UX</p>
             </div>
             <div>
-              <p className="text-2xl font-bold text-[#09332C]">2 weeks</p>
+              <p className="text-2xl font-bold text-[#09332C]/60">2 weeks</p>
               <p className="text-xs text-foreground/58 mt-1">UI</p>
             </div>
           </div>
