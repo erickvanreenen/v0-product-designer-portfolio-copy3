@@ -47,8 +47,8 @@ export default function HomePage() {
               { num: "8+", label: "Projects in portfolio" },
             ].map((stat) => (
               <div key={stat.num}>
-                <p className="text-3xl md:text-4xl font-bold text-foreground tabular-nums">{stat.num}</p>
-                <p className="text-xs text-foreground/55 mt-1.5 leading-relaxed">{stat.label}</p>
+                <p className="text-6xl md:text-8xl font-bold text-foreground tabular-nums tracking-tight leading-none">{stat.num}</p>
+                <p className="text-xs text-foreground/55 mt-4 leading-relaxed">{stat.label}</p>
               </div>
             ))}
           </div>
@@ -91,9 +91,9 @@ export default function HomePage() {
               { step: "05", title: "Test", desc: "Validate with real users." },
               { step: "06", title: "Iterate", desc: "Refine through feedback." },
             ].map((step) => (
-              <div key={step.step} className="bg-[#E2F5EF] p-8">
-                <span className="text-xs text-[#F0531C] font-medium">{step.step}</span>
-                <h3 className="text-lg font-bold text-foreground mt-3">{step.title}</h3>
+              <div key={step.step} className="bg-[#E2F5EF] p-8 relative overflow-hidden">
+                <span className="absolute bottom-3 right-5 text-[88px] font-bold text-[#09332C]/[0.07] leading-none tabular-nums select-none pointer-events-none">{step.step}</span>
+                <h3 className="text-lg font-bold text-foreground">{step.title}</h3>
                 <p className="text-sm text-foreground/65 mt-2">{step.desc}</p>
               </div>
             ))}
@@ -104,8 +104,8 @@ export default function HomePage() {
       {/* CTA */}
       <section className="py-24 md:py-32 bg-white">
         <div className="max-w-5xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight mb-4">
-            Open to opportunities.
+          <h2 className="text-5xl md:text-7xl lg:text-8xl font-bold text-foreground tracking-tight leading-none mb-8">
+            Open to<br />opportunities.
           </h2>
           <p className="text-foreground/65 mb-8">
             Let's discuss a project or just say hello.
