@@ -126,7 +126,7 @@ export function OvertureCaseStudy({ project, nextProject, prevProject }: Overtur
         {/* Wireframes lightbox */}
         {lightboxOpen && (
           <div
-            className="fixed inset-0 z-50 bg-[#F7EDDA]/95 flex items-start justify-center overflow-auto p-6 md:p-12"
+            className="fixed inset-0 z-50 bg-[#F7EDDA] flex items-start justify-center overflow-auto p-6 md:p-12"
             onClick={() => setLightboxOpen(false)}
           >
             <div className="relative w-full max-w-7xl" onClick={(e) => e.stopPropagation()}>
