@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ArrowUpRight } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "About | Erick van Reenen",
@@ -177,61 +177,6 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Recommendations */}
-        <section className="mb-24 pb-24 border-b border-border">
-          <div className="flex items-center gap-3 mb-12">
-            <LogoMark size={16} color="#09332C" opacity={0.25} />
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">Recommendations</h2>
-          </div>
-          <div className="space-y-6">
-
-            {/* Kerry — UX / collaboration focus */}
-            <div className="bg-[#E2F5EF] rounded-lg p-8 md:p-10">
-              <p className="text-base text-foreground/80 leading-relaxed mb-6">
-                "I have worked alongside Erick as a senior visual and UX designer. Erick's calm nature and amazing ability to easily identify and define complex design problems and find simple, visually appealing solutions, makes him a pleasure to work with on UX and UI tasks. I have had the pleasure of collaborating with him on multiple design projects and he has been integral to the success of every one of them. The best leaders naturally inspire others and Erick's positive mindset and clear communication motivates others in his team to work well and efficiently together. His natural curiosity and proactivity makes him a vital asset for any task. He is always an absolute pleasure to work with."
-              </p>
-              <a
-                href="https://www.linkedin.com/in/kerry-sillifant-62911787/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm font-bold text-foreground hover:text-[#F0531C] transition-colors duration-200"
-              >
-                Kerry Sillifant
-              </a>
-            </div>
-
-            {/* Bernadine — strategic / technical */}
-            <div className="bg-[#F7EDDA]/60 rounded-lg p-8 md:p-10">
-              <p className="text-base text-foreground/80 leading-relaxed mb-6">
-                "As a senior visual designer, Erick brings experience and expertise to every project. His ability to translate complex concepts into captivating visuals is genuinely remarkable. He not only possesses exceptional technical skills but also has a keen eye for aesthetics, ensuring that every design he produces is not only functional but also aesthetically pleasing."
-              </p>
-              <a
-                href="https://www.linkedin.com/in/bernadinemons/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm font-bold text-foreground hover:text-[#F0531C] transition-colors duration-200"
-              >
-                Bernadine Mons
-              </a>
-            </div>
-
-            {/* Jabulani — delivery / quality */}
-            <div className="bg-[#F7EDDA]/60 rounded-lg p-8 md:p-10">
-              <p className="text-base text-foreground/80 leading-relaxed mb-6">
-                "Erick's creative prowess and dedication to design are truly remarkable. Throughout our time working together, I've witnessed Erick consistently deliver top-notch designs that not only meet but often exceed our clients' expectations. His attention to detail is unmatched, and he has an exceptional ability to transform ideas into visually captivating and engaging designs."
-              </p>
-              <a
-                href="https://www.linkedin.com/in/jabulani-magidivana-39381b139/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm font-bold text-foreground hover:text-[#F0531C] transition-colors duration-200"
-              >
-                Jabulani Magidivana
-              </a>
-            </div>
-
-          </div>
-        </section>
 
         {/* Skills + Tooling */}
         <section className="mb-0 pb-24 border-b border-border">
