@@ -12,7 +12,7 @@ interface TagFilterProps {
 
 export function TagFilter({ tags, activeTag, onTagChange }: TagFilterProps) {
   const [paused, setPaused] = useState(false);
-  const allItems: (ProjectTag | null)[] = [null, ...tags];
+  const allItems: ProjectTag[] = [...tags];
 
   return (
     <div
@@ -34,12 +34,12 @@ export function TagFilter({ tags, activeTag, onTagChange }: TagFilterProps) {
             onClick={() => onTagChange(tag)}
             className={cn(
               "text-sm px-4 py-2 rounded-full border transition-all duration-200 shrink-0 cursor-pointer",
-              (tag === null ? activeTag === null : activeTag === tag)
+              activeTag === tag
                 ? "bg-[#F0531C] text-white border-[#F0531C]"
                 : "bg-transparent text-foreground/80 border-border hover:border-foreground/40"
             )}
           >
-            {tag ?? "All"}
+            {tag}
           </button>
         ))}
       </div>
