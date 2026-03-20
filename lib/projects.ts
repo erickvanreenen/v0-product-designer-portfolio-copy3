@@ -133,7 +133,8 @@ export const projects: Project[] = [
       "Systems thinking at scale requires mapping dependencies before designing solutions",
       "Low-UX-maturity environments require evidence-led advocacy, not assumption"
     ],
-    images: []
+    images: [],
+    externalLink: "https://innovate.faithful-to-nature.co.za/"
   },
   {
     slug: "flanksource",
