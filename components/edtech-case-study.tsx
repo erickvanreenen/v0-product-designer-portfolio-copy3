@@ -79,10 +79,10 @@ export function EdtechCaseStudy({ project, nextProject, prevProject }: Props) {
             Visual design for a Business Systems Analysis course on Masterstart, Stellenbosch Business School's online platform.
           </p>
           <p className="text-base text-foreground/80 leading-relaxed mb-5">
-            I worked alongside a subject matter expert and a learning designer. My role was visual and layout design: generating infographic assets that made complex BA concepts clear and engaging.
+            I worked alongside a subject matter expert and a learning designer. <strong>My role was visual and layout design: generating infographic assets that made complex BA concepts clear and engaging.</strong>
           </p>
           <p className="text-base text-foreground/80 leading-relaxed">
-            Seeing course content come to life in Articulate Rise is something I genuinely enjoy. This project sits at the intersection of visual communication, instructional logic, and layout discipline.
+            Seeing course content come to life in Articulate Rise is something I genuinely enjoy. <strong>This project sits at the intersection of visual communication, instructional logic, and layout discipline.</strong>
           </p>
         </section>
 
@@ -93,7 +93,7 @@ export function EdtechCaseStudy({ project, nextProject, prevProject }: Props) {
               <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">Brief</h2>
             </div>
           <p className="text-base text-foreground/80 leading-relaxed mb-10">
-            Create visual and infographic assets for a Business Systems Analysis course built in Articulate Rise. Work within the learning designer's content structure. Communicate complex conceptual models clearly and accessibly.
+            <strong>Create visual and infographic assets</strong> for a Business Systems Analysis course built in Articulate Rise. Work within the learning designer's content structure. <strong>Communicate complex conceptual models clearly and accessibly.</strong>
           </p>
 
           <div className="space-y-6">

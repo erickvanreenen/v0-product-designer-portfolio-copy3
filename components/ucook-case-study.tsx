@@ -274,7 +274,7 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
             </div>
           </div>
           <p className="text-base text-foreground/85 leading-relaxed mb-10">
-            Move payment to the start. Use the cart as the entry point. Auto-deduce customer profile from order.
+            <strong>Move payment to the start.</strong> Use the cart as the entry point. Auto-deduce customer profile from order.
           </p>
 
           {/* Flow */}
@@ -333,7 +333,7 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
             </div>
 
           <p className="text-base text-foreground/85 leading-relaxed mb-10">
-            Two workstreams. Quick wins shipped independently. The structural redesign tackled the funnel itself.
+            <strong>Two workstreams.</strong> Quick wins shipped independently. <strong>The structural redesign tackled the funnel itself.</strong>
           </p>
 
           <div className="grid md:grid-cols-2 gap-px bg-border">

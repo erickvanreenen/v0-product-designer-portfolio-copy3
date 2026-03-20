@@ -59,10 +59,10 @@ export function FtnCaseStudy({ project, nextProject, prevProject }: FtnCaseStudy
             <strong>Rapid store expansion has moved the platform into a full omnichannel environment.</strong>
           </p>
           <p className="text-base text-foreground/80 leading-relaxed mb-4">
-            The Magento 1 to Magento 2 migration started around 2020. Multiple designers passed through. I joined as the lone lead UX/UI designer in September 2024.
+            The Magento 1 to Magento 2 migration started around 2020. Multiple designers passed through. <strong>I joined as the lone lead UX/UI designer in September 2024.</strong>
           </p>
           <p className="text-base text-foreground/80 leading-relaxed">
-            The platform was live. Revenue was flowing. But years of dev-first decisions had accumulated into significant UX debt. No single designer had stayed long enough to address it systematically.
+            <strong>The platform was live. Revenue was flowing.</strong> But <strong>years of dev-first decisions had accumulated into significant UX debt.</strong> No single designer had stayed long enough to address it systematically.
           </p>
         </section>
 
@@ -92,10 +92,10 @@ export function FtnCaseStudy({ project, nextProject, prevProject }: FtnCaseStudy
           </section>
 
           <p className="text-base text-foreground/80 leading-relaxed mb-4">
-            Systems thinking became non-negotiable. Every design decision had downstream consequences: across tech, logistics, data, and operations.
+            <strong>Systems thinking became non-negotiable.</strong> Every design decision had downstream consequences: across tech, logistics, data, and operations.
           </p>
           <p className="text-base text-foreground/80 leading-relaxed">
-            Advocating for good UX here means translating user needs into business outcomes and technical language simultaneously. It is a skill. It has become one of my strongest.
+            <strong>Advocating for good UX here means translating user needs into business outcomes and technical language simultaneously.</strong> It is a skill. It has become one of my strongest.
           </p>
         </section>
 
@@ -135,7 +135,7 @@ export function FtnCaseStudy({ project, nextProject, prevProject }: FtnCaseStudy
           <p className="text-xs text-[#F0531C] font-medium uppercase tracking-widest mb-10">Shipped</p>
 
           <p className="text-base text-foreground/80 leading-relaxed mb-10">
-            When I joined, filtering changed structure between category levels. L1 looked different from L2. L2 from L3. No shared logic. No shared pattern.
+            When I joined, <strong>filtering changed structure between category levels.</strong> L1 looked different from L2. L2 from L3. <strong>No shared logic. No shared pattern.</strong>
           </p>
 
           {/* Problem / Solution */}
@@ -196,7 +196,7 @@ export function FtnCaseStudy({ project, nextProject, prevProject }: FtnCaseStudy
           <p className="text-xs text-foreground/65 font-medium uppercase tracking-widest mb-10">In progress</p>
 
           <p className="text-base text-foreground/80 leading-relaxed mb-10">
-            Faithful to Nature is opening stores at a rapid rate. The platform needed to reflect this, extending beyond its original delivery model into a true omnichannel experience.
+            <strong>Faithful to Nature is opening stores at a rapid rate.</strong> The platform needed to reflect this, <strong>extending beyond its original delivery model into a true omnichannel experience.</strong>
           </p>
 
           {/* Existing vs New */}

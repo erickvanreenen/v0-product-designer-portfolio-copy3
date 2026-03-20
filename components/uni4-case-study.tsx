@@ -1,5 +1,6 @@
 "use client";
 
+import React from "react";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight, ArrowUpRight } from "lucide-react";
 import { Project } from "@/lib/projects";
@@ -92,10 +93,10 @@ export function Uni4CaseStudy({ project, nextProject, prevProject }: Uni4CaseStu
             Three years as Visual Team Lead at UNi4 Online.
           </p>
           <p className="text-base text-foreground/80 leading-relaxed mb-5">
-            The company needed two things done in parallel: fix a fragmented design team, and design a new aggregator platform to consolidate multiple education brands.
+            The company needed two things done in parallel: <strong>fix a fragmented design team, and design a new aggregator platform</strong> to consolidate multiple education brands.
           </p>
           <p className="text-base text-foreground/80 leading-relaxed">
-            I ran both. Team lead on one side, UX designer on the other. The two tracks informed each other throughout.
+            <strong>I ran both.</strong> Team lead on one side, UX designer on the other. The two tracks informed each other throughout.
           </p>
         </section>
 
@@ -111,13 +112,13 @@ export function Uni4CaseStudy({ project, nextProject, prevProject }: Uni4CaseStu
               <p className="text-xs text-foreground/65 font-medium uppercase tracking-widest mb-4">Track 01</p>
               <h3 className="text-base font-bold text-foreground mb-3">Team leadership</h3>
               <div className="space-y-3">
-                {[
-                  "Designers were working in isolation with no shared visibility.",
-                  "Output quality was inconsistent. KPIs were being missed.",
-                  "Introduced regular check-ins, shared workflows, and Kanban-based project tracking.",
-                  "Team productivity increased significantly and KPI achievement became consistent.",
-                ].map((item) => (
-                  <div key={item} className="flex items-start gap-3">
+                {([
+                  <><strong>Designers were working in isolation</strong> with no shared visibility.</>,
+                  <>Output quality was inconsistent. <strong>KPIs were being missed.</strong></>,
+                  <><strong>Introduced regular check-ins, shared workflows, and Kanban-based project tracking.</strong></>,
+                  <><strong>Team productivity increased significantly</strong> and KPI achievement became consistent.</>,
+                ] as React.ReactNode[]).map((item, idx) => (
+                  <div key={idx} className="flex items-start gap-3">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#09332C]/20 mt-[0.4rem] shrink-0" />
                     <p className="text-sm text-foreground/80 leading-relaxed">{item}</p>
                   </div>
@@ -128,13 +129,13 @@ export function Uni4CaseStudy({ project, nextProject, prevProject }: Uni4CaseStu
               <p className="text-xs text-[#F0531C] font-medium uppercase tracking-widest mb-4">Track 02</p>
               <h3 className="text-base font-bold text-foreground mb-3">Platform design</h3>
               <div className="space-y-3">
-                {[
-                  "Multiple education brands needed to coexist on a single aggregator platform.",
-                  "Users required seamless navigation across brands without losing context.",
-                  "Designed a unified information architecture that balanced brand identity with platform consistency.",
-                  "Delivered a cohesive user experience across all brands under one platform.",
-                ].map((item) => (
-                  <div key={item} className="flex items-start gap-3">
+                {([
+                  <>Multiple education brands needed to coexist on <strong>a single aggregator platform.</strong></>,
+                  <>Users required <strong>seamless navigation across brands</strong> without losing context.</>,
+                  <><strong>Designed a unified information architecture</strong> that balanced brand identity with platform consistency.</>,
+                  <><strong>Delivered a cohesive user experience</strong> across all brands under one platform.</>,
+                ] as React.ReactNode[]).map((item, idx) => (
+                  <div key={idx} className="flex items-start gap-3">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#F0531C]/40 mt-[0.4rem] shrink-0" />
                     <p className="text-sm text-foreground/80 leading-relaxed">{item}</p>
                   </div>
@@ -172,27 +173,27 @@ export function Uni4CaseStudy({ project, nextProject, prevProject }: Uni4CaseStu
               {
                 step: "01",
                 label: "Team process audit",
-                desc: "Analysed existing workflows. Interviewed designers individually to understand friction points and morale. Identified lack of shared visibility as the core problem.",
+                desc: <><strong>Analysed existing workflows.</strong> Interviewed designers individually to understand friction points and morale. <strong>Identified lack of shared visibility as the core problem.</strong></>,
               },
               {
                 step: "02",
                 label: "Kanban implementation",
-                desc: "Introduced a shared Kanban board. Weekly check-ins. Clear task ownership. Output quality improved and missed deadlines dropped significantly.",
+                desc: <>Introduced a shared Kanban board. Weekly check-ins. Clear task ownership. <strong>Output quality improved and missed deadlines dropped significantly.</strong></>,
               },
               {
                 step: "03",
                 label: "Competitor analysis",
-                desc: "Studied multi-brand education aggregator platforms globally. Identified navigation patterns and IA approaches for consolidating distinct brands under one roof.",
+                desc: <><strong>Studied multi-brand education aggregator platforms globally.</strong> Identified navigation patterns and IA approaches for consolidating distinct brands under one roof.</>,
               },
               {
                 step: "04",
                 label: "Information architecture",
-                desc: "Designed the IA to allow cross-brand navigation while keeping each brand's identity intact. Unified design patterns built to flex across multiple brands.",
+                desc: <><strong>Designed the IA to allow cross-brand navigation</strong> while keeping each brand&apos;s identity intact. Unified design patterns built to flex across multiple brands.</>,
               },
               {
                 step: "05",
                 label: "Platform design",
-                desc: "Delivered the aggregator platform design. Stakeholders across all brands reviewed and signed off on the final output.",
+                desc: <><strong>Delivered the aggregator platform design.</strong> Stakeholders across all brands reviewed and signed off on the final output.</>,
               },
             ].map((item, i, arr) => (
               <div key={item.step} className="flex gap-6">

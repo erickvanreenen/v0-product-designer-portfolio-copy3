@@ -175,13 +175,13 @@ export function EduvosCaseStudy({ project, nextProject, prevProject }: EduvosCas
             I started doing content writing and course creation at Eduvos in May 2024.
           </p>
           <p className="text-base text-foreground/80 leading-relaxed mb-5">
-            I was tasked to merge and consolidate the UX and UI modules into the three-year Digital Design degree programme as a unified module.
+            <strong>I was tasked to merge and consolidate the UX and UI modules</strong> into the three-year Digital Design degree programme as a unified module.
           </p>
           <p className="text-base text-foreground/80 leading-relaxed mb-5">
-            It involved evaluating the relevance of existing content, determining what to retain, discard, or introduce. This included crafting both formative and summative assessments, as well as developing lesson content through educational writing and design.
+            It involved evaluating the relevance of existing content, <strong>determining what to retain, discard, or introduce.</strong> This included crafting both formative and summative assessments, as well as developing lesson content through educational writing and design.
           </p>
           <p className="text-base text-foreground/80 leading-relaxed">
-            I enjoyed this work as it challenged me to really think and assess what the most relevant things are to introduce into the learning path.
+            I enjoyed this work as it challenged me to <strong>really think and assess what the most relevant things are to introduce into the learning path.</strong>
           </p>
         </section>
 
@@ -216,10 +216,10 @@ export function EduvosCaseStudy({ project, nextProject, prevProject }: EduvosCas
             <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">Approach</h2>
           </div>
           <p className="text-base text-foreground/80 leading-relaxed mb-6">
-            Structured the unified module so each exercise builds progressively toward the summative assessment. Clear learning objectives anchored every piece of content.
+            <strong>Structured the unified module so each exercise builds progressively toward the summative assessment.</strong> Clear learning objectives anchored every piece of content.
           </p>
           <p className="text-base text-foreground/80 leading-relaxed">
-            Explored how to balance theory with practical application across six weeks of formative exercises. Each brief was designed to mirror real industry workflows, culminating in a live presentation and full portfolio submission.
+            Explored how to balance theory with practical application across six weeks of formative exercises. <strong>Each brief was designed to mirror real industry workflows,</strong> culminating in a live presentation and full portfolio submission.
           </p>
         </section>
 

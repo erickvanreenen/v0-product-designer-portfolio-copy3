@@ -86,7 +86,7 @@ export function OvertureCaseStudy({ project, nextProject, prevProject }: Overtur
               <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">Brief</h2>
             </div>
           <p className="text-base text-foreground/85 leading-relaxed">
-            Design a promoter app that streamlines event documentation, connecting promoters, agents, and artists throughout the advancing stage of event organisation.
+            <strong>Design a promoter app that streamlines event documentation,</strong> connecting promoters, agents, and artists throughout the advancing stage of event organisation.
           </p>
         </section>
 
@@ -97,10 +97,10 @@ export function OvertureCaseStudy({ project, nextProject, prevProject }: Overtur
               <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">Research</h2>
             </div>
           <p className="text-base text-foreground/85 leading-relaxed mb-4">
-            Benchmarked leading event platforms globally.
+            <strong>Benchmarked leading event platforms globally.</strong>
           </p>
           <p className="text-base text-foreground/85 leading-relaxed">
-            Mapped user journeys and deliverables across the advancing process.
+            <strong>Mapped user journeys and deliverables</strong> across the advancing process.
           </p>
         </section>
 
@@ -245,7 +245,7 @@ export function OvertureCaseStudy({ project, nextProject, prevProject }: Overtur
         <section className="mb-24 bg-white rounded-lg p-8 md:p-10">
           <h2 className="text-xs text-[#F0531C] font-medium uppercase tracking-widest mb-6">Outcome</h2>
           <p className="text-base text-foreground/80 leading-relaxed">
-            Delivered and signed off in 4 weeks.
+            <strong>Delivered and signed off in 4 weeks.</strong>
           </p>
         </section>
 

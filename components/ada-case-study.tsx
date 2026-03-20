@@ -165,10 +165,10 @@ export function AdaCaseStudy({ project, nextProject, prevProject }: AdaCaseStudy
             Freelance lecturer at the Academy of Digital Arts, Jan 2024 to Mar 2025.
           </p>
           <p className="text-base text-foreground/80 leading-relaxed mb-5">
-            I delivered a UX design module as part of the Higher Certificate in Web Publishing and Interactive Media. The role covered in-person lesson delivery, slide content creation, and assessment design.
+            <strong>I delivered a UX design module</strong> as part of the Higher Certificate in Web Publishing and Interactive Media. The role covered in-person lesson delivery, slide content creation, and assessment design.
           </p>
           <p className="text-base text-foreground/80 leading-relaxed">
-            Two summative assessments were authored, structured around real apps and real research methods. Students were guided from competitive benchmarking and usability testing through to wireframes and final presentations.
+            <strong>Two summative assessments were authored, structured around real apps and real research methods.</strong> Students were guided from competitive benchmarking and usability testing through to wireframes and final presentations.
           </p>
         </section>
 
@@ -179,7 +179,7 @@ export function AdaCaseStudy({ project, nextProject, prevProject }: AdaCaseStudy
             <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">From the slides</h2>
           </div>
           <p className="text-sm text-foreground/65 mb-10">
-            A snapshot of slide content from the module. This is pre-AI-takeover material — foundational theory built from scratch and delivered in person.
+            A snapshot of slide content from the module. <strong>This is pre-AI-takeover material</strong> — foundational theory built from scratch and delivered in person.
           </p>
 
           {/* Slide deck 01 */}
@@ -294,7 +294,7 @@ export function AdaCaseStudy({ project, nextProject, prevProject }: AdaCaseStudy
             <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">Assessments</h2>
           </div>
           <p className="text-base text-foreground/80 leading-relaxed mb-12">
-            Both summative assessments were designed to mirror real industry workflows. Students were not given hypothetical scenarios -- they worked with real apps, real competitors, and real users.
+            <strong>Both summative assessments were designed to mirror real industry workflows.</strong> Students were not given hypothetical scenarios -- <strong>they worked with real apps, real competitors, and real users.</strong>
           </p>
         </section>
 

@@ -67,7 +67,7 @@ export function FlanksourceCaseStudy({ project, nextProject, prevProject }: Prop
             <strong>Mission Control was built to close that gap.</strong>
           </p>
           <p className="text-base text-foreground/80 leading-relaxed">
-            They had metrics dashboards, log tools, and Git for config, but nothing tying them together. Engineers needed one place to understand the health of their systems and act on it.
+            They had metrics dashboards, log tools, and Git for config, but <strong>nothing tying them together.</strong> <strong>Engineers needed one place to understand the health of their systems and act on it.</strong>
           </p>
         </section>
 
@@ -105,7 +105,7 @@ export function FlanksourceCaseStudy({ project, nextProject, prevProject }: Prop
           <p className="text-xs text-[#F0531C] font-medium uppercase tracking-widest mb-10">Dashboard redesign</p>
 
           <p className="text-base text-foreground/80 leading-relaxed mb-10">
-            Design a single dashboard that surfaces actionable insights and system health, consolidating five major platform components into one scannable view.
+            <strong>Design a single dashboard</strong> that surfaces actionable insights and system health, <strong>consolidating five major platform components into one scannable view.</strong>
           </p>
 
           {/* Five components */}
