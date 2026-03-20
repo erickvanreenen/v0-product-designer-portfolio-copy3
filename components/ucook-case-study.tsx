@@ -127,7 +127,7 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
 
         {/* Opening */}
         <section className="mb-24">
-          <p className="text-lg text-foreground leading-relaxed mb-10">
+          <p className="text-xl md:text-2xl text-foreground font-medium leading-snug mb-10">
             Customer service data showed users completing what they believed was sign-up, then contacting support expecting deliveries.
           </p>
           <div className="grid grid-cols-2 gap-px bg-[#09332C]/10 mb-8">
