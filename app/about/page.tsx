@@ -40,7 +40,7 @@ const tools = [
 
 const aiTools = [
   "Perplexity", "ChatGPT", "Claude", "NotebookLM",
-  "Figma AI (Pencil)", "Figma Make", "Stitch by Google",
+  "Figma Make", "Stitch by Google",
 ];
 
 function LogoMark({ size = 28, opacity = 1 }: { size?: number; color?: string; opacity?: number }) {
