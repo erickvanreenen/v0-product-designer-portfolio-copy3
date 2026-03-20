@@ -27,7 +27,7 @@ export function Uni4CaseStudy({ project, nextProject, prevProject }: Uni4CaseStu
 
           <div className="flex flex-wrap gap-1.5 mb-6">
             {project.tags.map((tag) => (
-              <span key={tag} className="text-xs text-foreground/58">{tag}</span>
+              <span key={tag} className="text-xs text-foreground/65">{tag}</span>
             ))}
           </div>
 
@@ -74,7 +74,7 @@ export function Uni4CaseStudy({ project, nextProject, prevProject }: Uni4CaseStu
       {/* Outcomes */}
       <section className="bg-[#E2F5EF]">
         <div className="max-w-5xl mx-auto px-6 py-10">
-          <p className="text-xs text-foreground/58 font-medium uppercase tracking-widest mb-6">Outcomes</p>
+          <p className="text-xs text-foreground/65 font-medium uppercase tracking-widest mb-6">Outcomes</p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {project.outcomes.map((outcome, i) => (
               <p key={i} className="text-sm text-foreground/85 leading-relaxed">{outcome}</p>
@@ -103,12 +103,12 @@ export function Uni4CaseStudy({ project, nextProject, prevProject }: Uni4CaseStu
         <section className="mb-24">
           <div className="flex items-center gap-3 mb-10">
             <LogoMark size={16} opacity={0.25} />
-            <h2 className="text-3xl font-bold text-foreground tracking-tight">Two tracks</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">Two tracks</h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-px bg-border mb-12">
             <div className="bg-white p-8">
-              <p className="text-xs text-foreground/58 font-medium uppercase tracking-widest mb-4">Track 01</p>
+              <p className="text-xs text-foreground/65 font-medium uppercase tracking-widest mb-4">Track 01</p>
               <h3 className="text-base font-bold text-foreground mb-3">Team leadership</h3>
               <div className="space-y-3">
                 {[
@@ -148,7 +148,7 @@ export function Uni4CaseStudy({ project, nextProject, prevProject }: Uni4CaseStu
         <section className="mb-24">
           <div className="flex items-center gap-3 mb-10">
             <LogoMark size={16} opacity={0.25} />
-            <h2 className="text-3xl font-bold text-foreground tracking-tight">Goals</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">Goals</h2>
           </div>
           <div className="space-y-6">
             {project.goals.map((goal, i) => (
@@ -164,7 +164,7 @@ export function Uni4CaseStudy({ project, nextProject, prevProject }: Uni4CaseStu
         <section className="mb-24">
           <div className="flex items-center gap-3 mb-10">
             <LogoMark size={16} opacity={0.25} />
-            <h2 className="text-3xl font-bold text-foreground tracking-tight">What I did</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">What I did</h2>
           </div>
 
           <div className="space-y-4">
@@ -213,7 +213,7 @@ export function Uni4CaseStudy({ project, nextProject, prevProject }: Uni4CaseStu
         <section className="mb-24">
           <div className="flex items-center gap-3 mb-10">
             <LogoMark size={16} opacity={0.25} />
-            <h2 className="text-3xl font-bold text-foreground tracking-tight">Insights</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">Insights</h2>
           </div>
           <div className="space-y-6">
             {project.insights.map((insight, i) => (
@@ -235,7 +235,7 @@ export function Uni4CaseStudy({ project, nextProject, prevProject }: Uni4CaseStu
         <section className="mb-24">
           <div className="flex items-center gap-3 mb-10">
             <LogoMark size={16} opacity={0.25} />
-            <h2 className="text-3xl font-bold text-foreground tracking-tight">Reflection</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">Reflection</h2>
           </div>
           <div className="space-y-6">
             {project.learnings.map((learning, i) => (

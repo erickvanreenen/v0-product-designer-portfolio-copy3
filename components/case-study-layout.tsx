@@ -27,7 +27,7 @@ export function CaseStudyLayout({ project, nextProject, prevProject }: CaseStudy
 
           <div className="flex flex-wrap gap-1.5 mb-6">
             {project.tags.map((tag) => (
-              <span key={tag} className="text-xs text-foreground/58">{tag}</span>
+              <span key={tag} className="text-xs text-foreground/65">{tag}</span>
             ))}
           </div>
 
@@ -72,7 +72,7 @@ export function CaseStudyLayout({ project, nextProject, prevProject }: CaseStudy
       {/* Outcomes */}
       <section className="bg-[#E2F5EF]">
         <div className="max-w-5xl mx-auto px-6 py-10">
-          <p className="text-xs text-foreground/58 font-medium uppercase tracking-widest mb-6">Outcomes</p>
+          <p className="text-xs text-foreground/65 font-medium uppercase tracking-widest mb-6">Outcomes</p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {project.outcomes.map((outcome, i) => (
               <p key={i} className="text-sm text-foreground/85 leading-relaxed">{outcome}</p>
@@ -91,7 +91,7 @@ export function CaseStudyLayout({ project, nextProject, prevProject }: CaseStudy
 
         {/* Goals */}
         <section className="mb-24">
-          <h2 className="text-3xl font-bold text-foreground tracking-tight mb-10">Goals</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight mb-10">Goals</h2>
           <div className="space-y-6">
             {project.goals.map((goal, i) => (
               <div key={i} className="flex items-start gap-6">
@@ -104,13 +104,13 @@ export function CaseStudyLayout({ project, nextProject, prevProject }: CaseStudy
 
         {/* Research */}
         <section className="mb-24">
-          <h2 className="text-3xl font-bold text-foreground tracking-tight mb-10">Research</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight mb-10">Research</h2>
           <p className="text-base text-foreground/85 leading-relaxed">{project.research}</p>
         </section>
 
         {/* Insights */}
         <section className="mb-24">
-          <h2 className="text-3xl font-bold text-foreground tracking-tight mb-10">Insights</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight mb-10">Insights</h2>
           <div className="space-y-6">
             {project.insights.map((insight, i) => (
               <div key={i} className="flex items-start gap-6">
@@ -123,13 +123,13 @@ export function CaseStudyLayout({ project, nextProject, prevProject }: CaseStudy
 
         {/* IA & Flows */}
         <section className="mb-24">
-          <h2 className="text-3xl font-bold text-foreground tracking-tight mb-10">Architecture</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight mb-10">Architecture</h2>
           <p className="text-base text-foreground/85 leading-relaxed">{project.iaFlows}</p>
         </section>
 
         {/* Design */}
         <section className="mb-24">
-          <h2 className="text-3xl font-bold text-foreground tracking-tight mb-10">Design</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight mb-10">Design</h2>
           <p className="text-base text-foreground/85 leading-relaxed mb-6">{project.designExploration}</p>
           <p className="text-base text-foreground/85 leading-relaxed">{project.finalUI}</p>
         </section>
@@ -138,7 +138,7 @@ export function CaseStudyLayout({ project, nextProject, prevProject }: CaseStudy
         {/* Testing */}
         {project.testing && (
           <section className="mb-24">
-            <h2 className="text-3xl font-bold text-foreground tracking-tight mb-10">Testing</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight mb-10">Testing</h2>
             <p className="text-base text-foreground/85 leading-relaxed">{project.testing}</p>
           </section>
         )}
@@ -151,7 +151,7 @@ export function CaseStudyLayout({ project, nextProject, prevProject }: CaseStudy
 
         {/* Reflection */}
         <section className="mb-24">
-          <h2 className="text-3xl font-bold text-foreground tracking-tight mb-10">Reflection</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight mb-10">Reflection</h2>
           <div className="space-y-6">
             {project.learnings.map((learning, i) => (
               <div key={i} className="flex items-start gap-6">

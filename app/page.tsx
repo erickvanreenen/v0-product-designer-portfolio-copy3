@@ -49,7 +49,7 @@ export default function HomePage() {
             <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">Selected work</h2>
             <Link
               href="/projects"
-              className="text-sm text-foreground/58 hover:text-[#F0531C] transition-colors duration-200 flex items-center gap-1.5 group"
+              className="text-sm text-foreground/65 hover:text-[#F0531C] transition-colors duration-200 flex items-center gap-1.5 group"
             >
               All projects
               <ArrowRight size={14} className="group-hover:translate-x-0.5 transition-transform duration-200" />

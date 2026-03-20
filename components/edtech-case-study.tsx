@@ -28,7 +28,7 @@ export function EdtechCaseStudy({ project, nextProject, prevProject }: Props) {
 
           <div className="flex flex-wrap gap-1.5 mb-6">
             {project.tags.map((tag) => (
-              <span key={tag} className="text-xs text-foreground/58">{tag}</span>
+              <span key={tag} className="text-xs text-foreground/65">{tag}</span>
             ))}
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight mb-4 max-w-2xl">
@@ -90,7 +90,7 @@ export function EdtechCaseStudy({ project, nextProject, prevProject }: Props) {
         <section className="mb-24">
           <div className="flex items-center gap-3 mb-10">
               <LogoMark size={16} opacity={0.25} />
-              <h2 className="text-3xl font-bold text-foreground tracking-tight">Brief</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">Brief</h2>
             </div>
           <p className="text-base text-foreground/80 leading-relaxed mb-10">
             Create visual and infographic assets for a Business Systems Analysis course built in Articulate Rise. Work within the learning designer's content structure. Communicate complex conceptual models clearly and accessibly.
@@ -110,7 +110,7 @@ export function EdtechCaseStudy({ project, nextProject, prevProject }: Props) {
         <section className="mb-24">
           <div className="flex items-center gap-3 mb-4">
               <LogoMark size={16} opacity={0.25} />
-              <h2 className="text-3xl font-bold text-foreground tracking-tight">Approach</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">Approach</h2>
             </div>
           <p className="text-xs text-[#F0531C] font-medium uppercase tracking-widest mb-10">Visual design in service of learning</p>
 
@@ -134,7 +134,7 @@ export function EdtechCaseStudy({ project, nextProject, prevProject }: Props) {
         <section className="mb-24">
           <div className="flex items-center gap-3 mb-10">
               <LogoMark size={16} opacity={0.25} />
-              <h2 className="text-3xl font-bold text-foreground tracking-tight">Insights</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">Insights</h2>
             </div>
           <div className="space-y-6">
             {project.insights.map((insight, i) => (
@@ -151,10 +151,10 @@ export function EdtechCaseStudy({ project, nextProject, prevProject }: Props) {
           <section className="mb-24">
             <div className="flex items-center gap-3 mb-10">
               <LogoMark size={16} opacity={0.25} />
-              <h2 className="text-3xl font-bold text-foreground tracking-tight">Live experience</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">Live experience</h2>
             </div>
             <div className="bg-[#E2F5EF] rounded-lg p-8 md:p-10">
-              <p className="text-xs text-foreground/58 font-medium uppercase tracking-widest mb-6">What the course covers</p>
+              <p className="text-xs text-foreground/65 font-medium uppercase tracking-widest mb-6">What the course covers</p>
               <div className="grid md:grid-cols-2 gap-4 mb-8">
                 {[
                   { label: "Systems thinking", desc: "Conceptual models and stakeholder mapping made visual through infographic design." },
@@ -198,7 +198,7 @@ export function EdtechCaseStudy({ project, nextProject, prevProject }: Props) {
         <section className="mb-24">
           <div className="flex items-center gap-3 mb-10">
               <LogoMark size={16} opacity={0.25} />
-              <h2 className="text-3xl font-bold text-foreground tracking-tight">Reflection</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">Reflection</h2>
             </div>
           <div className="space-y-6">
             {project.learnings.map((learning, i) => (

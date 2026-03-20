@@ -44,7 +44,7 @@ export function OvertureCaseStudy({ project, nextProject, prevProject }: Overtur
         <div className="max-w-5xl mx-auto px-6 py-20 md:py-28">
           <div className="flex flex-wrap gap-1.5 mb-6">
             {project.tags.map((tag) => (
-              <span key={tag} className="text-xs text-foreground/58">{tag}</span>
+              <span key={tag} className="text-xs text-foreground/65">{tag}</span>
             ))}
           </div>
 
@@ -83,7 +83,7 @@ export function OvertureCaseStudy({ project, nextProject, prevProject }: Overtur
         <section className="mb-24">
           <div className="flex items-center gap-3 mb-10">
               <LogoMark size={16} opacity={0.25} />
-              <h2 className="text-3xl font-bold text-foreground tracking-tight">Brief</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">Brief</h2>
             </div>
           <p className="text-base text-foreground/85 leading-relaxed">
             Design a promoter app that streamlines event documentation, connecting promoters, agents, and artists throughout the advancing stage of event organisation.
@@ -94,7 +94,7 @@ export function OvertureCaseStudy({ project, nextProject, prevProject }: Overtur
         <section className="mb-24">
           <div className="flex items-center gap-3 mb-10">
               <LogoMark size={16} opacity={0.25} />
-              <h2 className="text-3xl font-bold text-foreground tracking-tight">Research</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">Research</h2>
             </div>
           <p className="text-base text-foreground/85 leading-relaxed mb-4">
             Benchmarked leading event platforms globally.
@@ -108,7 +108,7 @@ export function OvertureCaseStudy({ project, nextProject, prevProject }: Overtur
         <section className="mb-24">
           <div className="flex items-center gap-3 mb-10">
             <LogoMark size={16} opacity={0.25} />
-            <h2 className="text-3xl font-bold text-foreground tracking-tight">Wireframes</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">Wireframes</h2>
           </div>
           <div
             className="bg-[#F7EDDA]/50 rounded-lg cursor-zoom-in relative group p-6 md:p-10"
@@ -155,7 +155,7 @@ export function OvertureCaseStudy({ project, nextProject, prevProject }: Overtur
         <section className="mb-24">
           <div className="flex items-center gap-3 mb-10">
             <LogoMark size={16} opacity={0.25} />
-            <h2 className="text-3xl font-bold text-foreground tracking-tight">Prototype</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">Prototype</h2>
           </div>
           <div
             className="bg-[#E2F5EF] rounded-lg cursor-zoom-in relative group p-6 md:p-10"
@@ -202,12 +202,12 @@ export function OvertureCaseStudy({ project, nextProject, prevProject }: Overtur
         <section className="mb-24">
           <div className="flex items-center gap-3 mb-10">
               <LogoMark size={16} opacity={0.25} />
-              <h2 className="text-3xl font-bold text-foreground tracking-tight">Team</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">Team</h2>
             </div>
           <div className="flex gap-16">
             <div>
               <p className="text-sm text-foreground font-medium">Erick van Reenen</p>
-              <p className="text-xs text-foreground/58 mt-1">UX Designer</p>
+              <p className="text-xs text-foreground/65 mt-1">UX Designer</p>
             </div>
             <div>
               <Link
@@ -218,7 +218,7 @@ export function OvertureCaseStudy({ project, nextProject, prevProject }: Overtur
               >
                 Brent Nygaard
               </Link>
-              <p className="text-xs text-foreground/58 mt-1">UI Designer</p>
+              <p className="text-xs text-foreground/65 mt-1">UI Designer</p>
             </div>
           </div>
         </section>
@@ -227,16 +227,16 @@ export function OvertureCaseStudy({ project, nextProject, prevProject }: Overtur
         <section className="mb-24">
           <div className="flex items-center gap-3 mb-10">
               <LogoMark size={16} opacity={0.25} />
-              <h2 className="text-3xl font-bold text-foreground tracking-tight">Timeline</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">Timeline</h2>
             </div>
           <div className="flex gap-16">
             <div className="flex items-baseline gap-3">
               <p className="text-2xl font-bold text-foreground">2 weeks</p>
-              <p className="text-xs text-foreground/58 uppercase tracking-widest font-medium">UX</p>
+              <p className="text-xs text-foreground/65 uppercase tracking-widest font-medium">UX</p>
             </div>
             <div className="flex items-baseline gap-3">
               <p className="text-2xl font-bold text-foreground">2 weeks</p>
-              <p className="text-xs text-foreground/58 uppercase tracking-widest font-medium">UI</p>
+              <p className="text-xs text-foreground/65 uppercase tracking-widest font-medium">UI</p>
             </div>
           </div>
         </section>

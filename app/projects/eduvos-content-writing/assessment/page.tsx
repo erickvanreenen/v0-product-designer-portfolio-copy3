@@ -120,7 +120,7 @@ export default function AssessmentPage() {
 
           <div className="flex flex-wrap gap-1.5 mb-6">
             {["EdTech", "Content Design", "Formative Assessment"].map((tag) => (
-              <span key={tag} className="text-xs text-foreground/58">{tag}</span>
+              <span key={tag} className="text-xs text-foreground/65">{tag}</span>
             ))}
           </div>
 
@@ -154,7 +154,7 @@ export default function AssessmentPage() {
       {/* Learning Objective */}
       <section className="bg-[#E2F5EF]">
         <div className="max-w-3xl mx-auto px-6 py-10">
-          <p className="text-xs text-foreground/58 font-medium uppercase tracking-widest mb-4">Learning Objective</p>
+          <p className="text-xs text-foreground/65 font-medium uppercase tracking-widest mb-4">Learning Objective</p>
           <p className="text-base text-foreground/85 leading-relaxed">
             This brief aims to immerse you in the core principles of User Interface (UI) and User Experience (UX) design, applying them in a real-world scenario by revamping a non-profit organisation's website. Through a series of hands-on exercises, you will develop user personas, create mid-fidelity prototypes, and select the best platform for implementation. The project will culminate in usability testing, ensuring that your design enhances user interaction while staying true to the non-profit's mission and brand identity.
           </p>
@@ -165,7 +165,7 @@ export default function AssessmentPage() {
 
         {/* Brief Topic */}
         <section className="mb-24">
-          <h2 className="text-3xl font-bold text-foreground tracking-tight mb-6">Brief topic</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight mb-6">Brief topic</h2>
           <p className="text-base text-foreground/85 leading-relaxed">
             You are tasked with identifying an existing non-profit organisation that has a poorly designed website. Your goal is to revamp the website, aligning it with modern UI and UX principles to improve user interaction and overall experience. The project includes developing user personas, creating a mid-fidelity prototype, and performing usability testing to validate your design. Finally, you will present your findings and design updates in a live presentation.
           </p>
@@ -173,7 +173,7 @@ export default function AssessmentPage() {
 
         {/* Scope */}
         <section className="mb-24">
-          <h2 className="text-3xl font-bold text-foreground tracking-tight mb-6">Scope</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight mb-6">Scope</h2>
           <p className="text-base text-foreground/85 leading-relaxed">
             This brief will consist of six exercises spanning six weeks, focusing on each step in the UI/UX design process. Each exercise will build on the skills and knowledge covered in class, helping you progress toward the final website revamp and usability testing. Completion of these exercises is essential to prepare for the final summative assessment in weeks 7 and 8.
           </p>
@@ -181,7 +181,7 @@ export default function AssessmentPage() {
 
         {/* Delivery Requirements */}
         <section className="mb-24">
-          <h2 className="text-3xl font-bold text-foreground tracking-tight mb-10">Delivery requirements</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight mb-10">Delivery requirements</h2>
           <div className="space-y-6">
             {[
               "A digital portfolio containing all required deliverables for the brief.",
@@ -198,7 +198,7 @@ export default function AssessmentPage() {
 
         {/* Formative Exercises */}
         <section className="mb-24">
-          <h2 className="text-3xl font-bold text-foreground tracking-tight mb-2">Exercises and deliverables</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight mb-2">Exercises and deliverables</h2>
           <p className="text-xs text-[#F0531C] font-medium uppercase tracking-widest mb-12">Formative — Weeks 1 to 6</p>
           <div className="space-y-12">
             {exercises.map((ex) => (
@@ -206,7 +206,7 @@ export default function AssessmentPage() {
                 <div className="flex items-center gap-3 mb-6">
                   <span className="text-xs text-[#F0531C] font-medium uppercase tracking-widest">{ex.week}</span>
                   <span className="text-foreground/35">/</span>
-                  <span className="text-xs text-foreground/58 font-medium uppercase tracking-widest">{ex.label}</span>
+                  <span className="text-xs text-foreground/65 font-medium uppercase tracking-widest">{ex.label}</span>
                 </div>
                 <h3 className="text-xl font-bold text-foreground tracking-tight mb-3">{ex.title}</h3>
                 <p className="text-sm text-[#F0531C] font-medium mb-6">{ex.objective}</p>
@@ -220,11 +220,11 @@ export default function AssessmentPage() {
                 </div>
                 <div className="grid md:grid-cols-2 gap-6 pt-6 border-t border-border">
                   <div>
-                    <p className="text-xs text-foreground/58 font-medium uppercase tracking-widest mb-2">Deliverable</p>
+                    <p className="text-xs text-foreground/65 font-medium uppercase tracking-widest mb-2">Deliverable</p>
                     <p className="text-sm text-foreground/85 leading-relaxed">{ex.deliverable}</p>
                   </div>
                   <div>
-                    <p className="text-xs text-foreground/58 font-medium uppercase tracking-widest mb-2">Tools</p>
+                    <p className="text-xs text-foreground/65 font-medium uppercase tracking-widest mb-2">Tools</p>
                     <p className="text-sm text-foreground/85 leading-relaxed">{ex.tools}</p>
                   </div>
                 </div>
@@ -235,7 +235,7 @@ export default function AssessmentPage() {
 
         {/* Summative */}
         <section className="mb-24">
-          <h2 className="text-3xl font-bold text-foreground tracking-tight mb-2">Summative assessment</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight mb-2">Summative assessment</h2>
           <p className="text-xs text-[#F0531C] font-medium uppercase tracking-widest mb-12">Weeks 7 and 8</p>
           <div className="space-y-12">
             {summative.map((ex) => (
@@ -243,7 +243,7 @@ export default function AssessmentPage() {
                 <div className="flex items-center gap-3 mb-6">
                   <span className="text-xs text-[#F0531C] font-medium uppercase tracking-widest">{ex.week}</span>
                   <span className="text-foreground/35">/</span>
-                  <span className="text-xs text-foreground/58 font-medium uppercase tracking-widest">{ex.label}</span>
+                  <span className="text-xs text-foreground/65 font-medium uppercase tracking-widest">{ex.label}</span>
                 </div>
                 <h3 className="text-xl font-bold text-foreground tracking-tight mb-3">{ex.title}</h3>
                 <p className="text-sm text-[#F0531C] font-medium mb-6">{ex.objective}</p>
@@ -257,11 +257,11 @@ export default function AssessmentPage() {
                 </div>
                 <div className="grid md:grid-cols-2 gap-6 pt-6 border-t border-border">
                   <div>
-                    <p className="text-xs text-foreground/58 font-medium uppercase tracking-widest mb-2">Deliverable</p>
+                    <p className="text-xs text-foreground/65 font-medium uppercase tracking-widest mb-2">Deliverable</p>
                     <p className="text-sm text-foreground/85 leading-relaxed">{ex.deliverable}</p>
                   </div>
                   <div>
-                    <p className="text-xs text-foreground/58 font-medium uppercase tracking-widest mb-2">Tools</p>
+                    <p className="text-xs text-foreground/65 font-medium uppercase tracking-widest mb-2">Tools</p>
                     <p className="text-sm text-foreground/85 leading-relaxed">{ex.tools}</p>
                   </div>
                 </div>
@@ -272,7 +272,7 @@ export default function AssessmentPage() {
 
         {/* Minimum Requirements */}
         <section className="mb-24">
-          <h2 className="text-3xl font-bold text-foreground tracking-tight mb-10">Minimum research requirements</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight mb-10">Minimum research requirements</h2>
           <div className="space-y-6">
             {[
               "User personas should be detailed and visually engaging.",

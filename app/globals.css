@@ -126,3 +126,18 @@
     @apply bg-background text-foreground;
   }
 }
+
+/*
+  Type scale — reference
+  ──────────────────────────────────────────────
+  h1  page title     text-4xl md:text-6xl font-bold tracking-tight
+  h2  section title  text-3xl md:text-4xl font-bold tracking-tight
+  h3  subsection     text-xl font-bold
+  h4  eyebrow/label  text-xs font-medium uppercase tracking-widest
+
+  b1  lead           text-lg  text-foreground/85
+  b2  body           text-base text-foreground/80
+  b3  support        text-sm  text-foreground/65
+      muted numbers  text-foreground/35
+  ──────────────────────────────────────────────
+*/

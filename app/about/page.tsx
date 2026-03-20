@@ -67,7 +67,7 @@ export default function AboutPage() {
             </h1>
           </div>
 
-          <p className="text-lg text-foreground/75 max-w-xl leading-relaxed mb-14">
+          <p className="text-lg text-foreground/80 max-w-xl leading-relaxed mb-14">
             UX-first. Strategic thinking. Fifteen years building things people actually use.
           </p>
 

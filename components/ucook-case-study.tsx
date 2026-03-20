@@ -70,7 +70,7 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
         <div className="max-w-5xl mx-auto px-6 py-20 md:py-28">
           <div className="flex flex-wrap gap-1.5 mb-6">
             {project.tags.map((tag) => (
-              <span key={tag} className="text-xs text-foreground/58">{tag}</span>
+              <span key={tag} className="text-xs text-foreground/65">{tag}</span>
             ))}
           </div>
 
@@ -133,11 +133,11 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
           <div className="grid grid-cols-2 gap-px bg-[#09332C]/10 mb-8">
             <div className="bg-[#FDFAF5] p-8">
               <p className="text-5xl md:text-6xl font-bold text-foreground/30 leading-none tabular-nums">60+</p>
-              <p className="text-xs text-foreground/55 font-medium uppercase tracking-widest mt-4">Incomplete sign-ups per week</p>
+              <p className="text-xs text-foreground/65 font-medium uppercase tracking-widest mt-4">Incomplete sign-ups per week</p>
             </div>
             <div className="bg-[#FDFAF5] p-8">
               <p className="text-5xl md:text-6xl font-bold text-foreground/30 leading-none tabular-nums">1.43%</p>
-              <p className="text-xs text-foreground/55 font-medium uppercase tracking-widest mt-4">Retention through the sign-up path</p>
+              <p className="text-xs text-foreground/65 font-medium uppercase tracking-widest mt-4">Retention through the sign-up path</p>
             </div>
           </div>
           <p className="text-base text-foreground/65">
@@ -211,7 +211,7 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
               <LogoMark size={16} opacity={0.25} />
               <h2 className="text-4xl font-bold text-foreground tracking-tight">Research</h2>
             </div>
-          <p className="text-sm text-foreground/58 mb-10">Seven stages. Mixed methods.</p>
+          <p className="text-sm text-foreground/65 mb-10">Seven stages. Mixed methods.</p>
 
           <div className="space-y-0">
             {[
@@ -270,7 +270,7 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
             <LogoMark size={16} opacity={0.25} />
             <div>
               <p className="text-xs text-[#F0531C] font-medium uppercase tracking-widest mb-1">Option considered</p>
-              <h2 className="text-3xl font-bold text-foreground tracking-tight">Pay on Sign Up</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">Pay on Sign Up</h2>
             </div>
           </div>
           <p className="text-base text-foreground/85 leading-relaxed mb-10">
@@ -283,7 +283,7 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
               {["Meal Kit Page", "Add to Cart", "Checkout"].map((step, i) => (
                 <div key={step} className="bg-white p-5">
                   <p className="text-xs text-foreground/35 font-bold mb-2">{String(i + 1).padStart(2, "0")}</p>
-                  <p className="text-sm text-foreground/75">{step}</p>
+                  <p className="text-sm text-foreground/80">{step}</p>
                 </div>
               ))}
             </div>
@@ -295,7 +295,7 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
               ].map(({ label, step, accent }) => (
                 <div key={label} className={`p-5 ${accent ? "bg-[#E2F5EF]" : "bg-white"}`}>
                   <p className={`text-xs font-bold mb-2 ${accent ? "text-[#F0531C]" : "text-foreground/35"}`}>{String(step).padStart(2, "0")}</p>
-                  <p className={`text-sm ${accent ? "text-foreground font-semibold" : "text-foreground/75"}`}>{label}</p>
+                  <p className={`text-sm ${accent ? "text-foreground font-semibold" : "text-foreground/80"}`}>{label}</p>
                 </div>
               ))}
             </div>
@@ -374,7 +374,7 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
                 </div>
               ))}
             </div>
-            <p className="text-xs text-foreground/55 mt-4">Four paths. One outcome. No dead ends.</p>
+            <p className="text-xs text-foreground/65 mt-4">Four paths. One outcome. No dead ends.</p>
           </div>
 
           {/* Wireframes */}
@@ -406,7 +406,7 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
               ].map((spec) => (
                 <div key={spec.title} className="bg-white p-6">
                   <p className="text-sm font-bold text-foreground">{spec.title}</p>
-                  <p className="text-xs text-foreground/58 mt-1">{spec.desc}</p>
+                  <p className="text-xs text-foreground/65 mt-1">{spec.desc}</p>
                 </div>
               ))}
             </div>
@@ -480,7 +480,7 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
           {/* ROI context */}
           <div className="border-t border-border pt-10 mt-10">
             <p className="text-4xl md:text-5xl font-bold text-[#F0531C]">~R255k</p>
-            <p className="text-xs text-foreground/55 font-medium uppercase tracking-widest mt-2 mb-6">6-month redesign impact ROI · Aug 2025 – Jan 2026</p>
+            <p className="text-xs text-foreground/65 font-medium uppercase tracking-widest mt-2 mb-6">6-month redesign impact ROI · Aug 2025 – Jan 2026</p>
             <p className="text-sm text-foreground/50 leading-relaxed whitespace-nowrap overflow-x-auto">
               R405k × 63% (3.7% → 9.3%) = ~R255k
             </p>
@@ -490,9 +490,9 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
           <div className="mt-12 pt-8 border-t border-border">
             <h3 className="text-xs text-foreground/65 font-medium uppercase tracking-widest mb-4">Pending</h3>
             <ul className="space-y-2">
-              <li className="text-sm text-foreground/58">Payment timing decision outcomes.</li>
-              <li className="text-sm text-foreground/58">A/B testing results.</li>
-              <li className="text-sm text-foreground/58">Post-release refund and billing impact.</li>
+              <li className="text-sm text-foreground/65">Payment timing decision outcomes.</li>
+              <li className="text-sm text-foreground/65">A/B testing results.</li>
+              <li className="text-sm text-foreground/65">Post-release refund and billing impact.</li>
             </ul>
           </div>
         </section>
