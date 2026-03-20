@@ -31,7 +31,7 @@ export function ProjectCard({ project, featured = false }: ProjectCardProps) {
             {project.tags.slice(0, 3).map((tag) => (
               <span
                 key={tag}
-                className="text-xs text-[#09332C]/75 bg-[#F7EDDA] rounded-md px-3 h-6 inline-flex items-center whitespace-nowrap"
+                className="text-xs text-[#09332C]/75 bg-[#E2F5EF] rounded-md px-3 h-6 inline-flex items-center whitespace-nowrap"
               >
                 {tag}
               </span>
