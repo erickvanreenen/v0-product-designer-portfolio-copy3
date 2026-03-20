@@ -137,7 +137,7 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
             </div>
             <div className="bg-[#FDFAF5] p-8">
               <p className="text-5xl md:text-6xl font-bold text-foreground/30 leading-none tabular-nums">1.43%</p>
-              <p className="text-xs text-foreground/55 font-medium uppercase tracking-widest mt-4">Retention through the path</p>
+              <p className="text-xs text-foreground/55 font-medium uppercase tracking-widest mt-4">Retention through the sign-up path</p>
             </div>
           </div>
           <p className="text-base text-foreground/65">
