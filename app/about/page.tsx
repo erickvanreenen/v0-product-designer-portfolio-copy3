@@ -101,9 +101,6 @@ export default function AboutPage() {
         <section className="mb-24">
           <div className="max-w-2xl">
             <p className="text-xl text-foreground font-medium leading-relaxed mb-6">
-              I came to UX through a longer route than most.
-            </p>
-            <p className="text-base text-foreground/80 leading-relaxed mb-5">
               I am an experienced designer with a diverse background in entrepreneurship, business development, branding, product design, visual and online education design, and UX/UI.
             </p>
             <p className="text-base text-foreground/80 leading-relaxed mb-5">
