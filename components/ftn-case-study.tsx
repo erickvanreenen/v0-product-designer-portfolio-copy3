@@ -26,21 +26,9 @@ export function FtnCaseStudy({ project, nextProject, prevProject }: FtnCaseStudy
           <h1 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight mb-4 max-w-2xl">
             {project.title}
           </h1>
-          <p className="text-lg text-foreground/70 max-w-xl leading-relaxed mb-8">
+          <p className="text-lg text-foreground/70 max-w-xl leading-relaxed">
             {project.subtitle}
           </p>
-
-          {project.externalLink && (
-            <a
-              href={project.externalLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-[#F0531C] text-white text-sm font-medium rounded-full hover:bg-[#09332C] transition-all duration-200 group"
-            >
-              View live
-              <ArrowUpRight size={16} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200" />
-            </a>
-          )}
 
           {/* Meta grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 mt-14">
@@ -293,6 +281,27 @@ export function FtnCaseStudy({ project, nextProject, prevProject }: FtnCaseStudy
             ))}
           </div>
         </section>
+
+        {/* View live CTA */}
+        {project.externalLink && (
+          <section className="mb-24">
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6 border border-border rounded-lg p-8">
+              <div>
+                <p className="text-xs text-foreground/35 font-medium uppercase tracking-widest mb-1">Production site</p>
+                <p className="text-sm text-foreground/70">View the current live experience.</p>
+              </div>
+              <a
+                href={project.externalLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-[#F0531C] text-white text-sm font-medium rounded-full hover:bg-[#09332C] transition-all duration-200 group shrink-0"
+              >
+                View live
+                <ArrowUpRight size={16} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200" />
+              </a>
+            </div>
+          </section>
+        )}
 
       </div>
 
