@@ -167,43 +167,18 @@ export default function AboutPage() {
         </section>
 
 
-        {/* Skills + Tooling */}
+        {/* Tooling */}
         <section className="mb-0 pb-24 border-b border-border">
           <div className="flex items-center gap-3 mb-12">
             <LogoMark size={16} color="#09332C" opacity={0.25} />
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">Skills + Tooling</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">Tooling</h2>
           </div>
-          <div className="space-y-12">
-            <div>
-              <h3 className="text-xs text-foreground/65 font-medium uppercase tracking-widest mb-6">Skills</h3>
-              <div className="flex flex-wrap gap-2">
-                {skills.map((skill) => (
-                  <span key={skill} className="text-sm px-3 py-1.5 rounded-full bg-[#E2F5EF] text-[#09332C]/60">
-                    {skill}
-                  </span>
-                ))}
-              </div>
-            </div>
-            <div>
-              <h3 className="text-xs text-foreground/65 font-medium uppercase tracking-widest mb-6">Tools</h3>
-              <div className="flex flex-wrap gap-2">
-                {tools.map((tool) => (
-                  <span key={tool} className="text-sm px-3 py-1.5 rounded-full bg-[#F7EDDA] text-[#09332C]/80">
-                    {tool}
-                  </span>
-                ))}
-              </div>
-            </div>
-            <div>
-              <h3 className="text-xs text-foreground/65 font-medium uppercase tracking-widest mb-6">AI Tools</h3>
-              <div className="flex flex-wrap gap-2">
-                {aiTools.map((tool) => (
-                  <span key={tool} className="text-sm px-3 py-1.5 rounded-full bg-[#F7DFBA] text-[#09332C]/80">
-                    {tool}
-                  </span>
-                ))}
-              </div>
-            </div>
+          <div className="flex flex-wrap gap-2">
+            {[...tools, ...aiTools].map((tool) => (
+              <span key={tool} className="text-sm px-3 py-1.5 rounded-full bg-[#F7EDDA] text-[#09332C]/80">
+                {tool}
+              </span>
+            ))}
           </div>
         </section>
 
