@@ -479,24 +479,11 @@ export function UCookCaseStudy({ project, nextProject, prevProject }: UCookCaseS
 
           {/* ROI context */}
           <div className="border-t border-border pt-10 mt-10">
-            <p className="text-xs text-foreground/45 font-medium uppercase tracking-widest mb-8">Aug 2025 – Jan 2026</p>
-            <div className="font-mono">
-              <div className="flex items-baseline gap-4 mb-1">
-                <span className="text-xs text-foreground/35 w-3 shrink-0"> </span>
-                <span className="text-2xl font-bold text-foreground/60 tabular-nums">R405k</span>
-                <span className="text-xs text-foreground/40">Total revenue (100%) from new funnel cohort</span>
-              </div>
-              <div className="flex items-baseline gap-4 mb-3">
-                <span className="text-xs text-foreground/35 w-3 shrink-0">×</span>
-                <span className="text-2xl font-bold text-foreground/60 tabular-nums">63%</span>
-                <span className="text-xs text-foreground/40">Share unlocked vs old funnel (3.7% → 9.3%)</span>
-              </div>
-              <div className="border-t border-[#09332C]/15 pt-3 flex items-baseline gap-4">
-                <span className="text-xs text-foreground/35 w-3 shrink-0">=</span>
-                <span className="text-4xl md:text-5xl font-bold text-[#F0531C] tabular-nums">~R255k</span>
-                <span className="text-xs text-foreground/40">6-month redesign impact ROI</span>
-              </div>
-            </div>
+            <p className="text-4xl md:text-5xl font-bold text-[#F0531C]">~R255k</p>
+            <p className="text-xs text-foreground/55 font-medium uppercase tracking-widest mt-2 mb-6">6-month redesign impact ROI · Aug 2025 – Jan 2026</p>
+            <p className="text-sm text-foreground/50 leading-relaxed whitespace-nowrap overflow-x-auto">
+              R405k × 63% (3.7% → 9.3%) = ~R255k
+            </p>
           </div>
 
           {/* Pending */}
