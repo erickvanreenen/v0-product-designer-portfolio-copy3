@@ -20,15 +20,6 @@ export default function HomePage() {
           {/* Headline */}
           <HeroHeadline />
 
-          {/* Context strip */}
-          <p className="text-sm text-foreground/45 font-medium mb-10 md:mb-14 tracking-wide">
-            UX Designer 75% &nbsp;/&nbsp; UI 25%
-            <span className="mx-3 text-foreground/20">·</span>
-            E-commerce, Omnichannel, EdTech
-            <span className="mx-3 text-foreground/20">·</span>
-            Cape Town
-          </p>
-
           {/* CTAs */}
           <div className="flex items-center gap-5">
             <Link
