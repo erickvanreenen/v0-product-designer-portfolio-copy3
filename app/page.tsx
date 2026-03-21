@@ -16,16 +16,6 @@ export default function HomePage() {
       <section className="bg-[#FDFAF5]">
         <div className="max-w-5xl mx-auto px-6 pt-20 pb-16 md:pt-32 md:pb-24">
 
-          {/* Name + availability */}
-          <div className="flex items-center gap-3 mb-10 md:mb-14">
-            <span className="text-sm text-foreground/45 tracking-tight">Erick van Reenen</span>
-            <span className="text-foreground/20 select-none">·</span>
-            <span className="inline-flex items-center gap-1.5 text-xs font-medium text-[#F0531C]">
-              <span className="availability-dot w-1.5 h-1.5 rounded-full bg-[#F0531C] inline-block" />
-              Available
-            </span>
-          </div>
-
           {/* Headline */}
           <h1 className="text-5xl md:text-6xl lg:text-[72px] font-bold text-foreground tracking-tight leading-[1.04] max-w-3xl mb-8 md:mb-10">
             Fusing user needs with business outcomes.
