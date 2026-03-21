@@ -2,7 +2,6 @@ import Link from "next/link";
 import { projects } from "@/lib/projects";
 import { ProjectCard } from "@/components/project-card";
 import { ArrowRight } from "lucide-react";
-import { Icon } from "@/components/material-icon";
 
 export default function HomePage() {
   const featuredSlugs = ["ucook", "faithful-to-nature", "flanksource", "edtech-interactive-learning"];
@@ -13,28 +12,45 @@ export default function HomePage() {
   return (
     <div>
       {/* Hero */}
-      <section className="bg-white">
-        <div className="max-w-5xl mx-auto px-6 py-20 md:py-32">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-foreground max-w-2xl tracking-tight mb-6">
+      <section className="bg-[#FDFAF5]">
+        <div className="max-w-5xl mx-auto px-6 pt-20 pb-16 md:pt-32 md:pb-24">
+
+          {/* Name + availability */}
+          <div className="flex items-center gap-3 mb-10 md:mb-14">
+            <span className="text-sm text-foreground/45 tracking-tight">Erick van Reenen</span>
+            <span className="text-foreground/20 select-none">·</span>
+            <span className="inline-flex items-center gap-1.5 text-xs font-medium text-[#F0531C]">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#F0531C] inline-block" />
+              Available
+            </span>
+          </div>
+
+          {/* Headline */}
+          <h1 className="text-5xl md:text-6xl lg:text-[72px] font-bold text-foreground tracking-tight leading-[1.04] max-w-3xl mb-8 md:mb-10">
             Fusing user needs with business outcomes.
           </h1>
-          <p className="text-sm text-[#F0531C] font-bold uppercase tracking-widest mb-6">
-            UX Designer 75% / UI 25%
+
+          {/* Context strip */}
+          <p className="text-sm text-foreground/45 font-medium mb-10 md:mb-14 tracking-wide">
+            UX Designer 75% &nbsp;/&nbsp; UI 25%
+            <span className="mx-3 text-foreground/20">·</span>
+            E-commerce, Omnichannel, EdTech
+            <span className="mx-3 text-foreground/20">·</span>
+            Cape Town
           </p>
-          <p className="text-lg text-foreground/65 max-w-xl">
-            Designing for e-commerce, omnichannel, and EdTech.
-          </p>
-          <div className="flex gap-4 mt-12">
+
+          {/* CTAs */}
+          <div className="flex items-center gap-5">
             <Link
               href="/projects"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-[#F0531C] text-white text-sm font-medium rounded-full hover:bg-[#F0531C]/90 transition-all duration-200 group"
+              className="inline-flex items-center gap-2 bg-[#F0531C] text-white text-sm font-medium px-6 py-3 hover:bg-[#09332C] transition-colors duration-200 group"
             >
               View work
-              <ArrowRight size={16} className="group-hover:translate-x-0.5 transition-transform duration-200" />
+              <ArrowRight size={15} className="group-hover:translate-x-0.5 transition-transform duration-200" />
             </Link>
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 px-6 py-3 border border-[#09332C]/15 text-foreground/65 text-sm font-medium rounded-full hover:bg-[#09332C]/5 transition-all duration-200"
+              className="text-sm font-medium text-foreground/60 hover:text-foreground transition-colors duration-200 underline underline-offset-4 decoration-foreground/20 hover:decoration-foreground/60"
             >
               Get in touch
             </Link>
@@ -43,68 +59,76 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Selected Work */}
-      <section className="py-24 md:py-32">
-        <div className="max-w-5xl mx-auto px-6">
-          <div className="flex items-center justify-between mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">Selected work</h2>
-            <Link
-              href="/projects"
-              className="text-sm text-foreground/65 hover:text-[#F0531C] transition-colors duration-200 flex items-center gap-1.5 group"
-            >
-              All projects
-              <ArrowRight size={14} className="group-hover:translate-x-0.5 transition-transform duration-200" />
-            </Link>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-16 md:gap-12">
-            {featuredProjects.map((project) => (
-              <ProjectCard key={project.slug} project={project} featured />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Process */}
-      <section className="py-24 md:py-32 bg-[#E2F5EF]">
-        <div className="max-w-5xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight mb-16">Process</h2>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-[#09332C]/10">
+      {/* Dark section — what I actually do */}
+      <section className="bg-[#09332C]">
+        <div className="max-w-5xl mx-auto px-6 py-16 md:py-24">
+          <div className="grid md:grid-cols-3 gap-10 md:gap-16">
             {[
-              { step: "01", title: "Research", desc: "Dig into users, data, and context.", icon: "manage_search" },
-              { step: "02", title: "Define", desc: "Turn insights into sharp problems.", icon: "adjust" },
-              { step: "03", title: "Ideate", desc: "Explore multiple directions.", icon: "lightbulb" },
-              { step: "04", title: "Prototype", desc: "Build tangible, testable concepts.", icon: "build" },
-              { step: "05", title: "Test", desc: "Validate with real users.", icon: "biotech" },
-              { step: "06", title: "Iterate", desc: "Refine through feedback.", icon: "published_with_changes" },
-            ].map((step) => (
-              <div key={step.step} className="bg-[#E2F5EF] p-8 relative overflow-hidden">
-                <span className="absolute bottom-3 right-5 text-[88px] font-bold text-[#F0531C]/[0.13] leading-none tabular-nums select-none pointer-events-none">{step.step}</span>
-                <Icon name={step.icon} size={20} className="text-[#09332C]/40 mb-4" />
-                <h3 className="text-lg font-bold text-foreground">{step.title}</h3>
-                <p className="text-sm text-foreground/65 mt-2">{step.desc}</p>
+              {
+                n: "01",
+                title: "I initiate work that isn't on the roadmap.",
+                body: "The UCOOK sign-up investigation started because I noticed something in the data. No one asked for it. I scoped it, researched it, and delivered a redesign that moved completion from 3.7% to 9.3%.",
+              },
+              {
+                n: "02",
+                title: "Research before wireframes. Always.",
+                body: "Customer interviews, heatmaps, usability testing, internal surveys, competitive benchmarking. I don't design from assumptions when data is available and accessible.",
+              },
+              {
+                n: "03",
+                title: "Handoffs that actually ship.",
+                body: "Annotated prototypes with scrollIntoView() specs, validation rules, and GTM triggers. Developers get exactly what to build. No back-and-forth guessing.",
+              },
+            ].map((item) => (
+              <div key={item.n}>
+                <span className="text-xs text-[#F7EDDA]/25 font-bold block mb-5 tracking-widest">{item.n}</span>
+                <h3 className="text-base font-bold text-[#F7EDDA] mb-3 leading-snug">{item.title}</h3>
+                <p className="text-sm text-[#F7EDDA]/55 leading-relaxed">{item.body}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-24 md:py-32 bg-white">
+      {/* Selected work */}
+      <section className="py-20 md:py-28">
         <div className="max-w-5xl mx-auto px-6">
-          <h2 className="text-5xl md:text-7xl lg:text-8xl font-bold text-foreground tracking-tight leading-none mb-8">
-            Open to<br />opportunities.
+
+          <div className="flex items-baseline justify-between mb-14 md:mb-16">
+            <span className="text-xs text-foreground/40 font-medium uppercase tracking-widest">Selected work</span>
+            <Link
+              href="/projects"
+              className="text-xs text-foreground/50 hover:text-[#F0531C] transition-colors duration-200 flex items-center gap-1 group"
+            >
+              All projects
+              <ArrowRight size={12} className="group-hover:translate-x-0.5 transition-transform duration-200" />
+            </Link>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-x-10 gap-y-16 md:gap-y-20">
+            {featuredProjects.map((project) => (
+              <ProjectCard key={project.slug} project={project} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-20 md:py-32 border-t border-border/50">
+        <div className="max-w-5xl mx-auto px-6">
+          <p className="text-xs text-foreground/35 font-medium uppercase tracking-widest mb-8">Open to work</p>
+          <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground tracking-tight leading-[1.04] mb-8 max-w-2xl">
+            Let's build something worth using.
           </h2>
-          <p className="text-foreground/65 mb-8">
-            Let's discuss a project or just say hello.
+          <p className="text-foreground/50 mb-10 max-w-sm">
+            Full-time, contract, or something interesting. Cape Town and remote.
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-[#F0531C] text-white text-sm font-medium rounded-full hover:bg-[#09332C] transition-all duration-200 group"
+            className="inline-flex items-center gap-2 bg-[#09332C] text-[#F7EDDA] text-sm font-medium px-6 py-3 hover:bg-[#F0531C] hover:text-white transition-colors duration-200 group"
           >
             Get in touch
-            <ArrowRight size={16} className="group-hover:translate-x-0.5 transition-transform duration-200" />
+            <ArrowRight size={15} className="group-hover:translate-x-0.5 transition-transform duration-200" />
           </Link>
         </div>
       </section>

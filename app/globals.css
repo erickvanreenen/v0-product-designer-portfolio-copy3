@@ -140,6 +140,13 @@
   body {
     @apply bg-background text-foreground;
   }
+  ::selection {
+    background: #F0531C;
+    color: #ffffff;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 /*

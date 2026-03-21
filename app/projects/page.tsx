@@ -23,43 +23,42 @@ export default function ProjectsPage() {
 
   return (
     <div>
-      <section className="bg-white">
-        <div className="max-w-5xl mx-auto px-6 py-20 md:py-28">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground tracking-tight mb-4">
+      <section className="bg-[#FDFAF5]">
+        <div className="max-w-5xl mx-auto px-6 py-16 md:py-24">
+          <p className="text-xs text-foreground/35 font-medium uppercase tracking-widest mb-6">Work</p>
+          <h1 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight mb-3">
             Projects
           </h1>
-          <p className="text-[#F0531C] max-w-lg">
-            UX work spanning e-commerce, apps, and education.
+          <p className="text-sm text-foreground/45 max-w-sm">
+            UX across e-commerce, omnichannel platforms, and education.
           </p>
         </div>
       </section>
 
-      <div className="max-w-5xl mx-auto px-6 py-12 md:py-16">
-        <div className="mb-12">
+      <div className="max-w-5xl mx-auto px-6 py-10 md:py-14">
+
+        {/* Tag filter */}
+        <div className="mb-14">
           <TagFilter tags={allTags} activeTag={activeTag} onTagChange={setActiveTag} />
         </div>
 
-        {/* Main projects grid */}
+        {/* Main projects */}
         {mainProjects.length > 0 && (
-          <div className="grid md:grid-cols-2 gap-16 md:gap-12">
+          <div className="grid md:grid-cols-2 gap-x-10 gap-y-16 md:gap-y-20">
             {mainProjects.map((project) => (
               <ProjectCard key={project.slug} project={project} />
             ))}
           </div>
         )}
 
-        {/* EdTech section */}
+        {/* EdTech */}
         {edtechProjects.length > 0 && (
-          <div className="mt-24">
-            <div className="border-t border-border pt-16 mb-12">
-              <p className="text-xs text-[#F0531C] font-medium uppercase tracking-widest mb-3">
-                Discipline
-              </p>
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">
-                EdTech
-              </h2>
+          <div className="mt-24 md:mt-32">
+            <div className="border-t border-border/60 pt-14 mb-14">
+              <p className="text-xs text-[#F0531C] font-medium uppercase tracking-widest mb-2">Discipline</p>
+              <h2 className="text-2xl md:text-3xl font-bold text-foreground tracking-tight">EdTech</h2>
             </div>
-            <div className="grid md:grid-cols-2 gap-16 md:gap-12">
+            <div className="grid md:grid-cols-2 gap-x-10 gap-y-16 md:gap-y-20">
               {edtechProjects.map((project) => (
                 <ProjectCard key={project.slug} project={project} />
               ))}
@@ -69,9 +68,10 @@ export default function ProjectsPage() {
 
         {filteredProjects.length === 0 && (
           <div className="text-center py-20">
-            <p className="text-foreground/65">No projects match this filter.</p>
+            <p className="text-foreground/40 text-sm">No projects match this filter.</p>
           </div>
         )}
+
       </div>
     </div>
   );

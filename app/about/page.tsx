@@ -56,25 +56,24 @@ export default function AboutPage() {
   return (
     <div>
       {/* Hero */}
-      <section className="bg-white overflow-hidden">
-        <div className="max-w-5xl mx-auto px-6 py-20 md:py-28">
+      <section className="bg-[#FDFAF5]">
+        <div className="max-w-5xl mx-auto px-6 py-16 md:py-28">
 
-          {/* Logo mark + headline */}
-          <div className="flex items-start gap-5 mb-10">
-            <div className="mt-2 shrink-0">
-              <LogoMark size={44} />
+          <div className="flex items-start gap-5 mb-10 md:mb-12">
+            <div className="mt-1.5 shrink-0">
+              <LogoMark size={40} />
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground tracking-tight leading-none">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground tracking-tight leading-[1.05]">
               Follow the curiosity.
             </h1>
           </div>
 
-          <p className="text-lg text-foreground/80 max-w-xl leading-relaxed mb-14">
+          <p className="text-base md:text-lg text-foreground/65 max-w-xl leading-relaxed mb-12 md:mb-16">
             Systems thinking. Fifteen years making and building things people use and love.
           </p>
 
-          {/* Contact details — meta tile style */}
-          <div className="grid grid-cols-2 md:grid-cols-4">
+          {/* Contact meta */}
+          <div className="grid grid-cols-2 md:grid-cols-4 border-t border-border/60">
             {[
               { label: "Location", value: "Cape Town, South Africa", icon: "location_on", href: "https://maps.google.com/?q=Cape+Town,+South+Africa" },
               { label: "Email", value: "erickvanreenen@gmail.com", icon: "mail", href: "mailto:erickvanreenen@gmail.com" },
@@ -83,14 +82,14 @@ export default function AboutPage() {
             ].map((item, i) => (
               <div
                 key={item.label}
-                className={`p-6 min-w-0 overflow-hidden border-border ${
+                className={`py-5 px-4 min-w-0 border-border/60 ${
                   i === 1 || i === 3 ? "border-l" : i === 2 ? "md:border-l" : ""
                 } ${
                   i === 2 || i === 3 ? "border-t md:border-t-0" : ""
                 }`}
               >
-                <div className="flex items-center gap-1.5 text-foreground/35 mb-2">
-                  <Icon name={item.icon} size={14} />
+                <div className="flex items-center gap-1.5 text-foreground/30 mb-1.5">
+                  <Icon name={item.icon} size={13} />
                   <span className="text-xs font-medium uppercase tracking-widest">{item.label}</span>
                 </div>
                 {item.href ? (
@@ -111,36 +110,33 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <div className="max-w-5xl mx-auto px-6 py-16 md:py-24">
+      {/* Bio + Beyond + Experience + Education + Tooling */}
+      <div className="max-w-5xl mx-auto px-6 py-14 md:py-20">
 
         {/* Bio */}
-        <section className="mb-24">
-          <div className="max-w-2xl">
-            <p className="text-xl text-foreground font-medium leading-relaxed mb-6">
-              I am an experienced designer with a diverse background in entrepreneurship, business development, branding, product design, visual and online education design, and UX/UI.
-            </p>
-            <p className="text-base text-foreground/80 leading-relaxed mb-5">
-              I have a passion for how exceptional design impacts users' lives, blending creativity, empathy, and kindness in everything I create. My work is driven by a deep curiosity and an endless desire to understand the intricacies of design, focusing on the people I design for and with.
-            </p>
-            <p className="text-base text-foreground/80 leading-relaxed mb-5">
-              I embrace research as an essential tool for uncovering user needs, shaping experiences that resonate with their motivations and aspirations. I'm a dedicated problem-solver and advocate for quality design, balancing innovation with practical solutions.
-            </p>
-          </div>
+        <section className="mb-20 md:mb-24 max-w-2xl">
+          <p className="text-lg md:text-xl text-foreground font-medium leading-relaxed mb-6">
+            I am an experienced designer with a diverse background in entrepreneurship, business development, branding, product design, visual and online education design, and UX/UI.
+          </p>
+          <p className="text-base text-foreground/70 leading-relaxed mb-5">
+            I have a passion for how exceptional design impacts users' lives, blending creativity, empathy, and kindness in everything I create. My work is driven by a deep curiosity and an endless desire to understand the intricacies of design, focusing on the people I design for and with.
+          </p>
+          <p className="text-base text-foreground/70 leading-relaxed">
+            I embrace research as an essential tool for uncovering user needs, shaping experiences that resonate with their motivations and aspirations. I'm a dedicated problem-solver and advocate for quality design, balancing innovation with practical solutions.
+          </p>
         </section>
 
         {/* Beyond work */}
-        <section className="mb-24 pb-16 border-b border-border">
-          <div className="flex items-center gap-3 mb-6">
-            <LogoMark size={16} color="#09332C" opacity={0.25} />
-            <h2 className="text-xs text-foreground/65 font-medium uppercase tracking-widest">Beyond work</h2>
+        <section className="mb-20 md:mb-24 pb-16 md:pb-20 border-b border-border/60">
+          <div className="flex items-center gap-3 mb-5">
+            <LogoMark size={14} opacity={0.2} />
+            <h2 className="text-xs text-foreground/40 font-medium uppercase tracking-widest">Beyond work</h2>
           </div>
-          <p className="text-base text-foreground/80 leading-relaxed max-w-2xl mb-16">
+          <p className="text-base text-foreground/70 leading-relaxed max-w-2xl mb-14">
             Beyond design, I'm a proud father who draws inspiration and solace from nature, Tai Chi, meditation, breathwork, trail running, and early morning swims in the Atlantic Ocean, infusing my work with a sense of calm and reflection.
           </p>
-
-          {/* Prints */}
           <div>
-            <p className="text-base text-foreground/80 leading-relaxed mb-8">
+            <p className="text-sm text-foreground/55 leading-relaxed mb-8">
               I enjoy making prints for free play as a creative outlet.
             </p>
             <PrintsCarousel />
@@ -148,23 +144,23 @@ export default function AboutPage() {
         </section>
 
         {/* Experience */}
-        <section className="mb-24 pb-24 border-b border-border">
-          <div className="flex items-center gap-3 mb-12">
-            <LogoMark size={16} color="#09332C" opacity={0.25} />
+        <section className="mb-20 md:mb-24 pb-20 md:pb-24 border-b border-border/60">
+          <div className="flex items-center gap-3 mb-12 md:mb-14">
+            <LogoMark size={14} opacity={0.2} />
             <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">Experience</h2>
           </div>
           <div className="space-y-0">
             {experience.map((exp, i, arr) => (
-              <div key={`${exp.company}-${exp.title}`} className="flex gap-6">
+              <div key={`${exp.company}-${exp.title}`} className="flex gap-5 md:gap-6">
                 <div className="flex flex-col items-center">
-                  <div className="w-2 h-2 rounded-full bg-[#F0531C] flex-shrink-0 mt-1.5" />
-                  {i < arr.length - 1 && <div className="w-px flex-1 bg-border mt-1" />}
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#F0531C] shrink-0 mt-2" />
+                  {i < arr.length - 1 && <div className="w-px flex-1 bg-border/60 mt-1.5" />}
                 </div>
-                <div className="pb-10">
-                  <p className="text-xs text-foreground/65 font-medium mb-1">{exp.period}</p>
+                <div className="pb-9 md:pb-10">
+                  <p className="text-xs text-foreground/40 font-medium mb-1">{exp.period}</p>
                   <h3 className="text-base font-bold text-foreground">{exp.title}</h3>
                   <p className="text-sm text-[#F0531C] mb-1">{exp.company}</p>
-                  <p className="text-sm text-foreground/65">{exp.desc}</p>
+                  <p className="text-sm text-foreground/55">{exp.desc}</p>
                 </div>
               </div>
             ))}
@@ -172,64 +168,91 @@ export default function AboutPage() {
         </section>
 
         {/* Education */}
-        <section className="mb-24 pb-24 border-b border-border">
-          <div className="flex items-center gap-3 mb-12">
-            <LogoMark size={16} color="#09332C" opacity={0.25} />
+        <section className="mb-20 md:mb-24 pb-20 md:pb-24 border-b border-border/60">
+          <div className="flex items-center gap-3 mb-12 md:mb-14">
+            <LogoMark size={14} opacity={0.2} />
             <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">Education</h2>
           </div>
-          <div className="space-y-8">
+          <div className="space-y-7 md:space-y-8">
             {education.map((edu) => (
-              <div key={edu.title} className="flex items-start gap-8">
-                <span className="text-xs text-foreground/65 font-medium w-12 flex-shrink-0 pt-0.5">{edu.year}</span>
+              <div key={edu.title} className="flex items-start gap-6 md:gap-10">
+                <span className="text-xs text-foreground/35 font-medium w-14 shrink-0 pt-0.5">{edu.year}</span>
                 <div>
-                  <h3 className="text-base font-bold text-foreground">{edu.title}</h3>
-                  <p className="text-sm text-foreground/65">{edu.institution}</p>
+                  <h3 className="text-sm md:text-base font-bold text-foreground">{edu.title}</h3>
+                  <p className="text-sm text-foreground/50 mt-0.5">{edu.institution}</p>
                 </div>
               </div>
             ))}
           </div>
         </section>
 
-
-        {/* Tooling */}
-        <section className="mb-0 pb-24 border-b border-border">
-          <div className="flex items-center gap-3 mb-12">
-            <LogoMark size={16} color="#09332C" opacity={0.25} />
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">Tooling</h2>
+        {/* Skills */}
+        <section className="mb-20 md:mb-24 pb-20 md:pb-24 border-b border-border/60">
+          <div className="flex items-center gap-3 mb-12 md:mb-14">
+            <LogoMark size={14} opacity={0.2} />
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">Skills</h2>
           </div>
           <div className="flex flex-wrap gap-2">
-            {[...tools, ...aiTools].map((tool) => (
-              <span key={tool} className="text-sm px-3 py-1.5 rounded-full bg-[#F7EDDA] text-[#09332C]/80">
-                {tool}
+            {skills.map((skill) => (
+              <span key={skill} className="text-sm px-3 py-1.5 bg-[#F7EDDA] text-foreground/70 font-medium">
+                {skill}
               </span>
             ))}
           </div>
         </section>
 
-      </div>
-
-      {/* Get in Touch — white bg, full width */}
-      <section className="bg-white border-t border-border">
-        <div className="max-w-5xl mx-auto px-6 py-20 md:py-28">
-          <div className="flex items-start gap-5">
-            <div className="mt-1 shrink-0">
-              <LogoMark size={28} color="#F0531C" />
+        {/* Tooling */}
+        <section className="mb-0 pb-0">
+          <div className="flex items-center gap-3 mb-12 md:mb-14">
+            <LogoMark size={14} opacity={0.2} />
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">Tooling</h2>
+          </div>
+          <div className="grid md:grid-cols-2 gap-10 md:gap-16">
+            <div>
+              <p className="text-xs text-foreground/35 font-medium uppercase tracking-widest mb-5">Design + delivery</p>
+              <div className="flex flex-wrap gap-2">
+                {tools.map((tool) => (
+                  <span key={tool} className="text-sm px-3 py-1.5 bg-[#F7EDDA] text-foreground/70 font-medium">
+                    {tool}
+                  </span>
+                ))}
+              </div>
             </div>
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight mb-4">
-                Open to opportunities.
-              </h2>
-              <p className="text-foreground/65 mb-8 max-w-md">
-                Available for full-time roles, contract work, and interesting problems. Let's talk.
-              </p>
-              <Link
-                href="/contact"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-[#F0531C] text-white text-sm font-medium rounded-full hover:bg-[#09332C] transition-all duration-200 group"
-              >
-                Get in touch
-                <ArrowRight size={16} className="group-hover:translate-x-0.5 transition-transform duration-200" />
-              </Link>
+              <p className="text-xs text-foreground/35 font-medium uppercase tracking-widest mb-5">AI tools</p>
+              <div className="flex flex-wrap gap-2">
+                {aiTools.map((tool) => (
+                  <span key={tool} className="text-sm px-3 py-1.5 bg-[#F7EDDA] text-foreground/70 font-medium">
+                    {tool}
+                  </span>
+                ))}
+              </div>
             </div>
+          </div>
+        </section>
+
+      </div>
+
+      {/* CTA */}
+      <section className="bg-[#09332C]">
+        <div className="max-w-5xl mx-auto px-6 py-16 md:py-24">
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8">
+            <div>
+              <p className="text-xs text-[#F7EDDA]/30 font-medium uppercase tracking-widest mb-5">Open to work</p>
+              <h2 className="text-3xl md:text-4xl font-bold text-[#F7EDDA] tracking-tight mb-3">
+                Available for opportunities.
+              </h2>
+              <p className="text-[#F7EDDA]/55 max-w-sm text-sm">
+                Full-time roles, contract work, and interesting problems. Let's talk.
+              </p>
+            </div>
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-2 bg-[#F0531C] text-white text-sm font-medium px-6 py-3 hover:bg-[#F7EDDA] hover:text-[#09332C] transition-colors duration-200 group shrink-0"
+            >
+              Get in touch
+              <ArrowRight size={15} className="group-hover:translate-x-0.5 transition-transform duration-200" />
+            </Link>
           </div>
         </div>
       </section>

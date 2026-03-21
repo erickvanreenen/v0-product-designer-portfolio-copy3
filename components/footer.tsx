@@ -1,34 +1,48 @@
 import Link from "next/link";
-import { Mail } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="border-t border-border bg-white">
-      <div className="max-w-5xl mx-auto px-6 py-12">
+    <footer className="bg-[#09332C]">
+      <div className="max-w-5xl mx-auto px-6 py-10 md:py-12">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
-          <p className="text-sm text-foreground/65">
-            &copy; {new Date().getFullYear()} Erick van Reenen
-          </p>
-          <div className="flex items-center gap-6">
+
+          <div className="flex items-center gap-3">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/images/erick-logo.svg" width={16} height={16} alt="" style={{ opacity: 0.3, filter: "brightness(10)" }} />
+            <p className="text-sm text-[#F7EDDA]/40">
+              &copy; {new Date().getFullYear()} Erick van Reenen
+            </p>
+          </div>
+
+          <div className="flex items-center gap-8">
             <Link
               href="mailto:erickvanreenen@gmail.com"
-              className="text-foreground/65 hover:text-[#F0531C] transition-colors duration-200"
-              aria-label="Email"
+              className="text-sm text-[#F7EDDA]/50 hover:text-[#F0531C] transition-colors duration-200"
             >
-              <Mail size={16} />
+              Email
             </Link>
             <Link
               href="https://www.linkedin.com/in/erick-van-reenen-b549061a6/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-foreground/65 hover:text-[#F0531C] transition-colors duration-200"
-              aria-label="LinkedIn"
+              className="text-sm text-[#F7EDDA]/50 hover:text-[#F0531C] transition-colors duration-200"
             >
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-              </svg>
+              LinkedIn
+            </Link>
+            <Link
+              href="/projects"
+              className="text-sm text-[#F7EDDA]/50 hover:text-[#F7EDDA] transition-colors duration-200"
+            >
+              Work
+            </Link>
+            <Link
+              href="/about"
+              className="text-sm text-[#F7EDDA]/50 hover:text-[#F7EDDA] transition-colors duration-200"
+            >
+              About
             </Link>
           </div>
+
         </div>
       </div>
     </footer>
