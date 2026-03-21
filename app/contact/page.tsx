@@ -35,7 +35,7 @@ export default function ContactPage() {
         <div className="max-w-5xl mx-auto px-6 py-16 md:py-24">
           <p className="text-xs text-foreground/35 font-medium uppercase tracking-widest mb-6">Contact</p>
           <h1 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight mb-10 md:mb-14">
-            Let&apos;s talk.
+            Let&apos;s connect.
           </h1>
           <blockquote className="max-w-2xl border-l-2 border-[#F0531C] pl-6">
             <p className="text-base md:text-lg font-medium text-foreground leading-relaxed">
