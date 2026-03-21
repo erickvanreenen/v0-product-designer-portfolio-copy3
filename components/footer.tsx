@@ -8,7 +8,7 @@ export function Footer() {
 
           <div className="flex items-center gap-3">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/erick-logo.svg" width={16} height={16} alt="" style={{ opacity: 0.3, filter: "brightness(10)" }} />
+            <img src="/images/erick-logo.svg" width={16} height={16} alt="" style={{ filter: "brightness(0) saturate(100%) invert(42%) sepia(74%) saturate(1200%) hue-rotate(346deg) brightness(98%) contrast(97%)" }} />
             <p className="text-sm text-[#F7EDDA]/40">
               &copy; {new Date().getFullYear()} Erick van Reenen
             </p>
