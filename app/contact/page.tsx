@@ -14,14 +14,29 @@ export default function ContactPage() {
   const [formState, setFormState] = useState({ name: "", email: "", message: "" });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [error, setError] = useState("");
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-    setIsSubmitting(false);
-    setIsSubmitted(true);
-    setFormState({ name: "", email: "", message: "" });
+    setError("");
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formState),
+      });
+
+      if (!res.ok) throw new Error("Failed to send");
+
+      setIsSubmitted(true);
+      setFormState({ name: "", email: "", message: "" });
+    } catch {
+      setError("Something went wrong. Please try emailing me directly.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -93,6 +108,9 @@ export default function ContactPage() {
                       placeholder="Tell me about your project or role."
                     />
                   </div>
+                  {error && (
+                    <p className="text-sm text-[#F0531C]">{error}</p>
+                  )}
                   <button
                     type="submit" disabled={isSubmitting}
                     className="relative px-6 py-3 bg-[#F0531C] text-white text-sm font-medium hover:bg-[#09332C] active:scale-[0.98] transition-all duration-200 disabled:opacity-60 disabled:cursor-not-allowed overflow-hidden group"
