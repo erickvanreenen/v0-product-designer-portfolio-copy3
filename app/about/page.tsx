@@ -150,6 +150,24 @@ export default function AboutPage() {
           </div>
         </section>
 
+        {/* Artificial Intelligence */}
+        <FadeIn>
+        <section className="mb-20 md:mb-24 pb-20 md:pb-24 border-b border-border/60">
+          <div className="flex items-center gap-3 mb-12 md:mb-14">
+            <LogoMark size={14} opacity={0.2} />
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">Artificial Intelligence</h2>
+          </div>
+          <div className="max-w-2xl">
+            <p className="text-base text-foreground/70 leading-relaxed mb-5">
+              I use AI as a working partner throughout my design process, from accelerating research, analysing qualitative and quantitative data, and exploring ideas, to reviewing prototypes against usability and WCAG accessibility principles, refining UX copy, building and evolving design system components, and shaping content strategy for AI-driven search (GEO).
+            </p>
+            <p className="text-base text-foreground/70 leading-relaxed">
+              It enables faster iteration, structured critique, and more rigorous testing of ideas across multiple projects, while human judgement, user needs, and business context remain at the centre of every design decision.
+            </p>
+          </div>
+        </section>
+        </FadeIn>
+
         {/* Experience */}
         <FadeIn>
         <section className="mb-20 md:mb-24 pb-20 md:pb-24 border-b border-border/60">
