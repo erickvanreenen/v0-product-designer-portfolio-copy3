@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { projects, getProjectBySlug } from "@/lib/projects";
 import { CaseStudyLayout } from "@/components/case-study-layout";
 import { UCookCaseStudy } from "@/components/ucook-case-study";
+import { RhinoAfricaCaseStudy } from "@/components/rhino-africa-case-study";
 import { FlanksourceCaseStudy } from "@/components/flanksource-case-study";
 import { OvertureCaseStudy } from "@/components/overture-case-study";
 import { FtnCaseStudy } from "@/components/ftn-case-study";
@@ -9,6 +10,7 @@ import { EdtechCaseStudy } from "@/components/edtech-case-study";
 import { EduvosCaseStudy } from "@/components/eduvos-case-study";
 import { AdaCaseStudy } from "@/components/ada-case-study";
 import { Uni4CaseStudy } from "@/components/uni4-case-study";
+import { KurtosysCaseStudy } from "@/components/kurtosys-case-study";
 import { Metadata } from "next";
 
 interface PageProps {
@@ -55,6 +57,26 @@ export default async function CaseStudyPage({ params }: PageProps) {
   const projectIndex = projects.findIndex((p) => p.slug === slug);
   const nextProject = projects[projectIndex + 1];
   const prevProject = projects[projectIndex - 1];
+
+  if (slug === "rhino-africa-geo") {
+    return (
+      <RhinoAfricaCaseStudy
+        project={project}
+        nextProject={nextProject}
+        prevProject={prevProject}
+      />
+    );
+  }
+
+  if (slug === "kurtosys-rule-builder") {
+    return (
+      <KurtosysCaseStudy
+        project={project}
+        nextProject={nextProject}
+        prevProject={prevProject}
+      />
+    );
+  }
 
   if (slug === "ucook") {
     return (

@@ -5,53 +5,77 @@ import { CardVisual } from "@/components/card-visual";
 
 interface ProjectCardProps {
   project: Project;
-  featured?: boolean;
 }
 
 export function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <Link href={`/projects/${project.slug}`} className="group block">
-      <article>
-
-        {/* Thumbnail */}
-        <div className="relative overflow-hidden aspect-[4/3] mb-5 bg-[#F7EDDA]">
-          <div className="absolute inset-0 group-hover:scale-[1.018] transition-transform duration-500 ease-out">
+    <Link
+      href={`/projects/${project.slug}`}
+      data-accent={project.accent}
+      className="group block h-full focus-visible:outline-none"
+    >
+      {/*
+        Each card is its own white surface on the cream page. Without it the
+        cards ran together, since the only separation was whitespace.
+      */}
+      <article className="h-full flex flex-col bg-surface border border-line transition-colors duration-300 group-hover:border-accent/45">
+        <div className="relative overflow-hidden aspect-[8/5] bg-accent-wash">
+          <div className="absolute inset-0 transition-transform duration-[600ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.02]">
             <CardVisual slug={project.slug} />
           </div>
-          {/* Hover overlay with arrow */}
-          <div className="absolute inset-0 flex items-end justify-end p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <span className="bg-[#F0531C] text-white w-8 h-8 flex items-center justify-center translate-y-1 group-hover:translate-y-0 transition-transform duration-300">
-              <ArrowUpRight size={15} />
-            </span>
+          <span
+            className="absolute bottom-0 right-0 w-9 h-9 flex items-center justify-center bg-accent text-white
+                       translate-y-full group-hover:translate-y-0 group-focus-visible:translate-y-0
+                       transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]"
+          >
+            <ArrowUpRight size={16} />
+          </span>
+        </div>
+
+        <div className="flex flex-col flex-1 p-5 md:p-6">
+          {/*
+            Title and client stack rather than sitting on one row. Some client
+            names are long enough to blow out a flex row on a narrow screen.
+          */}
+          <h3 className="t-h2 text-2xl md:text-[26px] text-ink group-hover:text-accent transition-colors duration-200 break-words">
+            {project.title}
+          </h3>
+          <p className="t-label text-ink/45 mt-1.5 break-words">{project.client}</p>
+
+          <p className="text-[15px] text-ink/65 leading-relaxed mt-3.5 mb-5">
+            {project.subtitle}
+          </p>
+
+          <div className="mt-auto pt-4 border-t border-line">
+            {project.metric ? (
+              <div className="flex flex-wrap items-baseline gap-x-2.5 gap-y-1">
+                {/*
+                  A before and after pair reads as a direction, not two numbers.
+                  The arrow and the result carry the positive colour so the
+                  improvement is legible without reading the label.
+                */}
+                {project.metric.from ? (
+                  <span className="t-num text-lg font-semibold flex items-baseline gap-2">
+                    <span className="text-ink/45">{project.metric.from}</span>
+                    <span aria-hidden="true" className="text-positive">
+                      &rarr;
+                    </span>
+                    <span className="text-positive">{project.metric.value}</span>
+                  </span>
+                ) : (
+                  <span className="t-num text-lg font-semibold text-accent">
+                    {project.metric.value}
+                  </span>
+                )}
+                <span className="t-label text-ink/45">{project.metric.label}</span>
+              </div>
+            ) : (
+              <p className="text-[13px] text-ink/50 leading-relaxed">
+                {project.outcomes[0]}
+              </p>
+            )}
           </div>
         </div>
-
-        {/* Tags */}
-        <div className="flex flex-wrap gap-x-3 gap-y-1 mb-3">
-          {project.tags.slice(0, 3).map((tag) => (
-            <span key={tag} className="text-xs text-foreground/35 font-medium">
-              {tag}
-            </span>
-          ))}
-        </div>
-
-        {/* Title */}
-        <h3 className="text-xl font-bold text-foreground group-hover:text-[#F0531C] transition-colors duration-200 leading-snug mb-1.5">
-          {project.title}
-        </h3>
-
-        {/* Subtitle */}
-        <p className="text-sm text-foreground/55 leading-relaxed mb-5">
-          {project.subtitle}
-        </p>
-
-        {/* Key outcome */}
-        {project.outcomes[0] && (
-          <p className="text-xs text-foreground/40 border-t border-border/70 pt-4 leading-relaxed">
-            {project.outcomes[0]}
-          </p>
-        )}
-
       </article>
     </Link>
   );
