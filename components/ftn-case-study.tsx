@@ -34,6 +34,18 @@ export function FtnCaseStudy({ project, nextProject, prevProject }: Props) {
         ]}
       />
 
+      {/* Self-playing walkthrough of the app, Erick's own file in public/.
+          21:9 on desktop, a stacked 4:5 on a phone (the file adapts to its frame). */}
+      <section className="border-b border-line">
+        {/* Full bleed: edge to edge of the window, no side gutter */}
+        <iframe
+          src="/ftn-app-animation.html"
+          title="Faithful to Nature app walkthrough"
+          loading="lazy"
+          className="block w-full border-0 aspect-[4/5] max-h-[560px] md:aspect-auto md:max-h-none md:h-[clamp(440px,min(43vw,calc(100svh_-_140px)),900px)]"
+        />
+      </section>
+
       <Premise question={project.question} answer={project.answer} />
 
       <CaseBody>
